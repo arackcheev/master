@@ -1,14 +1,15 @@
 # xbridge.conf
 
 * Under the [Main] heading, edit these to suit your requirements:
-```ExchangeWallets=``` Add/remove coin heading's here
-```LogPath=``` Change file path to desired location 
+
+  * ```ExchangeWallets=``` Add/remove coin heading's here
+  * ```LogPath=``` Change file path to desired location 
 
 * Under the [COIN] heading's, edit these to suit your individual wallet's RPC configuration:
 
-```Address=``` Edit this field to your individual labelled receive addresses
-```Username=``` Username must match RPCuser in the coin's ".conf"
-```Password=``` Password must match RPCpassword in the coin's ".conf"
+  * ```Address=``` Edit this field to your individual labelled receive addresses
+  * ```Username=``` Username must match RPCuser in the coin's ".conf"
+  * ```Password=``` Password must match RPCpassword in the coin's ".conf"
 
 * This master xbridge.conf will be updated as coins are added
 
