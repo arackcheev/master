@@ -13,7 +13,7 @@
     2. Type `validateaddress <wallet address>`
     3. Copy `pubkey`
     4. If it says something about locked wallet go `walletpassphrase <walletpassword> <pick a number in seconds>` example: `walletpassphrase password 10000`
-    5. Type `decodescript <enter copied pubkey from step 3>`
+    5. Type `decodescript <enter copied pubkey from step iii>`
     6. Take the p2sh output and decode that to HEX on the base58 website
     7. Then convert first 2 digits of hex. decimal value = script prefix
 
