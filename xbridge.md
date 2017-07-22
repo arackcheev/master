@@ -1,12 +1,12 @@
 # XBRIDGE.CONF
 
--Under the [Main] heading, only use .conf’s and wallets vetted by the Dev team
+*Under the [Main] heading, only use .conf’s and wallets vetted by the Dev team
 
--Some wallets have been tested and traded through the testnet community, others are still work in progress
+*Some wallets have been tested and traded through the testnet community, others are still work in progress
 
--This master xbridge.conf will be updated as coins are added/vetted by the Dev team
+*This master xbridge.conf will be updated as coins are added/vetted by the Dev team
 
--Highlighted green sections need to be changed to match your individual wallet’s RPC configuration
+*Highlighted green sections need to be changed to match your individual wallet’s RPC configuration
 
 ```
 [Main]
