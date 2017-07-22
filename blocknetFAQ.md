@@ -1,13 +1,17 @@
 # BLOCKNET
 The Internet Of Blockchains
 
+
 ## Community-produced FAQ document
+
 
 ### What Is Blocknet?
 The Blocknet is a general-purpose infrastructure for inter-blockchain services. It is designed to enable the emerging “token ecosystem.” The first product build on this infrastructure is a decentralized exchange.
 
+
 ### What Does It  Do?
 The Blocknet enables inter-blockchain services, like decentralized exchange, monetised API consumption, and p2p digital service delivery. These are core enabling features of inter-chain dapps.
+
 
 ### How Does It Work?
 To support inter-blockchain services, the Blocknet has three core components, which work together to provide three core services.
@@ -28,10 +32,12 @@ To support inter-blockchain services, the Blocknet has three core components, wh
 
   * Service monetisation
   
+  
 ### What Is a Decentralized Exchange?
 A decentralized exchange is a service enabling counterparties (which may be people or machines) to exchange one currency or token for another, without the involvement of any third party as an intermediary. 
 
 The term “decentralized” denotes matters of control rather than the distribution of processing; the ideal of a decentralized solution is for the parties to a given interaction to be self-sovereign actors, in the sense that no third party is required to act on their behalf in order for the interaction to take place.
+
 
 ### How Does a Decentralized Exchange Work?
 Exchanges have four core functions:
@@ -56,10 +62,12 @@ The Blocknet decentralizes them in the following ways:
 
 * The exchange of tokens is achieved without the involvement of an intermediary, in a manner that does not require counterparties to trust one another beforehand. An atomic protocol is utilised (meaning that either the exchange of both currencies takes place, or nothing takes place), which employs  OP_CHECKLOCKTIMEVERIFY to nullify transaction malleability-based attacks. More details on the protocol are available here: http://kaykurokawa.blogspot.co.za/2015/10/atomic-cross-chain-transfer-overview.html
 
+
 ### Why Is a Decentralized Exchange a Key Enabler Of the Token Ecosystem?
 Decentralized exchange makes blockchain services intrinsically monetizable, removing the friction and high costs of traditional payment networks that have prevented the monetisation of the bulk of the API ecosystem.
 
 Due to the decentralized exchange, consumers of a service may pay in their native token even if the service consumes a different token. In a world in which (a) there are already thousands of blockchains, and (b) blockchains bloat inexorably, and so it is advisable not to support many services per blockchain, monetising inter-chain services is both an operational necessity and an ecosystem-enabling service.
+
 
 ### What Coins Does the Decentralized Exchange Support?
 The Blocknet was designed to maximise interoperability, and so most blockchain tokens may be integrated with no coding required.
@@ -72,12 +80,14 @@ The current integration requirements are:
 
 As a result, the Blocknet supports the majority of cryptocurrencies in existence, and no permission from anyone is required for these to be traded on the exchange.
 
+
 ### How Fast Is the Decentralized Exchange?
 Instant.
 
 However, note that once you have completed a trade and received coins, you will be dependent on their blockchain’s accepted confirmation time before your coins will be spendable again.
 
-Note: A future enhancement to the decentralized exchange may include a filter on the order book to enable traders to trade coins with less than the number of confirmations conventionally agreed upon as “safe.” This incurs a degree of risk for the benefit of supporting trading styles that require rapidly entering and exiting a position, such as scalping.
+*Note: A future enhancement to the decentralized exchange may include a filter on the order book to enable traders to trade coins with less than the number of confirmations conventionally agreed upon as “safe.” This incurs a degree of risk for the benefit of supporting trading styles that require rapidly entering and exiting a position, such as scalping.*
+
 
 ### How Private Is the Decentralized Exchanged?
 Because decentralized exchanges do not require traders to submit KYC information or divulge anything else about themselves to a third party, traders enjoy a naturally high degree of privacy.
@@ -93,8 +103,10 @@ Using decentralized exchange, these services are intrinsically monetizable, remo
 
 Due to the decentralized exchange, consumers of a service may pay in their native token even if the service consumes a different token.
  
+ 
 ### What Are the Benefits Of Running a Node? How Many Blocks Do I Need To Run One?
 There are two types of node: a "service node" and a “trader node”. Service nodes do not handle or control any trader's coins. Their function is to collect and distribute trade fees. Typically a service node operator will run multiple full node wallets of whichever coins (s)he wants to support, in order to garner as many trade fees as possible. Trader nodes enable one to trade on the decentralized exchange.The amount of BLOCK currently needed to run a service node is 5,000 BLOCK. To use the exchange you will not need any BLOCK.
+ 
  
 ### Will There Be Fees For Buying/Trading On the Blocknet Exchange?
 Yes, there are fees, though they are significantly lower that centralised exchanges.
