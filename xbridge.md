@@ -1,12 +1,23 @@
-# XBRIDGE.CONF
+# xbridge.conf
 
-* Under the [Main] heading, only use .conf’s and wallets vetted by the Dev team
+* Under the [Main] heading, edit these to suit your requirements:
+```
+ExchangeWallets=
+LogPath=
+```
 
-* Some wallets have been tested and traded through the testnet community, others are still work in progress
+* Under the [COIN] heading's, edit these to suit your individual wallet's RPC configuration:
+```
+Address=
+Username=
+Password=
+```
 
-* This master xbridge.conf will be updated as coins are added/vetted by the Dev team
+* This master xbridge.conf will be updated as coins are added
 
 * Highlighted green sections need to be changed to match your individual wallet’s RPC configuration
+
+## DX COMPATIBLE COINS
 
 ```
 [Main]
@@ -188,5 +199,221 @@ GetNewKeySupported=false
 ImportWithNoScanSupported=false
 MinTxFee=60000
 BlockTime=150
+FeePerByte=200
+```
+
+### COMMUNICATES BUT TX FAILS
+```
+[SEQ]
+Title=Sequence
+Address= SEQ TEST ADDRESS
+Ip=127.0.0.1
+Port=16663
+Username= YOUR USERNAME
+Password= YOUR PASSWORD
+AddressPrefix=63
+ScriptPrefix=64
+SecretPrefix=170
+COIN=100000000
+MinimumAmount=0
+TxVersion=1
+DustAmount=0
+CreateTxMethod=BTC
+GetNewKeySupported=false
+ImportWithNoScanSupported=false
+MinTxFee=100000
+BlockTime=60
+FeePerByte=200
+
+[BAY]
+Title=BitBay
+Address= BAY TEST ADDRESS
+Ip=127.0.0.1
+Port=19915
+Username= YOUR USERNAME
+Password= YOUR PASSWORD
+AddressPrefix=25
+ScriptPrefix=85
+SecretPrefix=153
+COIN=100000000
+MinimumAmount=0
+TxVersion=1
+DustAmount=0
+CreateTxMethod=BTC
+GetNewKeySupported=false
+ImportWithNoScanSupported=true
+MinTxFee=10000
+BlockTime=64
+FeePerByte=200
+
+[STRAT]
+Title=Stratis
+Address= STRAT TEST ADDRESS
+Ip=127.0.0.1
+Port=26174 
+Username= YOUR USERNAME
+Password= YOUR PASSWORD
+AddressPrefix=63
+ScriptPrefix=125
+SecretPrefix=191
+COIN=100000000
+MinimumAmount=0
+TxVersion=1
+DustAmount=0
+CreateTxMethod=BTC
+GetNewKeySupported=false
+ImportWithNoScanSupported=true
+MinTxFee=60000
+BlockTime=60
+FeePerByte=200
+
+[DOGE]
+Title=Dogecoin
+Address= DOGE TEST ADDRESS
+Ip=127.0.0.1
+Port=22555 
+Username= YOUR USERNAME
+Password= YOUR PASSWORD
+AddressPrefix=30
+ScriptPrefix=22
+SecretPrefix=158
+COIN=100000000
+MinimumAmount=0
+TxVersion=1
+DustAmount=0
+CreateTxMethod=BTC
+GetNewKeySupported=false
+ImportWithNoScanSupported=false
+MinTxFee=60000
+BlockTime=60
+FeePerByte=200
+
+[FTC]
+Title=Feathercoin
+Address= FTC TEST ADDRESS
+Ip=127.0.0.1
+Port=9337
+Username= YOUR USERNAME
+Password= YOUR PASSWORD
+AddressPrefix=14
+ScriptPrefix=5
+SecretPrefix=142
+COIN=100000000
+MinimumAmount=0
+TxVersion=1
+DustAmount=0
+CreateTxMethod=BTC
+GetNewKeySupported=false
+ImportWithNoScanSupported=false
+MinTxFee=60000
+BlockTime=60
+FeePerByte=200
+
+[QRK]
+Title=Quarkcoin
+Address=QRK TEST ADDRESS
+Ip=127.0.0.1
+Port=8372
+Username= YOUR USERNAME
+Password= YOUR PASSWORD
+AddressPrefix=58
+ScriptPrefix=9
+SecretPrefix=186
+COIN=100000000
+MinimumAmount=0
+TxVersion=1
+DustAmount=0
+CreateTxMethod=BTC
+GetNewKeySupported=false
+ImportWithNoScanSupported=false
+MinTxFee=60000
+BlockTime=30
+FeePerByte=200
+```
+
+### NOT TESTED
+```
+[XST]
+Title=Stealthcoin
+Address=XST TEST ADDRESS
+Ip=127.0.0.1
+Port=46502
+Username= YOUR USERNAME
+Password=YOUR PASSWORD
+AddressPrefix=62
+ScriptPrefix=85
+SecretPrefix=190
+COIN=100000000
+MinimumAmount=0
+TxVersion=1
+DustAmount=0
+CreateTxMethod=BTC
+GetNewKeySupported=false
+ImportWithNoScanSupported=true
+MinTxFee=100000
+BlockTime=60
+FeePerByte=200
+
+[BLK]
+Title=Blackcoin
+Address=BLK TEST ADDRESS
+Ip=127.0.0.1
+Port=15715
+Username= YOUR USERNAME
+Password= YOUR PASSWORD
+AddressPrefix=25
+ScriptPrefix=85
+SecretPrefix=153
+COIN=100000000
+MinimumAmount=0
+TxVersion=1
+DustAmount=0
+CreateTxMethod=BTC
+GetNewKeySupported=false
+ImportWithNoScanSupported=false
+MinTxFee=60000
+BlockTime=30
+FeePerByte=200
+
+[BRK]
+Title=Breakoutcoin
+Address=BRK TEST ADDRESS
+Ip=127.0.0.1
+Port=50542
+Username= YOUR USERNAME
+Password= YOUR PASSWORD
+AddressPrefix=19
+ScriptPrefix=1
+SecretPrefix=147
+COIN=100000000
+MinimumAmount=0
+TxVersion=1
+DustAmount=0
+CreateTxMethod=BTC
+GetNewKeySupported=false
+ImportWithNoScanSupported=false
+MinTxFee=60000
+BlockTime=300
+FeePerByte=200
+
+[BRX]
+Title=Breakoutstake
+Address=BRX TEST ADDRESS
+Ip=127.0.0.1
+Port=50542
+Username= YOUR USERNAME
+Password= YOUR PASSWORD
+AddressPrefix=19
+ScriptPrefix=1
+SecretPrefix=147
+COIN=100000000
+MinimumAmount=0
+TxVersion=1
+DustAmount=0
+CreateTxMethod=BTC
+GetNewKeySupported=false
+ImportWithNoScanSupported=false
+MinTxFee=60000
+BlockTime=300
 FeePerByte=200
 ```
