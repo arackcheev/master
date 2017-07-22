@@ -29,5 +29,5 @@
 
     1. Search wallet’s GitHub, official webpage, bitcointalk, general google searches
     2. Try some of the website sources listed below on the next page
-    3. Under the wallets Debug or Tool menu, click the Peers tab. The IP address port is usually 1 below what is listed. This only works sometimes.
+    3. Under the wallets Debug or Tool menu, click the Peers tab. The IP address port is sometimes 1 below what is listed. This only works sometimes.
     4. From command line (windows: `netstat -an` / linux: `netstat -anp`) That should show open ports (on windows it wont’ show the process, but there is a GUI that does)
