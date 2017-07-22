@@ -7,9 +7,9 @@
 
 * Under the ```[COIN]``` heading, edit to suit your individual wallet's RPC configuration:
 
-  * ```Address=``` Edit this field to your individual labelled receive addresses
-  * ```Username=``` Username must match RPCuser in the coin's ".conf"
-  * ```Password=``` Password must match RPCpassword in the coin's ".conf"
+  * ```Address=``` Edit this field to match your labelled receive address
+  * ```Username=``` Edit this field to match RPCuser in the coin's .conf
+  * ```Password=``` Edit this field to match RPCpassword in the coin's .conf
 
 * This master xbridge.conf will be updated as coins are added
 
