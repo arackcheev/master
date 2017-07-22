@@ -326,10 +326,7 @@ ImportWithNoScanSupported=false
 MinTxFee=60000
 BlockTime=30
 FeePerByte=200
-```
 
-## NOT TESTED
-```
 [XST]
 Title=Stealthcoin
 Address=XST TEST ADDRESS
@@ -350,7 +347,10 @@ ImportWithNoScanSupported=true
 MinTxFee=100000
 BlockTime=60
 FeePerByte=200
+```
 
+## NOT TESTED
+```
 [BLK]
 Title=Blackcoin
 Address=BLK TEST ADDRESS
@@ -414,3 +414,110 @@ MinTxFee=60000
 BlockTime=300
 FeePerByte=200
 ```
+
+## WORK IN PROGRESS
+```
+[BLOCK]
+Title=Blocknet
+Address=BLOCK TEST ADDRESS
+Ip=127.0.0.1
+Port=21358 
+Username=YOUR USERNAME
+Password=YOUR PASSWORD
+AddressPrefix=
+ScriptPrefix=
+SecretPrefix=
+COIN=
+MinimumAmount=
+TxVersion=
+DustAmount=
+CreateTxMethod=
+GetNewKeySupported=
+ImportWithNoScanSupported=
+MinTxFee=
+BlockTime=
+FeePerByte=
+
+[SWIFT]
+Title=BitSwift
+Address=SWIFT TEST ADDRESS
+Ip=127.0.0.1
+Port=21137 
+Username=YOUR USERNAME
+Password=YOUR PASSWORD
+AddressPrefix=
+ScriptPrefix=
+SecretPrefix=
+COIN=
+MinimumAmount=
+TxVersion=
+DustAmount=
+CreateTxMethod=
+GetNewKeySupported=
+ImportWithNoScanSupported=
+MinTxFee=
+BlockTime=
+FeePerByte=
+
+[XC]
+Title=XCurrency
+Address=XC TEST ADDRESS
+Ip=127.0.0.1
+Port=32347 
+Username=YOUR USERNAME
+Password=YOUR PASSWORD
+AddressPrefix=
+ScriptPrefix=
+SecretPrefix=
+COIN=
+MinimumAmount=
+TxVersion=
+DustAmount=
+CreateTxMethod=
+GetNewKeySupported=
+ImportWithNoScanSupported=
+MinTxFee=
+BlockTime=
+FeePerByte=
+
+[ZEC]
+Title=ZCash
+Address=ZEC TEST ADDRESS
+Ip=127.0.0.1
+Port=8232
+Username=YOUR USERNAME
+Password=YOUR PASSWORD
+AddressPrefix=28 & b8
+ScriptPrefix=28 & bd
+SecretPrefix=128
+COIN=100000000
+MinimumAmount=0
+TxVersion=1
+DustAmount=0
+CreateTxMethod=BTC
+GetNewKeySupported=false
+ImportWithNoScanSupported=false
+MinTxFee=???
+BlockTime=150
+FeePerByte=200
+
+[ETH]
+Title=Ethereum
+Address=ETH TEST ADDRESS
+Ip=127.0.0.1
+Port=8545 
+Username=YOUR USERNAME
+Password=YOUR PASSWORD
+AddressPrefix=
+ScriptPrefix=
+SecretPrefix=
+COIN=
+MinimumAmount=
+TxVersion=
+DustAmount=
+CreateTxMethod=
+GetNewKeySupported=
+ImportWithNoScanSupported=
+MinTxFee=
+BlockTime=
+FeePerByte=
