@@ -202,7 +202,7 @@ BlockTime=150
 FeePerByte=200
 ```
 
-### COMMUNICATES BUT TX FAILS
+## COMMUNICATES BUT TX FAILS
 ```
 [SEQ]
 Title=Sequence
@@ -331,7 +331,7 @@ BlockTime=30
 FeePerByte=200
 ```
 
-### NOT TESTED
+## NOT TESTED
 ```
 [XST]
 Title=Stealthcoin
