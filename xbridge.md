@@ -15,7 +15,7 @@ Password=
 
 * This master xbridge.conf will be updated as coins are added
 
-* Highlighted green sections need to be changed to match your individual wallet’s RPC configuration
+
 
 ## DX COMPATIBLE COINS
 
