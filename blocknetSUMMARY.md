@@ -80,26 +80,26 @@ The following is a list of coins which have been tested and are confirmed to be 
 
 ## Recordings of Live Tests
 
-* DASH Pairs
+### DASH Pairs
  * Blocknet DASH for SYS Decentralized Trade Across Blockchains: https://www.youtube.com/watch?v=d2yJTWvXHbA
 
  * Blocknet DASH for LTC Decentralized Trade Across Blockchains: https://www.youtube.com/watch?v=aG4z-oZ1-zc
 
  * Blocknet DASH for DYN Decentralized Trade Across Blockchains: https://www.youtube.com/watch?v=1U6K1S1Za_Y
 
-* DYN Pairs
+### DYN Pairs
  * Blocknet LTC for DYN Decentralized Trade Across Blockchains: https://www.youtube.com/watch?v=_0lsdyNM_e8
 
  * Blocknet DASH for DYN Decentralized Trade Across Blockchains: https://www.youtube.com/watch?v=1U6K1S1Za_Y
 
-* LTC Pairs
+### LTC Pairs
  * Blocknet LTC for SYS Decentralized Trade Across Blockchains: https://www.youtube.com/watch?v=n5cOS2evpFg
 
  * Blocknet LTC for DYN Decentralized Trade Across Blockchains: https://www.youtube.com/watch?v=_0lsdyNM_e8
 
  * Blocknet DASH for LTC Decentralized Trade Across Blockchains: https://www.youtube.com/watch?v=aG4z-oZ1-zc
 
-* SYS Pairs
+### SYS Pairs
  * Blocknet DASH for SYS Decentralized Trade Across Blockchains: https://www.youtube.com/watch?v=d2yJTWvXHbA
 
  * Blocknet LTC for SYS Decentralized Trade Across Blockchains: https://www.youtube.com/watch?v=n5cOS2evpFg
