@@ -1,26 +1,26 @@
-BLOCKNET
-
+# BLOCKNET
 The Internet Of Blockchains
 
-Blocknet Decentralised Exchange Setup Guide
+## Blocknet Decentralised Exchange Setup Guide
+
 **These instructions are to run either as trader or as a service node. You cannot trade when the client is setup as a service node.** 
 
-Blocknet’s DX uses the xbridgep2p™ blockchain router technology to enable users to exchange tokens and assets, and to utilise smart contracts between blockchains.
+* Blocknet’s DX uses the xbridgep2p™ blockchain router technology to enable users to exchange tokens and assets, and to utilise smart contracts between blockchains.
 
-For initial simplicity, at present xbridgep2p™ is embedded into the blocknet wallet, and its code repository is here: https://github.com/atcsecure/blocknet/branches
+* For initial simplicity, at present xbridgep2p™ is embedded into the blocknet wallet, and its code repository is here: https://github.com/atcsecure/blocknet/branches
 
-Overview
+## Overview
 Setup requires an integration between the Blocknet wallet and the wallets of coins you want as currency pairs. At this early stage, nothing is automated and no UI is built (only a quick wallet integration has been done for the time being). Configuration is by manually creating (or editing) at least four .conf files: 
 
-blocknet.conf
+ * blocknet.conf
 
-xbridge.conf
+ * xbridge.conf
 
-And a configuration file for each currency you want to support
+ * configuration file for each currency you want to support
 
 Integration is via the wallets’ RPC APIs. For security reasons we recommend that wallets all run on a single box and communicate over localhost (127.0.0.1), though wallets may also be run on multiple machines and connect via IP address. General documentation on JSON RPC features is available at https://en.bitcoin.it/wiki/Running_Bitcoin.
 
-Setup blocknet.conf
+## Setup blocknet.conf
 The current version of the Blocknet wallet requires testing on the testnet until its hardfork, which will enable OP_CHECKLOCKTIMEVERIFY. As such, it’s necessary to configure the Blocknet wallet to run on the testnet. 
 
 Additionally, the .conf file is required to contain the IP address of at least one service node.*
