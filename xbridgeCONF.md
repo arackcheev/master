@@ -413,31 +413,157 @@ ImportWithNoScanSupported=false
 MinTxFee=60000
 BlockTime=300
 FeePerByte=200
+
+[BLOCK]
+Title=Blocknet
+Address=BLOCK ADDRESS
+Ip=127.0.0.1
+Port=21358
+Username=YOUR USERNAME
+Password=YOURP PASSWORD
+AddressPrefix=26
+ScriptPrefix=28
+SecretPrefix=154
+COIN=100000000
+MinimumAmount=0
+TxVersion=1
+DustAmount=0
+CreateTxMethod=BTC
+GetNewKeySupported=false
+ImportWithNoScanSupported=true
+MinTxFee=60000
+BlockTime=150
+FeePerByte=200
+
+[DCR]
+Title=Decred
+Address=DCR ADDRESS
+Ip=127.0.0.1
+Port=9109
+Username=YOUR USERNAME
+Password=YOUR PASSWORD
+AddressPrefix=7
+ScriptPrefix=7
+SecretPrefix=110
+COIN=100000000
+MinimumAmount=0
+TxVersion=1
+DustAmount=0
+CreateTxMethod=BTC
+GetNewKeySupported=false
+ImportWithNoScanSupported=true
+MinTxFee=60000
+BlockTime=150
+FeePerByte=200
+
+[POT]
+Title=Potcoin
+Address=POT ADDRESS
+Ip=127.0.0.1
+Port=42000
+Username=YOUR USERNAME
+Password=YOUR PASSWORD
+AddressPrefix=55
+ScriptPrefix=5
+SecretPrefix=183
+COIN=100000000
+MinimumAmount=0
+TxVersion=1
+DustAmount=0
+CreateTxMethod=BTC
+GetNewKeySupported=false
+ImportWithNoScanSupported=true
+MinTxFee=1000000
+BlockTime=75
+FeePerByte=1000
+
+[PPC]
+Title=Peercoin
+Address=YOUR ADDRESS
+Ip=127.0.0.1
+Port=9902
+Username=YOUR USERNAME
+Password=YOUR PASSWORD
+AddressPrefix=55
+ScriptPrefix=117
+SecretPrefix=183
+COIN=100000000
+MinimumAmount=0
+TxVersion=1
+DustAmount=0
+CreateTxMethod=BTC
+GetNewKeySupported=false
+ImportWithNoScanSupported=true
+MinTxFee=1000000
+BlockTime=600
+FeePerByte=1000
+
+[GRS]
+Title=Groestlcoin
+Address=YOUR ADDRESS
+Ip=127.0.0.1
+Port=1441
+Username=YOUR USERNAME
+Password=YOUR PASSWORD
+AddressPrefix=36
+ScriptPrefix=5
+SecretPrefix=128
+COIN=100000000
+MinimumAmount=0
+TxVersion=1
+DustAmount=0
+CreateTxMethod=BTC
+GetNewKeySupported=false
+ImportWithNoScanSupported=true
+MinTxFee=2000000
+BlockTime=60
+FeePerByte=2000
+
+[MUE]
+Title=MonetaryUnit
+Address=YOUR ADDRESS
+Ip=127.0.0.1
+Port=29683
+Username=YOUR USERNAME
+Password=YOUR PASSWORD
+AddressPrefix=16
+ScriptPrefix=76
+SecretPrefix=126
+COIN=100000000
+MinimumAmount=0
+TxVersion=1
+DustAmount=0
+CreateTxMethod=BTC
+GetNewKeySupported=false
+ImportWithNoScanSupported=true
+MinTxFee=100000
+BlockTime=40
+FeePerByte=500
+
+[BCC]
+Title=Bitconnect
+Address=YOUR ADDRESS
+Ip=127.0.0.1
+Port=9240
+Username=YOUR USERNAME
+Password=YOUR PASSWORD
+AddressPrefix=18
+ScriptPrefix=85
+SecretPrefix=146
+COIN=100000000
+MinimumAmount=0
+TxVersion=1
+DustAmount=0
+CreateTxMethod=BTC
+GetNewKeySupported=false
+ImportWithNoScanSupported=true
+MinTxFee=1000000
+BlockTime=120
+FeePerByte=1000
 ```
 
 ## WORK IN PROGRESS
 ```
-[BLOCK]
-Title=Blocknet
-Address=BLOCK TEST ADDRESS
-Ip=127.0.0.1
-Port=21358 
-Username=YOUR USERNAME
-Password=YOUR PASSWORD
-AddressPrefix=
-ScriptPrefix=
-SecretPrefix=
-COIN=
-MinimumAmount=
-TxVersion=
-DustAmount=
-CreateTxMethod=
-GetNewKeySupported=
-ImportWithNoScanSupported=
-MinTxFee=
-BlockTime=
-FeePerByte=
-
 [SWIFT]
 Title=BitSwift
 Address=SWIFT TEST ADDRESS
@@ -521,3 +647,4 @@ ImportWithNoScanSupported=
 MinTxFee=
 BlockTime=
 FeePerByte=
+```
