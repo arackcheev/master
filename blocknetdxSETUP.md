@@ -5,7 +5,7 @@ The Internet Of Blockchains
 
 ## Blocknet Decentralised Exchange Setup Guide
 
-**These instructions are to run either as trader or as a service node. You cannot trade when the client is setup as a service node.** 
+**These instructions are to run as a trader on the Blocknet Decentralised Exchange** 
 
 * Blocknet’s DX uses the xbridgep2p™ blockchain router technology to enable users to exchange tokens and assets, and to utilise smart contracts between blockchains.
 
