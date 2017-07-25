@@ -1,10 +1,3 @@
-# BLOCKNET
-
-![alt text](https://github.com/Aderks/master/blob/master/block.PNG "Logo Title Text 1")
-
-The Internet Of Blockchains
-
-
 # xbridge.conf
 
 * Under the ```[Main]``` heading, edit to suit your requirements:
