@@ -1,9 +1,7 @@
 # BLOCKNET
-
 ![alt text](https://github.com/Aderks/master/blob/master/block.PNG "Logo Title Text 1")
 
 The Internet Of Blockchains
-
 
 ## Blocknet Decentralised Exchange Setup Guide
 
@@ -32,10 +30,10 @@ The current version of the Blocknet wallet requires testing on the testnet until
 Additionally, the .conf file is required to contain the IP address of at least one service node.*
 Create (or edit) a file named “blocknet.conf”, and paste the following into it:
 
-testnet=1
-connect=104.238.198.117
-
-Place the blocknet.conf file into the %AppData%\blocknet directory.
+   ```
+   testnet=1 connect=104.238.198.117
+   ```
+   * Place the blocknet.conf file into the %AppData%\blocknet directory.
 
 
 ## Setup  .conf Files for the Wallets of Your Trading Coins:
@@ -100,84 +98,6 @@ http://builds.xcurrency.co/blocknet/Build/Official_Blocknet_Wallet/xbridgep2p.co
 
  * Note: to avoid crashes or failed trades, you currently need to run each wallet that is configured below. Please edit your config file to feature only and all the coins you wish to trade with.
 
-```
-[Main]
-ExchangeWallets=BTC,SYS,LTC,[otherwallettitle1,otherwallettitle2,etc.]
-FullLog=true
-LogPath=C:\Users\PCusername\AppData\Roaming\blocknet\log
-ExchangeTax=300
-
-[BTC]
-Title=Bitcoin
-Address=TrkGg9p4EU9IM1DmDaZ/DpG2Rr0=
-Ip=127.0.0.1
-Port=8332
-Username=yourusername
-Password=yourpassword
-AddressPrefix=0
-ScriptPrefix=5
-SecretPrefix=128
-COIN=100000000
-MinimumAmount=0
-TxVersion=2
-DustAmount=0
-CreateTxMethod=BTC
-MinTxFee=60000
-BlockTime=600
-GetNewKeySupported=false
-ImportWithNoScanSupported=false
-FeePerByte=200
-
-[SYS]
-Title=SysCoin2
-Address=TrkGg9p4EU9IM1DmDaZ/DpG2Rr0=
-Ip=127.0.0.1
-Port=8370
-Username=yourusername
-Password=yourpassword
-AddressPrefix=0
-ScriptPrefix=5
-SecretPrefix=128
-COIN=100000000
-MinimumAmount=0
-TxVersion=1
-DustAmount=0
-CreateTxMethod=BTC
-MinTxFee=60000
-BlockTime=60
-GetNewKeySupported=false
-ImportWithNoScanSupported=false
-FeePerByte=200
-
-[LTC]
-Title=Litecoin
-Address=TrkGg9p4EU9IM1DmDaZ/DpG2Rr0=
-Ip=127.0.0.1
-Port=9332
-Username=yourusername
-Password=yourpassword
-AddressPrefix=48
-ScriptPrefix=5
-SecretPrefix=176
-COIN=100000000
-MinimumAmount=0
-DustAmount=0
-CreateTxMethod=BTC
-GetNewKeySupported=false
-ImportWithNoScanSupported=true
-FeePerByte=200
-MinTxFee=60000
-TxVersion=1
-BlockTime=60
-
-[RPC]
-Enable=false
-UserName=rpc1
-Password=rpc1
-UseSSL=false
-Port=8080
-```
-
  * To run as a service node, the .CONF file needs to contain the BTC dust value, as seen in the example above.
 
  * Paste the RPC usernames and passwords you created for each currency pair into the “Username” and “Password” fields in each section above.
@@ -218,9 +138,9 @@ Port=8080
 
 
 ## Verify communication between wallets.
- * In order to ensure that the xbridge client is communicating with your wallets and the .conf files are setup properly, on the Blocknet wallet, click the “XBridge” tab and then click the “console” button.
+In order to ensure that the xbridge client is communicating with your wallets and the .conf files are setup properly, on the Blocknet wallet, click the “XBridge” tab and then click the “console” button.
 
- * As the wallet starts up, you’ll see the DX initialise using the values you entered into your xbridge.conf file:
+As the wallet starts up, you’ll see the DX initialise using the values you entered into your xbridge.conf file:
 
  * Wait until you see “200” messages on the console. This signifies that the wallets are communicating over RPC and setup has been successful.
 
@@ -232,16 +152,15 @@ Port=8080
 ## Place an Order
 Once you’ve confirmed that the wallets are communicating and setup has been successful, do the following:
 
-In the “XBridge” tab of the Blocknet wallet, click on the “New Transaction” button. A new window will open:
+   * In the “XBridge” tab of the Blocknet wallet, click on the “New Transaction” button. A new window will open:
 
-Click on the “Address book” icon. This opens up a new window that displays the addresses you created in each currency pair wallet. 
+   * Click on the “Address book” icon. This opens up a new window that displays the addresses you created in each currency pair wallet. 
 
+      * Note: If you do not see these addresses, it means that your wallets are not communicating over RPC.
 
-Note: If you do not see these addresses, it means that your wallets are not communicating over RPC.
+      * Note: It may take up to about 30 seconds for xbridgep2p to connect with your wallets, but once startup has completed it will populate your currency pair addresses.
 
-Note: It may take up to about 30 seconds for xbridgep2p to connect with your wallets, but once startup has completed it will populate your currency pair addresses.
-
-Note: Do not manually paste an address into the “from” and “to” fields. Select addresses that xbridgep2p has been given by your currency pair wallets.
+      * Note: Do not manually paste an address into the “from” and “to” fields. Select addresses that xbridgep2p has been given by your currency pair wallets.
 
 
 ## Problem Diagnosis
@@ -261,24 +180,23 @@ Verify the ports are actually open. You may use Command Prompt to do so by typin
 ## Run as a Service Node
 A “service node” performs the function of collecting and distributing trade fees to the network. To run one, it is currently required that your Blocknet wallet holds 5000 BLOCK. When you run as a service node, you will receive trade fees on the DX.
 
-Before opening up the xbridge client in exchange mode, you will have to run, fully sync and unlock all wallets that are in the xbridgep2p.conf file. You will also need to run a fully synced Blocknet wallet.
+   * Before opening up the xbridge client in exchange mode, you will have to run, fully sync and unlock all wallets that are in the xbridgep2p.conf file. You will also need to run a fully synced Blocknet wallet.
 
-Verify there is communication between all wallets as per the above section.
+   * Verify there is communication between all wallets as per the above section.
 
-Navigate to the folder where the xbridgep2p client, .conf and .bat files are located.
+   * Navigate to the folder where the xbridgep2p client, .conf and .bat files are located.
 
-Either run 
+   * Either run 
 “dx.bat” 
 Or, in Command Prompt, run “blocknet.exe --enable-exchange”
 Or paste “"C:\Program Files\Blocknet DX\blocknet-qt.exe” -enable-exchange” into the application shortcut’s “target” field
 Or paste enable-exchange=1 into blocknet.conf
 
-This will open up a command window and then a couple seconds later the client loads.
+   * This will open up a command window and then a couple seconds later the client loads.
 
+   * At the top of the client should have “[exchange enabled]” and should display “service node” on the bottom left side. 
 
-At the top of the client should have “[exchange enabled]” and should display “service node” on the bottom left side. 
-
-No transactions can be created in service node mode.
+   * No transactions can be created in service node mode.
 
 
 ## Security Tips
@@ -286,52 +204,53 @@ No transactions can be created in service node mode.
 
 Since our technology essentially makes you your own exchange, here are some tips on how to keep your money safe.
 
-The Blocknet’s team will never ask for your private keys or coins. Do not get fooled by impersonators.
+   * The Blocknet’s team will never ask for your private keys or coins. Do not get fooled by impersonators.
 Exchanges
-Always move your coins from exchange to your private wallet.
 
-Use long and random password.
+   * Always move your coins from exchange to your private wallet.
 
-Set up 2FA on logins and any withdrawals.
+   * Use long and random password.
 
-Disable password recovery via SMS/phone service. Disable all password recovery options for maximum security.
+   * Set up 2FA on logins and any withdrawals.
 
-Recovery passwords are fine but keep them printed and offline.
+   * Disable password recovery via SMS/phone service. Disable all password recovery options for maximum security.
 
-Make sure your stored emails do not contain any extra information such as passwords or social security numbers.
+   * Recovery passwords are fine but keep them printed and offline.
 
-Use different email addresses where possible. This limits the ability for hackers to run their automated "Forgot my password" links.
-Online Activity / Personal Information Disclosure
-Do not promote your coin count etc online.
+   * Make sure your stored emails do not contain any extra information such as passwords or social security numbers.
 
-Limit your online public persona. This can attract unwanted attention which can make you a target.
+   * Use different email addresses where possible. This limits the ability for hackers to run their automated "Forgot my password" links. 
+   
+   * Online Activity / Personal Information Disclosure. Do not promote your coin count etc online.
 
-Disable any online accounts you no longer use.
+   * Limit your online public persona. This can attract unwanted attention which can make you a target.
 
-Assume hacking groups are building up social profiles on yourself. Your interests, time you are usually online, who you interact with.
+   * Disable any online accounts you no longer use.
 
-Hacking groups use automated scripts so if those resources are exhausted they will try to social engineer your contacts.
+   * Assume hacking groups are building up social profiles on yourself. Your interests, time you are usually online, who you interact with.
 
-Hacking groups are experts at social engineering. They have done this thousands of times.
+   * Hacking groups use automated scripts so if those resources are exhausted they will try to social engineer your contacts.
 
-Do not open random links and files provided in Slack, etc.
+   * Hacking groups are experts at social engineering. They have done this thousands of times.
 
-Do not fall for sob stories (Boohoo I lost all my coins) without proper due diligence.
-Personal Devices
-Take multiple backups of your private keys regularly.
+   * Do not open random links and files provided in Slack, etc.
 
-Verify backup by importing keys to the client.
+   * Do not fall for sob stories (Boohoo I lost all my coins) without proper due diligence.
 
-Store your backups in M-DISC or in paper format.
+   * Take multiple backups of your private keys regularly.
 
-Use dedicated wallet / staking PC and make it your safe haven. DO NOT USE IT FOR ANY OTHER ONLINE ACTIVITIES.
+   * Verify backup by importing keys to the client.
 
-Encrypt your hard drives.
+   * Store your backups in M-DISC or in paper format.
 
-Use open source where possible.
+   * Use dedicated wallet / staking PC and make it your safe haven. DO NOT USE IT FOR ANY OTHER ONLINE ACTIVITIES.
 
-Keep your software updated.
+   * Encrypt your hard drives.
 
-Do not install software from unknown 3rd party actors.
+   * Use open source where possible.
 
-Use network level segmentation and mitigate attack surface against your wallet PC.
+   * Keep your software updated.
+
+   * Do not install software from unknown 3rd party actors.
+
+   * Use network level segmentation and mitigate attack surface against your wallet PC.
