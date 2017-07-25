@@ -45,7 +45,7 @@ DustAmount=0
 CreateTxMethod=BTC
 MinTxFee=0
 BlockTime=600
-Address=BTC TEST ADDRESS
+Address=BTC ADDRESS
 GetNewKeySupported=false
 ImportWithNoScanSupported=false
 TxVersion=1
@@ -66,7 +66,7 @@ DustAmount=0
 CreateTxMethod=BTC
 MinTxFee=0
 BlockTime=60
-Address=SYS TEST ADDRESS
+Address=SYS ADDRESS
 GetNewKeySupported=false
 ImportWithNoScanSupported=false
 TxVersion=1
@@ -74,7 +74,7 @@ FeePerByte=200
 
 [LTC]
 Title=Litecoin
-Address=LTC TEST ADDRESS
+Address=LTC ADDRESS
 Ip=127.0.0.1
 Port=9332
 Username=YOUR USERNAME
@@ -95,7 +95,7 @@ BlockTime=60
 
 [DASH]
 Title=Dash
-Address=DASH TEST ADDRESS
+Address=DASH ADDRESS
 Ip=127.0.0.1
 Port=9998
 Username=YOUR USERNAME
@@ -116,7 +116,7 @@ FeePerByte=200
 
 [DYN]
 Title=Dynamic
-Address=DYN TEST ADDRESS
+Address=DYN ADDRESS
 Ip=127.0.0.1
 Port=31350
 Username=YOUR USERNAME
@@ -137,7 +137,7 @@ FeePerByte=200
 
 [VIA]
 Title=ViaCoin
-Address=VIA TEST ADDRESS
+Address=VIA ADDRESS
 Ip=127.0.0.1
 Port=5222
 Username=YOUR USERNAME
@@ -158,7 +158,7 @@ FeePerByte=200
 
 [DGB]
 Title=Digibyte
-Address=DGB TEST ADDRESS
+Address=DGB ADDRESS
 Ip=127.0.0.1
 Port=14022
 Username=YOUR USERNAME
@@ -179,7 +179,7 @@ FeePerByte=200
 
 [VTC]
 Title=Vertcoin
-Address=VTC TEST ADDRESS
+Address=VTC ADDRESS
 Ip=127.0.0.1
 Port=5888
 Username=YOUR USERNAME
@@ -203,7 +203,7 @@ FeePerByte=200
 ```
 [SEQ]
 Title=Sequence
-Address=SEQ TEST ADDRESS
+Address=SEQ ADDRESS
 Ip=127.0.0.1
 Port=16663
 Username=YOUR USERNAME
@@ -224,7 +224,7 @@ FeePerByte=200
 
 [BAY]
 Title=BitBay
-Address=BAY TEST ADDRESS
+Address=BAY ADDRESS
 Ip=127.0.0.1
 Port=19915
 Username=YOUR USERNAME
@@ -245,7 +245,7 @@ FeePerByte=200
 
 [STRAT]
 Title=Stratis
-Address=STRAT TEST ADDRESS
+Address=STRAT ADDRESS
 Ip=127.0.0.1
 Port=26174 
 Username=YOUR USERNAME
@@ -266,7 +266,7 @@ FeePerByte=200
 
 [DOGE]
 Title=Dogecoin
-Address=DOGE TEST ADDRESS
+Address=DOGE ADDRESS
 Ip=127.0.0.1
 Port=22555 
 Username=YOUR USERNAME
@@ -287,7 +287,7 @@ FeePerByte=200
 
 [FTC]
 Title=Feathercoin
-Address=FTC TEST ADDRESS
+Address=FTC ADDRESS
 Ip=127.0.0.1
 Port=9337
 Username=YOUR USERNAME
@@ -308,7 +308,7 @@ FeePerByte=200
 
 [QRK]
 Title=Quarkcoin
-Address=QRK TEST ADDRESS
+Address=QRK ADDRESS
 Ip=127.0.0.1
 Port=8372
 Username=YOUR USERNAME
@@ -329,7 +329,7 @@ FeePerByte=200
 
 [XST]
 Title=Stealthcoin
-Address=XST TEST ADDRESS
+Address=XST ADDRESS
 Ip=127.0.0.1
 Port=46502
 Username=YOUR USERNAME
@@ -353,7 +353,7 @@ FeePerByte=200
 ```
 [BLK]
 Title=Blackcoin
-Address=BLK TEST ADDRESS
+Address=BLK ADDRESS
 Ip=127.0.0.1
 Port=15715
 Username=YOUR USERNAME
@@ -374,7 +374,7 @@ FeePerByte=200
 
 [BRK]
 Title=Breakoutcoin
-Address=BRK TEST ADDRESS
+Address=BRK ADDRESS
 Ip=127.0.0.1
 Port=50542
 Username=YOUR USERNAME
@@ -395,7 +395,7 @@ FeePerByte=200
 
 [BRX]
 Title=Breakoutstake
-Address=BRX TEST ADDRESS
+Address=BRX ADDRESS
 Ip=127.0.0.1
 Port=50542
 Username=YOUR USERNAME
