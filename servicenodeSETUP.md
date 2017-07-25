@@ -146,20 +146,6 @@ As the wallet starts up, you’ll see the DX initialise using the values you ent
  * Note: If you fail to get “200” messages, it’s possible that the ports assigned to wallets differ from those specified in your .conf file. To check this, open Command Prompt, type netstat -an, and take a look which ports are being used over localhost (127.0.0.1), or sometimes over 0.0.0.0.
  
  
-## Place an Order
-Once you’ve confirmed that the wallets are communicating and setup has been successful, do the following:
-
-   * In the “XBridge” tab of the Blocknet wallet, click on the “New Transaction” button. A new window will open:
-
-   * Click on the “Address book” icon. This opens up a new window that displays the addresses you created in each currency pair wallet. 
-
-      * Note: If you do not see these addresses, it means that your wallets are not communicating over RPC.
-
-      * Note: It may take up to about 30 seconds for xbridgep2p to connect with your wallets, but once startup has completed it will populate your currency pair addresses.
-
-      * Note: Do not manually paste an address into the “from” and “to” fields. Select addresses that xbridgep2p has been given by your currency pair wallets.
-
-
 ## Problem Diagnosis
 To verify that each wallet is communicating with xbridgep2p make sure the created receive addresses for each wallet is listed in the address book. If this part fails, close your wallets and review their configuration files. 
 
@@ -177,7 +163,7 @@ Verify the ports are actually open. You may use Command Prompt to do so by typin
 ## Run as a Service Node
 A “service node” performs the function of collecting and distributing trade fees to the network. To run one, it is currently required that your Blocknet wallet holds 5000 BLOCK. When you run as a service node, you will receive trade fees on the DX.
 
-   * Before opening up the xbridge client in exchange mode, you will have to run, fully sync and unlock all wallets that are in the xbridgep2p.conf file. You will also need to run a fully synced Blocknet wallet.
+   * Before opening up the xbridge client in exchange mode, you will have to run, fully sync and unlock all wallets that are in the xbridge.conf file. You will also need to run a fully synced Blocknet wallet.
 
    * Verify there is communication between all wallets as per the above section.
 
@@ -194,61 +180,3 @@ Or paste enable-exchange=1 into blocknet.conf
    * At the top of the client should have “[exchange enabled]” and should display “service node” on the bottom left side. 
 
    * No transactions can be created in service node mode.
-
-
-## Security Tips
-(With thanks to threepwood)
-
-Since our technology essentially makes you your own exchange, here are some tips on how to keep your money safe.
-
-   * The Blocknet’s team will never ask for your private keys or coins. Do not get fooled by impersonators.
-Exchanges
-
-   * Always move your coins from exchange to your private wallet.
-
-   * Use long and random password.
-
-   * Set up 2FA on logins and any withdrawals.
-
-   * Disable password recovery via SMS/phone service. Disable all password recovery options for maximum security.
-
-   * Recovery passwords are fine but keep them printed and offline.
-
-   * Make sure your stored emails do not contain any extra information such as passwords or social security numbers.
-
-   * Use different email addresses where possible. This limits the ability for hackers to run their automated "Forgot my password" links. 
-   
-   * Online Activity / Personal Information Disclosure. Do not promote your coin count etc online.
-
-   * Limit your online public persona. This can attract unwanted attention which can make you a target.
-
-   * Disable any online accounts you no longer use.
-
-   * Assume hacking groups are building up social profiles on yourself. Your interests, time you are usually online, who you interact with.
-
-   * Hacking groups use automated scripts so if those resources are exhausted they will try to social engineer your contacts.
-
-   * Hacking groups are experts at social engineering. They have done this thousands of times.
-
-   * Do not open random links and files provided in Slack, etc.
-
-   * Do not fall for sob stories (Boohoo I lost all my coins) without proper due diligence.
-
-   * Take multiple backups of your private keys regularly.
-
-   * Verify backup by importing keys to the client.
-
-   * Store your backups in M-DISC or in paper format.
-
-   * Use dedicated wallet / staking PC and make it your safe haven. DO NOT USE IT FOR ANY OTHER ONLINE ACTIVITIES.
-
-   * Encrypt your hard drives.
-
-   * Use open source where possible.
-
-   * Keep your software updated.
-
-   * Do not install software from unknown 3rd party actors.
-
-   * Use network level segmentation and mitigate attack surface against your wallet PC.
-
