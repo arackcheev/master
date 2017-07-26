@@ -560,6 +560,27 @@ ImportWithNoScanSupported=true
 MinTxFee=1000000
 BlockTime=120
 FeePerByte=1000
+
+[NMC]
+Title=Namecoin
+Address=YOUR ADDRESS
+Ip=127.0.0.1
+Port=8336
+Username=YOUR USERNAME
+Password=YOUR PASSWORD
+AddressPrefix=52
+ScriptPrefix=13
+SecretPrefix=180
+COIN=100000000
+MinimumAmount=0
+TxVersion=1
+DustAmount=0
+CreateTxMethod=BTC
+GetNewKeySupported=false
+ImportWithNoScanSupported=true
+MinTxFee=1000000
+BlockTime=600
+FeePerByte=200
 ```
 
 ## WORK IN PROGRESS
