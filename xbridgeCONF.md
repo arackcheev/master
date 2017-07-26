@@ -578,9 +578,9 @@ DustAmount=0
 CreateTxMethod=BTC
 GetNewKeySupported=false
 ImportWithNoScanSupported=true
-MinTxFee=1000000
+MinTxFee=100000
 BlockTime=600
-FeePerByte=200
+FeePerByte=100
 ```
 
 ## WORK IN PROGRESS
