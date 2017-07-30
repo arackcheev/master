@@ -38,11 +38,11 @@ This is community based testing and the information will be relayed to the devel
  * See log below:
 
 #### Possible Solution(s):
- * Error code: ...  possibly user configuration parameter error
+ * User configuration parameter error
+ 
  
 #### Dev Feedback/Status Update:
-
-* 
+ * Contacted DYN/SEQ source to see if we can get assitance on SEQ. Possibly SEQ isn't CLTV but DYN is? 
 
 ## BitBay [BAY]
 
