@@ -203,6 +203,7 @@ This is community based testing and the information will be relayed to the devel
 
 [I] 2017-Jul-19 23:41:46 [0x3] error: {"code":-25,"message":""}
 [I] 2017-Jul-19 23:41:46 [0x3] payment B not send, no deposit tx, move to pending
+```
 
 #### Possible Solution(s):
  * User configuration parameter error
