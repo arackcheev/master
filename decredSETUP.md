@@ -1,54 +1,58 @@
-Go to: https://github.com/decred/decred-release/releases/tag/v1.0.5
+# DECRED CMD LINE SETUP FOR BLOCKNET DX
 
-Download: dcrinstall-windows-amd64-v1.0.5.exe
+* Go to: https://github.com/decred/decred-release/releases/tag/v1.0.5
 
-Run the .exe
+* Download: `dcrinstall-windows-amd64-v1.0.5.exe`
 
-Find the directory. Should be: `C:\Users\<NAME>\decred\ `
+* Run the .exe
+
+* Find the directory. Should be: `C:\Users\<NAME>\decred\ `
 
 ---
 
-* Open 3 cmd prompt windows.
-  * On all 3 change the directory to the source:
-	  `cd C:\Users\<NAME>\decred`
+* Open 3 cmd prompt windows
+  * On all 3, change the directory to the source directory:
+	  `cd C:\Users\<NAME>\decred` or wherever it was installed
     
-## First cmd prompt window:
+## 1ST CMD PROMPT WINDOW
 
-* On the first one copy and paste below and hit enter.
+* Type:
 
   * `dcrd --notls --rpcuser=CHANGE --rpcpass=CHANGE --minrelaytxfee=0.01 --rpclisten=127.0.0.1`
+  (change rpc user/pass)
 
-* It will connect and download the blockchain. Leave this running in the background.
+* It will then connect and download the blockchain. Leave this running in the background
 
-
-## Second cmd prompt window:
+## 2ND CMD PROMPT WINDOW
 
 * Type: `dcrwallet --create`
 
-* Create/enter a password. It wont display anything. 
+* Create and enter a password (it wont display anything when you type a password) 
 
-* Type it again for confirm it. 
+* Type it again to confirm
 
-* Click no on addition security and no on an exisiting wallet.
+* Type `n` on addition security
 
-* Copy your seed and Hex into a document and save it.
+* Type: `n` on an exisiting wallet
+
+* Copy your Seed and Hex into a document and save it
 
 * Type: `OK`  (capital letters)
 
 * Your wallet should be created successfully!
 
-## Third cmd prompt window:
+## 3RD CMD PROMPT WINDOW
 
-* Type and enter:
+* Type:
 
 `dcrwallet --username=CHANGE --password=CHANGE --noclienttls --noservertls --walletpass public --dcrdusername=CHANGE --dcrdpassword=CHANGE --txfee=0.01`
-(enter the same user/pass as the above RPC for both)
+(enter the same user/pass as the above RPC for both user/pass)
 
-  * Enter your password. It should rescan blocks and eventually connect to blocks.
+* Enter your password, it should rescan blocks and eventually connect
   
-  * Leave running in the background.
+* Leave it running in the background
 
-## Back to Second cmd prompt window:
+## BACK TO 2ND CMD PROMPT WINDOW
 
 * Type: 
 
@@ -56,25 +60,49 @@ Find the directory. Should be: `C:\Users\<NAME>\decred\ `
 
 (-u and -P is your user/pass from above. <password> is your wallet password, but don’t use the <> symbols)
 
-* It should take you back to the directory.
+* It should take you back to the directory
 
 * Type: 
 
 `dcrctl -u CHANGE -P CHANGE --wallet --notls createnewaccount "testDECRED"`
 
-(“testDECRED” is what I am calling this labelled address, use the quotation marks and label it what you want)
+(“testDECRED” is what I am calling my labelled address, use the quotation marks and label it whatever you want)
 
-* It should take you back to the directory. 
+* It should take you back to the directory
 
 * Type:
 
 	`dcrctl -u CHANGE -P CHANGE --wallet --notls getnewaddress "testDECRED"`
   
-  (getnewaddress " " is whatever you wrote on the above command)
+  (getnewaddress " " is whatever you wrote on the above command for a label)
 
-* This should output your labelled address.
+* This should output your labelled DCR address
 
-* Go to your xbridge and edit the parameters to match this address, rpc user/pass etc…
+## XBRIDGE.conf
 
-* Run xbridge.
+* Go to your xbridge.conf and add this config for DCR:
+`
+[DCR]
+Title=Decred
+Address=DCR ADDRESS
+Ip=127.0.0.1
+Port=9110
+Username=YOUR USERNAME
+Password=YOUR PASSWORD
+AddressPrefix=7
+ScriptPrefix=7
+SecretPrefix=34
+COIN=100000000
+MinimumAmount=0
+TxVersion=1
+DustAmount=0
+CreateTxMethod=BTC
+GetNewKeySupported=false
+ImportWithNoScanSupported=true
+MinTxFee=1000000
+BlockTime=150
+FeePerByte=1000
+`
+
+* Run xbridge
 
