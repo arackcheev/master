@@ -7,7 +7,7 @@ This is community based testing and the information will be relayed to the devel
 ## General Summary
 
 | COIN  | CLTV? | JSON RPC? | DX COMM? | TX POSTED? | BLOCK MOVEMENT? | MAKER RECEIVE COIN? | TAKER RECEIVE COIN? | STATUS or COMMENTS |
-|-------|-------|-----------|----------|------------|-----------------|---------------------|---------------------|----------------------|
+|:-------:|:-------:|:-----------:|:----------:|:------------:|:-----------------:|:---------------------:|:---------------------:|----------------------|
 | SEQ   |YES    |YES        |YES       |YES         |YES              |NO                   |NO                   |                      |
 | BAY   |YES    |YES        |YES       |YES         |NO               |NO                   |NO                   |                      |
 | STRAT |       |YES        |YES       |YES         |                 |                     |                     |                      |
@@ -54,7 +54,7 @@ This is community based testing and the information will be relayed to the devel
 
 # Bitswift [SWIFT]
 
-  * CLTV work is currently being worked on, won't test until complete
+  * CLTV is currently being implemented, won't test until complete
 
 # Potcoin [POT]
 
@@ -87,4 +87,4 @@ This is community based testing and the information will be relayed to the devel
 
 # Nxt [NXT]
 
-  * Need to modify Block API to understand NXT API?
+  * Need to modify Block API to understand NXT API??
