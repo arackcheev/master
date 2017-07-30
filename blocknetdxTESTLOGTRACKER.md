@@ -183,8 +183,24 @@ This is community based testing and the information will be relayed to the devel
 * Forthcoming...
   
 ## Siacoin [SIA]
+### Issue #1:
+* Haven't tested yet, might not be supported by Blocknet yet
+
+### Possible Solution(s):
+* Modify code to support SIA
+
+### Dev Feedback/Status Update:
+* 
 
 ## Bytecoin [BCN]
+### Issue #1:
+* Haven't tested yet, might not be supported by Blocknet yet
+
+### Possible Solution(s):
+* Modify code to support BCN and other CryptoNote based coins
+
+### Dev Feedback/Status Update:
+* 
 
 ## Nxt [NXT]
 
