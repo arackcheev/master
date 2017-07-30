@@ -92,6 +92,7 @@ This is community based testing and the information will be relayed to the devel
 
 #### Issue #1:
 * Using CMD line wallet due to issues with Paymetheus
+  * See CMD line setup here: https://github.com/Aderks/master/blob/master/decredSETUP.md
 
 * Achieve resp 200 on Decred but with errors:
 
