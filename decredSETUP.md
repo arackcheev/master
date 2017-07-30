@@ -58,7 +58,6 @@
 * Type: 
 
 `dcrctl -u CHANGE -P CHANGE --wallet --notls walletpassphrase <password> 1000000`
-
 	* (-u and -P is your user/pass from above. <password> is your wallet password, but don’t use the <> symbols)
 
 * It should take you back to the directory
@@ -66,7 +65,6 @@
 * Type: 
 
 `dcrctl -u CHANGE -P CHANGE --wallet --notls createnewaccount "testDECRED"`
-
 	* (“testDECRED” is what I am calling my labelled address, use the quotation marks and label it whatever you want)
 
 * It should take you back to the directory
@@ -74,7 +72,6 @@
 * Type:
 
 	`dcrctl -u CHANGE -P CHANGE --wallet --notls getnewaddress "testDECRED"`
-  
 	* (getnewaddress " " is whatever you wrote on the above command for a label)
 
 * This should output your labelled DCR address
@@ -82,7 +79,8 @@
 ## XBRIDGE.conf
 
 * Go to your xbridge.conf and add this config for DCR:
-`
+
+```
 [DCR]
 Title=Decred
 Address=DCR ADDRESS
@@ -103,7 +101,7 @@ ImportWithNoScanSupported=true
 MinTxFee=1000000
 BlockTime=150
 FeePerByte=1000
-`
+```
 
 * Run xbridge
 
