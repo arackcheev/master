@@ -33,15 +33,15 @@ This is community based testing and the information will be relayed to the devel
 
 ## Sequence [SEQ]
 
-### Issue #1: (re-test)
+#### Issue #1: (re-test)
  * After a successful TX posting there is Block movement? (re-test to make sure). No coin movement. TX cancels.
  
  * See log below:
 
-### Possible Solution(s):
+#### Possible Solution(s):
  * Error code: ... 
  
-### Dev Feedback/Status Update:
+#### Dev Feedback/Status Update:
 
 * 
 
@@ -56,13 +56,13 @@ This is community based testing and the information will be relayed to the devel
 ## Blackcoin [BLK]
 
 ## Stealthcoin [XST]
-### Issue #1:
+#### Issue #1:
 * Waiting on new windows client w/ updated CLTV codework 
 
-### Possible Solution(s):
+#### Possible Solution(s):
 * Wait for release of new wallet client, then begin testing
 
-### Dev Feedback/Status Update:
+#### Dev Feedback/Status Update:
 * Forthcoming...
 
 ## Breakoutcoin [BRK]
@@ -70,14 +70,14 @@ This is community based testing and the information will be relayed to the devel
 ## Breakoutstake [BRX]
 
 ## Bitswift [SWIFT]
-### Issue #1:
+#### Issue #1:
 * No CLTV support yet
 
-### Possible Solution(s):
+#### Possible Solution(s):
 * CLTV is currently being implemented into BitSwift
 * Once new wallet is out testing can begin
 
-### Dev Feedback/Status Update:
+#### Dev Feedback/Status Update:
 * Forthcoming...
 
 ## Potcoin [POT]
@@ -90,7 +90,7 @@ This is community based testing and the information will be relayed to the devel
 
 ## Decred [DCR]
 
-### Issue #1:
+#### Issue #1:
 * Using CMD line wallet due to issues with Paymetheus
 
 * Achieve resp 200 on Decred but with errors:
@@ -113,7 +113,7 @@ This is community based testing and the information will be relayed to the devel
 * With the error Block calls/recieves wallet and balance information from Decred
 * Most likely the reason for Issue #2
 
-### Issue #2:
+#### Issue #2:
 * When creating a new TX, and hit Post, we get a "invalid TX address"
 
 * Decred uses a 35 character address, whereas the majority of others use 34 and sometimes 33 character addresses
@@ -142,76 +142,76 @@ This is community based testing and the information will be relayed to the devel
 ```
 * Stays in 'Hold' state, due to unrecognized forced address
   
-### Possible Solution(s):
+#### Possible Solution(s):
 
 * Need block to recognize 35 character long addresses or somehow decompress the address to be usable
 
-### Dev Feedback/Status Update:
+#### Dev Feedback/Status Update:
 
 * 
 
 ## XCurrency [XC]
-### Issue #1:
+#### Issue #1:
 * Unsure if Xcurrency has CLTV support yet
 
-### Possible Solution(s):
+#### Possible Solution(s):
 * Get confirmation on CLTV support
 * Download and test trade
 
-### Dev Feedback/Status Update:
+#### Dev Feedback/Status Update:
 * 
 
 ## Ethereum [ETH]
-### Issue #1:
+#### Issue #1:
 * Not support by Blocknet yet
 
-### Possible Solution(s):
+#### Possible Solution(s):
 * Modify code to support ETH and ERC20 coins
 
-### Dev Feedback/Status Update:
+#### Dev Feedback/Status Update:
 * Forthcoming...
 
 ## Zcash [ZEC]
 
-### Issue #1:
+#### Issue #1:
 * Not support by Blocknet yet
 
-### Possible Solution(s):
+#### Possible Solution(s):
 * Modify code to support ZEC
 
-### Dev Feedback/Status Update:
+#### Dev Feedback/Status Update:
 * Forthcoming...
   
 ## Siacoin [SIA]
-### Issue #1:
+#### Issue #1:
 * Haven't tested yet, might not be supported by Blocknet yet
 
-### Possible Solution(s):
+#### Possible Solution(s):
 * Modify code to support SIA
 
-### Dev Feedback/Status Update:
+#### Dev Feedback/Status Update:
 * 
 
 ## Bytecoin [BCN]
-### Issue #1:
+#### Issue #1:
 * Haven't tested yet, might not be supported by Blocknet yet
 
-### Possible Solution(s):
+#### Possible Solution(s):
 * Modify code to support BCN and other CryptoNote based coins
 
-### Dev Feedback/Status Update:
+#### Dev Feedback/Status Update:
 * 
 
 ## Nxt [NXT]
 
-### Issue #1:
+#### Issue #1:
 * NXT has its own CLTV/API, but it's different from Bitcoin based coins
 
-### Possible Solution(s):
+#### Possible Solution(s):
 * Need to modify Block API to understand NXT API
 * Once block can talk with NXT tests can be conducted
 
-### Dev Feedback/Status Update:
+#### Dev Feedback/Status Update:
 
 * 
   
