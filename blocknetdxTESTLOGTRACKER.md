@@ -50,7 +50,7 @@ This is community based testing and the information will be relayed to the devel
 
 ## Feathercoin [FTC]
 #### Issue #1:
- * After a successful TX posting there is Block movement
+ * After a successful TX posting and TX acceptance there is Block movement
  * TX maker sends FTC out successfully
  * TX taker sends coin out successfully
  * TX maker receives coin successfully
