@@ -12,6 +12,7 @@
 
 * Open 3 cmd prompt windows
   * On all 3, change the directory to the source directory:
+  
 	  `cd C:\Users\<NAME>\decred` or wherever it was installed
     
 ## 1ST CMD PROMPT WINDOW
