@@ -56,16 +56,29 @@ This is community based testing and the information will be relayed to the devel
 ## Blackcoin [BLK]
 
 ## Stealthcoin [XST]
+### Issue #1:
+* Waiting on new windows client w/ updated CLTV codework 
 
-  * CLTV is complete, waiting on new windows wallet w/ CLTV to test
+### Possible Solution(s):
+* Wait for release of new wallet client, then being testing
+
+### Dev Feedback/Status Update:
+* Forthcoming...
 
 ## Breakoutcoin [BRK]
 
 ## Breakoutstake [BRX]
 
 ## Bitswift [SWIFT]
+### Issue #1:
+* No CLTV support yet
 
-  * CLTV is currently being implemented, won't test until complete
+### Possible Solution(s):
+* CLTV is currently being implemented into BitSwift
+* Once new wallet is out testing can begin
+
+### Dev Feedback/Status Update:
+* Forthcoming...
 
 ## Potcoin [POT]
 
@@ -138,17 +151,36 @@ This is community based testing and the information will be relayed to the devel
 * 
 
 ## XCurrency [XC]
+### Issue #1:
+* Unsure if Xcurrency has CLTV support yet
 
-  * Not tested, CLTV ready? 
+### Possible Solution(s):
+* Get confirmation on CLTV support
+* Download and test trade
+
+### Dev Feedback/Status Update:
+* 
 
 ## Ethereum [ETH]
+### Issue #1:
+* Not support by Blocknet yet
 
-  * Forthcoming...
+### Possible Solution(s):
+* Modify code to support ETH and ERC20 coins
+
+### Dev Feedback/Status Update:
+* Forthcoming...
 
 ## Zcash [ZEC]
 
-  * Forthcoming...
-  * Need to modify Block API
+### Issue #1:
+* Not support by Blocknet yet
+
+### Possible Solution(s):
+* Modify code to support ZEC
+
+### Dev Feedback/Status Update:
+* Forthcoming...
   
 ## Siacoin [SIA]
 
@@ -156,4 +188,14 @@ This is community based testing and the information will be relayed to the devel
 
 ## Nxt [NXT]
 
-  * Need to modify Block API to understand NXT API??
+### Issue #1:
+* NXT has its own CLTV/API, but it's different from Bitcoin based coins
+
+### Possible Solution(s):
+* Need to modify Block API to understand NXT API
+* Once block can talk with NXT tests can be conducted
+
+### Dev Feedback/Status Update:
+
+* 
+  
