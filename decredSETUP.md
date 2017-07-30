@@ -6,7 +6,7 @@
 
 * Run the .exe
 
-* Find the directory. Should be: `C:\Users\<NAME>\decred\ `
+* Find the directory, it should be: `C:\Users\<NAME>\decred\ `
 
 ---
 
