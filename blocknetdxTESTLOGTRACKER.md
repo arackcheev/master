@@ -39,7 +39,7 @@ This is community based testing and the information will be relayed to the devel
  * See log below:
 
 #### Possible Solution(s):
- * Error code: ... 
+ * Error code: ...  possibly user configuration parameter error
  
 #### Dev Feedback/Status Update:
 
