@@ -1,4 +1,5 @@
 # Decred CMD Line Setup For Blocknet DX
+THANKS TO @86b (Slack) for spending countless hours on this setup!
 
 * Go to: https://github.com/decred/decred-release/releases/tag/v1.0.5
 
