@@ -8,8 +8,8 @@ This is community based testing and the information will be relayed to the devel
 
 | COIN  | CLTV? | JSON RPC? | DX COMM? | TX POSTED? | BLOCK MOVEMENT? | MAKER RECEIVE COIN? | TAKER RECEIVE COIN? | STATUS OF RESOLUTION |
 |-------|-------|-----------|----------|------------|-----------------|---------------------|---------------------|----------------------|
-| SEQ   |   Y    |     Y      |     Y     |     Y       |      Y           |        Y             |     N                |                      |
-| BAY   |    Y   |        Y   |          |            |                 |                     |                     |                      |
+| SEQ   |   YES    |     YES      |     YES     |     YES       |      YES           |        YES             |     NO                |                      |
+| BAY   |    YES   |        YES   |          |            |                 |                     |                     |                      |
 | STRAT |       |           |          |            |                 |                     |                     |                      |
 | FTC   |       |           |          |            |                 |                     |                     |                      |
 | QRK   |       |           |          |            |                 |                     |                     |                      |
