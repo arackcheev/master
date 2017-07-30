@@ -28,63 +28,132 @@ This is community based testing and the information will be relayed to the devel
 | ZEC   |       |           |          |            |                 |                     |                     |                      |
 | SIA   |       |           |          |            |                 |                     |                     |                      |
 | BCN   |       |           |          |            |                 |                     |                     |                      |
-| XMR   |       |           |          |            |                 |                     |                     |                      |
 | NXT   |PROBABLE|PROBABLE  |          |            |                 |                     |                     |NOT LOOKED INTO YET   |
 
 
-# Sequence [SEQ]
+## Sequence [SEQ]
 
-# BitBay [BAY]
+### Issue #1: (re-test)
+ * After a successful TX posting there is Block movement? (re-test to make sure). No coin movement. TX cancels.
+ 
+ * See log below:
 
-# Stratis [STRAT]
+### Possible Solution(s):
+ * Error code: ... 
+ 
+### Dev Feedback/Status Update:
 
-# Feathercoin [FTC]
+* 
 
-# Quarkcoin [QRK]
+## BitBay [BAY]
 
-# Blackcoin [BLK]
+## Stratis [STRAT]
 
-# Stealthcoin [XST]
+## Feathercoin [FTC]
+
+## Quarkcoin [QRK]
+
+## Blackcoin [BLK]
+
+## Stealthcoin [XST]
 
   * CLTV is complete, waiting on new windows wallet w/ CLTV to test
 
-# Breakoutcoin [BRK]
+## Breakoutcoin [BRK]
 
-# Breakoutstake [BRX]
+## Breakoutstake [BRX]
 
-# Bitswift [SWIFT]
+## Bitswift [SWIFT]
 
   * CLTV is currently being implemented, won't test until complete
 
-# Potcoin [POT]
+## Potcoin [POT]
 
-# Peercoin [PPC]
+## Peercoin [PPC]
 
-# Bitconnect [BCC]
+## Bitconnect [BCC]
 
-# Groestlcoin [GRS]
+## Groestlcoin [GRS]
 
-# Decred [DCR]
+## Decred [DCR]
 
-# XCurrency [XC]
+### Issue #1:
+* Using CMD line wallet due to issues with Paymetheus
+
+* Achieve resp 200 on Decred but with errors:
+
+```
+[I] 2017-Jul-30 09:48:57 [0x2] HTTP: resp 200 {"result":{"default":0,"imported":0,"testDECRED":0},"error":null,"id":1}
+[I] 2017-Jul-30 09:48:57 [0x2] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["default"],"id":1}
+
+[I] 2017-Jul-30 09:48:57 [0x2] HTTP: resp 200 {"result":null,"error":null,"id":1}
+[I] 2017-Jul-30 09:48:57 [0x2] result not an array 
+[I] 2017-Jul-30 09:48:57 [0x2] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["imported"],"id":1}
+
+[I] 2017-Jul-30 09:48:57 [0x2] HTTP: resp 200 {"result":null,"error":{"code":-4,"message":"account not found"},"id":1}
+[I] 2017-Jul-30 09:48:57 [0x2] error: {"code":-4,"message":"account not found"}
+[I] 2017-Jul-30 09:48:57 [0x2] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["testDECRED"],"id":1}
+
+[I] 2017-Jul-30 09:48:57 [0x2] HTTP: resp 200 {"result":["Dse7q6T1ZACC8SqMwMvSKkYGtF16RXXY9Ec"],"error":null,"id":1}
+```
+
+* With the error Block calls/recieves wallet and balance information from Decred
+* Most likely the reason for Issue #2
+
+### Issue #2:
+* When creating a new TX, and hit Post, we get a "invalid TX address"
+
+* Decred uses a 35 character address, whereas the majority of others use 34 and sometimes 33 character addresses
+
+ * Attempts were made to decompress base58 and remove the last 4 bytes for checksum, and the 2nd byte for color byte
+ * With the removal of the 2nd byte of HEX, we then converted back to Base 58 and forced a TX off that address, see below:
+ 
+```
+[I] 2017-Jul-30 01:58:23 [0x1] HTTP: resp 200 {"result":[{"txid":"0f85c55d26e2d7b07e0bce816499ff1661e6b269e389529c8fee18a32643be1b","vout":2,"address":"Sbxd4x4FnJzbFGdapFKoiMxh4zBxRqyztX","v2address":"1Ffd37H73woPixr8GpLjATp8RCxXcNs8y4","account":"","scriptPubKey":"76a914a0dfa62eb2485183e2b75d8d6ba80852d3f6e38a88ac","amount":68.97999200,"confirmations":11232,"spendable":true,"solvable":true},{"txid":"1b429eceb7fde8ec155c43aeb9fb6ab9f814767c9ff4bc070a819a2a86fd519b","vout":1,"address":"ShAF9TmFCTQtRzTcsZjyr63VKyT5wBzXWS","v2address":"1LsF7cz6U6DguggAL8kuJBtvgCDfCUupFW","account":"","scriptPubKey":"76a914d9eaf849d0363217ca31ceec0fd49083edfc734c88ac","amount":0.00300000,"confirmations":11816,"spendable":true,"solvable":true},{"txid":"80651921aa40eba9dbe3a563530752a4d343d314e55e867c3628622f6a33ecbb","vout":1,"address":"ShAF9TmFCTQtRzTcsZjyr63VKyT5wBzXWS","v2address":"1LsF7cz6U6DguggAL8kuJBtvgCDfCUupFW","account":"","scriptPubKey":"76a914d9eaf849d0363217ca31ceec0fd49083edfc734c88ac","amount":0.00300000,"confirmations":11760,"spendable":true,"solvable":true},{"txid":"36f590f2f707de7e13941a46eca16b88fc9af364fbe97d60271e987bd5de95d0","vout":2,"address":"SfWjtYYg9RR95CuNUjpGaeny82x685NyHG","v2address":"1KDjrhmXR4DwYu7uwJqC2keQUFifKCF7VU","account":"","scriptPubKey":"76a914c7db07e4420d6ff99bfc6127a417bee51e58963a88ac","amount":3.68719360,"confirmations":12543,"spendable":true,"solvable":true},{"txid":"b75d742be3b652bd9f618e61fc2b1e11903298bcfac26929c50e2976d509abe6","vout":1,"address":"ShAF9TmFCTQtRzTcsZjyr63VKyT5wBzXWS","v2address":"1LsF7cz6U6DguggAL8kuJBtvgCDfCUupFW","account":"","scriptPubKey":"76a914d9eaf849d0363217ca31ceec0fd49083edfc734c88ac","amount":0.00300000,"confirmations":11697,"spendable":true,"solvable":true}],"error":null,"id":1}
+
+[I] 2017-Jul-30 01:58:26 [0x1] rpc call <listunspent>
+[I] 2017-Jul-30 01:58:26 [0x1] HTTP: req  listunspent {"method":"listunspent","params":[],"id":1}
+
+[I] 2017-Jul-30 01:58:26 [0x1] HTTP: resp 200 {"result":null,"error":null,"id":1}
+[I] 2017-Jul-30 01:58:26 [0x1] result not an array 
+[I] 2017-Jul-30 01:58:26 [0x1] rpc::listUnspent failedgetAccountBalance
+[I] 2017-Jul-30 01:58:32 [0x1] rpc call <listunspent>
+[I] 2017-Jul-30 01:58:32 [0x1] HTTP: req  listunspent {"method":"listunspent","params":[],"id":1}
+
+[I] 2017-Jul-30 01:58:32 [0x1] HTTP: resp 200 {"result":[{"txid":"0f85c55d26e2d7b07e0bce816499ff1661e6b269e389529c8fee18a32643be1b","vout":2,"address":"Sbxd4x4FnJzbFGdapFKoiMxh4zBxRqyztX","v2address":"1Ffd37H73woPixr8GpLjATp8RCxXcNs8y4","account":"","scriptPubKey":"76a914a0dfa62eb2485183e2b75d8d6ba80852d3f6e38a88ac","amount":68.97999200,"confirmations":11232,"spendable":true,"solvable":true},{"txid":"1b429eceb7fde8ec155c43aeb9fb6ab9f814767c9ff4bc070a819a2a86fd519b","vout":1,"address":"ShAF9TmFCTQtRzTcsZjyr63VKyT5wBzXWS","v2address":"1LsF7cz6U6DguggAL8kuJBtvgCDfCUupFW","account":"","scriptPubKey":"76a914d9eaf849d0363217ca31ceec0fd49083edfc734c88ac","amount":0.00300000,"confirmations":11816,"spendable":true,"solvable":true},{"txid":"80651921aa40eba9dbe3a563530752a4d343d314e55e867c3628622f6a33ecbb","vout":1,"address":"ShAF9TmFCTQtRzTcsZjyr63VKyT5wBzXWS","v2address":"1LsF7cz6U6DguggAL8kuJBtvgCDfCUupFW","account":"","scriptPubKey":"76a914d9eaf849d0363217ca31ceec0fd49083edfc734c88ac","amount":0.00300000,"confirmations":11760,"spendable":true,"solvable":true},{"txid":"36f590f2f707de7e13941a46eca16b88fc9af364fbe97d60271e987bd5de95d0","vout":2,"address":"SfWjtYYg9RR95CuNUjpGaeny82x685NyHG","v2address":"1KDjrhmXR4DwYu7uwJqC2keQUFifKCF7VU","account":"","scriptPubKey":"76a914c7db07e4420d6ff99bfc6127a417bee51e58963a88ac","amount":3.68719360,"confirmations":12543,"spendable":true,"solvable":true},{"txid":"b75d742be3b652bd9f618e61fc2b1e11903298bcfac26929c50e2976d509abe6","vout":1,"address":"ShAF9TmFCTQtRzTcsZjyr63VKyT5wBzXWS","v2address":"1LsF7cz6U6DguggAL8kuJBtvgCDfCUupFW","account":"","scriptPubKey":"76a914d9eaf849d0363217ca31ceec0fd49083edfc734c88ac","amount":0.00300000,"confirmations":11697,"spendable":true,"solvable":true}],"error":null,"id":1}
+
+[I] 2017-Jul-30 01:58:32 [0x2] broadcast message, command 6
+[T] 2017-Jul-30 01:58:32 [0x2] received packet, command code <6>
+[T] 2017-Jul-30 01:58:32 [0x2] [] processTransactionHold
+[I] 2017-Jul-30 01:58:33 [0x2] received message to GsEm68N/jr65zMlWWO/RXTpS6b4= command 7
+```
+* Stays in 'Hold' state, due to unrecognized forced address
+  
+### Possible Solution(s):
+
+* Need block to recognize 35 character long addresses or somehow decompress the address to be usable
+
+### Dev Feedback/Status Update:
+
+* 
+
+## XCurrency [XC]
 
   * Not tested, CLTV ready? 
 
-# Ethereum [ETH]
+## Ethereum [ETH]
 
   * Forthcoming...
 
-# Zcash [ZEC]
+## Zcash [ZEC]
 
   * Forthcoming...
   * Need to modify Block API
   
-# Siacoin [SIA]
+## Siacoin [SIA]
 
-# Bytecoin [BCN]
+## Bytecoin [BCN]
 
-# Monero [XMR]
-
-# Nxt [NXT]
+## Nxt [NXT]
 
   * Need to modify Block API to understand NXT API??
