@@ -6,30 +6,30 @@ This is community based testing and the information will be relayed to the devel
 
 ## General Summary
 
-| COIN  | CLTV? | JSON RPC? | DX COMM? | TX POSTED? | BLOCK MOVEMENT? | MAKER RECEIVE COIN? | TAKER RECEIVE COIN? | STATUS OF RESOLUTION |
+| COIN  | CLTV? | JSON RPC? | DX COMM? | TX POSTED? | BLOCK MOVEMENT? | MAKER RECEIVE COIN? | TAKER RECEIVE COIN? | STATUS or COMMENTS |
 |-------|-------|-----------|----------|------------|-----------------|---------------------|---------------------|----------------------|
-| SEQ   |   YES    |     YES      |     YES     |     YES       |      YES           |        YES             |     NO                |                      |
-| BAY   |    YES   |        YES   |          |            |                 |                     |                     |                      |
-| STRAT |       |           |          |            |                 |                     |                     |                      |
-| FTC   |       |           |          |            |                 |                     |                     |                      |
-| QRK   |       |           |          |            |                 |                     |                     |                      |
-| BLK   |       |           |          |            |                 |                     |                     |                      |
-| XST   |       |           |          |            |                 |                     |                     |                      |
-| BRK   |       |           |          |            |                 |                     |                     |                      |
-| BRX   |       |           |          |            |                 |                     |                     |                      |
-| SWIFT |       |           |          |            |                 |                     |                     |                      |
-| POT   |       |           |          |            |                 |                     |                     |                      |
-| PPC   |       |           |          |            |                 |                     |                     |                      |
-| BCC   |       |           |          |            |                 |                     |                     |                      |
-| GRS   |       |           |          |            |                 |                     |                     |                      |
-| DCR   |       |           |          |            |                 |                     |                     |                      |
-| XC    |       |           |          |            |                 |                     |                     |                      |
+| SEQ   |YES    |YES        |YES       |YES         |YES              |NO                   |NO                   |                      |
+| BAY   |YES    |YES        |YES       |YES         |NO               |NO                   |NO                   |                      |
+| STRAT |       |YES        |YES       |YES         |                 |                     |                     |                      |
+| FTC   |       |YES        |YES       |YES         |YES              |YES                  |NO                   |                      |
+| QRK   |       |YES        |YES       |YES         |                 |                     |                     |                      |
+| BLK   |       |YES        |YES       |YES         |NO               |                     |                     |                      |
+| XST   |       |YES        |YES       |YES         |                 |                     |                     |                      |
+| BRK   |       |YES        |YES       |NO          |                 |                     |                     |'INVALID TX ADDRESS ON TX POST'                      |
+| BRX   |       |YES        |YES       |NO          |                 |                     |                     |'INVALID TX ADDRESS ON TX POST'                      |
+| SWIFT |       |YES        |          |            |                 |                     |                     |                      |
+| POT   |       |YES        |YES       |            |                 |                     |                     |                      |
+| PPC   |       |YES        |YES       |            |                 |                     |                     |                      |
+| BCC   |       |YES        |          |            |                 |                     |                     |                      |
+| GRS   |       |YES        |YES       |            |                 |                     |                     |                      |
+| DCR   |       |YES        |YES       |            |                 |                     |                     |                      |
+| XC    |       |YES        |          |            |                 |                     |                     |                      |
 | ETH   |       |           |          |            |                 |                     |                     |                      |
 | ZEC   |       |           |          |            |                 |                     |                     |                      |
 | SIA   |       |           |          |            |                 |                     |                     |                      |
 | BCN   |       |           |          |            |                 |                     |                     |                      |
 | XMR   |       |           |          |            |                 |                     |                     |                      |
-| NXT   |       |           |          |            |                 |                     |                     |                      |
+| NXT   |PROBABLE|PROBABLE  |          |            |                 |                     |                     |NOT LOOKED INTO YET   |
 
 
 # Sequence [SEQ]
