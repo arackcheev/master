@@ -60,7 +60,7 @@ This is community based testing and the information will be relayed to the devel
 * Waiting on new windows client w/ updated CLTV codework 
 
 ### Possible Solution(s):
-* Wait for release of new wallet client, then being testing
+* Wait for release of new wallet client, then begin testing
 
 ### Dev Feedback/Status Update:
 * Forthcoming...
