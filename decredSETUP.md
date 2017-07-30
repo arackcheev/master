@@ -58,7 +58,8 @@
 * Type: 
 
 	* `dcrctl -u CHANGE -P CHANGE --wallet --notls walletpassphrase <password> 1000000`
-		* (-u and -P is your user/pass from above. "password" is your wallet password, but don’t use the <> symbols)
+		* (-u and -P is your user/pass from above)
+		* ("password" is your wallet password, but don’t use the <> symbols)
 
 * It should take you back to the directory
 
