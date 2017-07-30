@@ -46,8 +46,8 @@
 
 * Type:
 
-* `dcrwallet --username=CHANGE --password=CHANGE --noclienttls --noservertls --walletpass public --dcrdusername=CHANGE --dcrdpassword=CHANGE --txfee=0.01`
-	* (enter the same user/pass as the above RPC for both user/pass)
+	* `dcrwallet --username=CHANGE --password=CHANGE --noclienttls --noservertls --walletpass public --dcrdusername=CHANGE --dcrdpassword=CHANGE --txfee=0.01`
+		* (enter the same user/pass as the above RPC for both user/pass)
 
 * Enter your password, it should rescan blocks and eventually connect
   
@@ -57,22 +57,22 @@
 
 * Type: 
 
-* `dcrctl -u CHANGE -P CHANGE --wallet --notls walletpassphrase <password> 1000000`
-	* (-u and -P is your user/pass from above. <password> is your wallet password, but don’t use the <> symbols)
+	* `dcrctl -u CHANGE -P CHANGE --wallet --notls walletpassphrase <password> 1000000`
+		* (-u and -P is your user/pass from above. <password> is your wallet password, but don’t use the <> symbols)
 
 * It should take you back to the directory
 
 * Type: 
 
-* `dcrctl -u CHANGE -P CHANGE --wallet --notls createnewaccount "testDECRED"`
-	* (“testDECRED” is what I am calling my labelled address, use the quotation marks and label it whatever you want)
+	* `dcrctl -u CHANGE -P CHANGE --wallet --notls createnewaccount "testDECRED"`
+		* (“testDECRED” is what I am calling my labelled address, use the quotation marks and label it whatever you want)
 
 * It should take you back to the directory
 
 * Type:
 
-* `dcrctl -u CHANGE -P CHANGE --wallet --notls getnewaddress "testDECRED"`
-	* (getnewaddress " " is whatever you wrote on the above command for a label)
+	* `dcrctl -u CHANGE -P CHANGE --wallet --notls getnewaddress "testDECRED"`
+		* (getnewaddress " " is whatever you wrote on the above command for a label)
 
 * This should output your labelled DCR address
 
