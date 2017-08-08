@@ -37,7 +37,7 @@ This is community based testing and the information will be relayed to the devel
  
  * See log below:
  
- * Maker end SEQ/SYS:
+ * MAKER SEQ/SYS LOG:
 ```[I] 2017-Aug-07 23:54:16 [0x3] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
 
 [I] 2017-Aug-07 23:54:16 [0x3] HTTP: resp 200 {"result":{"":54.99000000,"DX testaddress":0.00000000},"error":null,"id":1}
@@ -348,7 +348,7 @@ This is community based testing and the information will be relayed to the devel
 [T] 2017-Aug-07 22:54:36 [0x2] received packet, command code <22>
 ```
 
- * SERVICE NODE:
+ * SERVICE  NODE:
 ```[I] 2017-Aug-07 23:54:09 [0x2] broadcast message, command 3
 [T] 2017-Aug-07 23:54:09 [0x2] received packet, command code <3>
 [T] 2017-Aug-07 23:54:09 [0x2] [] processTransaction
@@ -421,6 +421,56 @@ This is community based testing and the information will be relayed to the devel
 ## BitBay [BAY]
 
 ## Stratis [STRAT]
+
+ * TAKER LOG STRAT/SYS:
+```
+[I] 2017-Aug-07 23:02:13 [0x1] rpc call <listunspent>
+[I] 2017-Aug-07 23:02:13 [0x1] HTTP: req  listunspent {"method":"listunspent","params":[],"id":1}
+
+[I] 2017-Aug-07 23:02:13 [0x1] HTTP: resp 200 {"result":[{"txid":"0f85c55d26e2d7b07e0bce816499ff1661e6b269e389529c8fee18a32643be1b","vout":2,"address":"Sbxd4x4FnJzbFGdapFKoiMxh4zBxRqyztX","v2address":"1Ffd37H73woPixr8GpLjATp8RCxXcNs8y4","account":"","scriptPubKey":"76a914a0dfa62eb2485183e2b75d8d6ba80852d3f6e38a88ac","amount":68.97999200,"confirmations":23415,"spendable":true,"solvable":true},{"txid":"1b429eceb7fde8ec155c43aeb9fb6ab9f814767c9ff4bc070a819a2a86fd519b","vout":1,"address":"ShAF9TmFCTQtRzTcsZjyr63VKyT5wBzXWS","v2address":"1LsF7cz6U6DguggAL8kuJBtvgCDfCUupFW","account":"","scriptPubKey":"76a914d9eaf849d0363217ca31ceec0fd49083edfc734c88ac","amount":0.00300000,"confirmations":23999,"spendable":true,"solvable":true},{"txid":"80651921aa40eba9dbe3a563530752a4d343d314e55e867c3628622f6a33ecbb","vout":1,"address":"ShAF9TmFCTQtRzTcsZjyr63VKyT5wBzXWS","v2address":"1LsF7cz6U6DguggAL8kuJBtvgCDfCUupFW","account":"","scriptPubKey":"76a914d9eaf849d0363217ca31ceec0fd49083edfc734c88ac","amount":0.00300000,"confirmations":23943,"spendable":true,"solvable":true},{"txid":"36f590f2f707de7e13941a46eca16b88fc9af364fbe97d60271e987bd5de95d0","vout":2,"address":"SfWjtYYg9RR95CuNUjpGaeny82x685NyHG","v2address":"1KDjrhmXR4DwYu7uwJqC2keQUFifKCF7VU","account":"","scriptPubKey":"76a914c7db07e4420d6ff99bfc6127a417bee51e58963a88ac","amount":3.68719360,"confirmations":24726,"spendable":true,"solvable":true},{"txid":"b75d742be3b652bd9f618e61fc2b1e11903298bcfac26929c50e2976d509abe6","vout":1,"address":"ShAF9TmFCTQtRzTcsZjyr63VKyT5wBzXWS","v2address":"1LsF7cz6U6DguggAL8kuJBtvgCDfCUupFW","account":"","scriptPubKey":"76a914d9eaf849d0363217ca31ceec0fd49083edfc734c88ac","amount":0.00300000,"confirmations":23880,"spendable":true,"solvable":true}],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:02:13 [0x4] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 23:02:14 [0x2] broadcast message, command 4
+[T] 2017-Aug-07 23:02:14 [0x2] received packet, command code <4>
+[T] 2017-Aug-07 23:02:14 [0x2] [] processPendingTransaction
+[I] 2017-Aug-07 23:02:14 [0x4] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 23:02:15 [0x4] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 23:02:16 [0x1] rpc call <listunspent>
+[I] 2017-Aug-07 23:02:16 [0x1] HTTP: req  listunspent {"method":"listunspent","params":[],"id":1}
+
+[I] 2017-Aug-07 23:02:16 [0x1] HTTP: resp 200 {"result":[],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:02:16 [0x4] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 23:02:17 [0x1] rpc call <listunspent>
+[I] 2017-Aug-07 23:02:17 [0x1] HTTP: req  listunspent {"method":"listunspent","params":[],"id":1}
+
+[I] 2017-Aug-07 23:02:17 [0x1] HTTP: resp 200 {"result":[{"txid":"0f85c55d26e2d7b07e0bce816499ff1661e6b269e389529c8fee18a32643be1b","vout":2,"address":"Sbxd4x4FnJzbFGdapFKoiMxh4zBxRqyztX","v2address":"1Ffd37H73woPixr8GpLjATp8RCxXcNs8y4","account":"","scriptPubKey":"76a914a0dfa62eb2485183e2b75d8d6ba80852d3f6e38a88ac","amount":68.97999200,"confirmations":23415,"spendable":true,"solvable":true},{"txid":"1b429eceb7fde8ec155c43aeb9fb6ab9f814767c9ff4bc070a819a2a86fd519b","vout":1,"address":"ShAF9TmFCTQtRzTcsZjyr63VKyT5wBzXWS","v2address":"1LsF7cz6U6DguggAL8kuJBtvgCDfCUupFW","account":"","scriptPubKey":"76a914d9eaf849d0363217ca31ceec0fd49083edfc734c88ac","amount":0.00300000,"confirmations":23999,"spendable":true,"solvable":true},{"txid":"80651921aa40eba9dbe3a563530752a4d343d314e55e867c3628622f6a33ecbb","vout":1,"address":"ShAF9TmFCTQtRzTcsZjyr63VKyT5wBzXWS","v2address":"1LsF7cz6U6DguggAL8kuJBtvgCDfCUupFW","account":"","scriptPubKey":"76a914d9eaf849d0363217ca31ceec0fd49083edfc734c88ac","amount":0.00300000,"confirmations":23943,"spendable":true,"solvable":true},{"txid":"36f590f2f707de7e13941a46eca16b88fc9af364fbe97d60271e987bd5de95d0","vout":2,"address":"SfWjtYYg9RR95CuNUjpGaeny82x685NyHG","v2address":"1KDjrhmXR4DwYu7uwJqC2keQUFifKCF7VU","account":"","scriptPubKey":"76a914c7db07e4420d6ff99bfc6127a417bee51e58963a88ac","amount":3.68719360,"confirmations":24726,"spendable":true,"solvable":true},{"txid":"b75d742be3b652bd9f618e61fc2b1e11903298bcfac26929c50e2976d509abe6","vout":1,"address":"ShAF9TmFCTQtRzTcsZjyr63VKyT5wBzXWS","v2address":"1LsF7cz6U6DguggAL8kuJBtvgCDfCUupFW","account":"","scriptPubKey":"76a914d9eaf849d0363217ca31ceec0fd49083edfc734c88ac","amount":0.00300000,"confirmations":23880,"spendable":true,"solvable":true}],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:02:17 [0x4] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 23:02:17 [0x2] broadcast message, command 6
+[T] 2017-Aug-07 23:02:17 [0x2] received packet, command code <6>
+[T] 2017-Aug-07 23:02:17 [0x2] [] processTransactionHold
+[I] 2017-Aug-07 23:02:18 [0x2] received message to PZ5Ysd+z7dmw7X/WBU/BhuHi3LY= command 7
+[I] 2017-Aug-07 23:02:18 [0x2] received message to mzu6SGYcA/KSKUBuzNu1IGm82hY= command 8
+[I] 2017-Aug-07 23:02:18 [0x2] received message to hZZ8n1wUVk5ovfBorWjrgRRyamQ= command 8
+[T] 2017-Aug-07 23:02:18 [0x2] received packet, command code <8>
+[T] 2017-Aug-07 23:02:18 [0x2] [STRAT] processTransactionInit
+[I] 2017-Aug-07 23:02:18 [0x4] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 23:02:18 [0x2] received message to PZ5Ysd+z7dmw7X/WBU/BhuHi3LY= command 9
+[I] 2017-Aug-07 23:02:19 [0x2] received message to iEF9gS1tMT/o2QNkz6bF9iAtfOU= command 10
+[I] 2017-Aug-07 23:02:19 [0x4] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 23:02:20 [0x4] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 23:02:21 [0x4] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 23:02:22 [0x4] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 23:02:23 [0x4] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 23:02:24 [0x4] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 23:02:24 [0x2] broadcast message, command 22
+[T] 2017-Aug-07 23:02:24 [0x2] received packet, command code <22>
+```
+
+ * TAKER LOG:
+ 
+
 
 ## Feathercoin [FTC]
 #### Issue #1:
