@@ -322,6 +322,58 @@ This is community based testing and the information will be relayed to the devel
 
 * 
 
+## GameCredits [GAME]
+
+#### Issue #1:
+ * After a successful TX GAME/SYS posting and TX acceptance there is Block movement
+ * TX maker sends GAME out successfully
+ * TX taker sends SYS out successfully
+ * TX maker receives SYS successfully
+ * TX taker does not receive GAME
+ * DX status stays in a "Created" state
+ * GAME stuck in P2SH Hash
+ 
+ * See log's below:
+ 
+   * [Maker Log](https://drive.google.com/open?id=0By-umY3NmpLVZW4yMzByeHltc28)
+  
+   * [Taker Log](https://drive.google.com/open?id=0By-umY3NmpLVLXZNOEcza2hrVDQ)
+  
+   * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVUWpqTzByYmRiQ1E)
+ 
+#### Possible Solution(s):
+ * User configuration parameter error
+ 
+ 
+#### Dev Feedback/Status Update:
+ *  
+
+## Reddcoin [RDD]
+
+#### Issue #1:
+ * After a successful TX RDD/SYS posting and TX acceptance there is Block movement
+ * TX maker sends RDD out successfully
+ * TX taker sends SYS out successfully
+ * TX maker receives SYS successfully
+ * TX taker does not receive RDD
+ * DX status goes into "Cancelled" state
+ * RDD stuck in P2SH Hash
+ 
+ * See log's below:
+ 
+   * [Maker Log](https://drive.google.com/open?id=0By-umY3NmpLVdlNJLXVyZUpwOVk)
+  
+   * [Taker Log](https://drive.google.com/open?id=0By-umY3NmpLVazhPcmRTWVhEUms)
+  
+   * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVSl9ZZzV2ejR5YVU)
+ 
+#### Possible Solution(s):
+ * User configuration parameter error
+ 
+ 
+#### Dev Feedback/Status Update:
+ *  
+
 ## XCurrency [XC]
 #### Issue #1:
 * Unsure if Xcurrency has CLTV support yet
@@ -384,56 +436,4 @@ This is community based testing and the information will be relayed to the devel
 
 #### Dev Feedback/Status Update:
 
-* 
-  
-## GameCredits [GAME]
-
-#### Issue #1:
- * After a successful TX GAME/SYS posting and TX acceptance there is Block movement
- * TX maker sends GAME out successfully
- * TX taker sends SYS out successfully
- * TX maker receives SYS successfully
- * TX taker does not receive GAME
- * DX status stays in a "Created" state
- * GAME stuck in P2SH Hash
- 
- * See log's below:
- 
-   * [Maker Log](https://drive.google.com/open?id=0By-umY3NmpLVZW4yMzByeHltc28)
-  
-   * [Taker Log](https://drive.google.com/open?id=0By-umY3NmpLVLXZNOEcza2hrVDQ)
-  
-   * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVUWpqTzByYmRiQ1E)
- 
-#### Possible Solution(s):
- * User configuration parameter error
- 
- 
-#### Dev Feedback/Status Update:
- *  
-
-## Reddcoin [RDD]
-
-#### Issue #1:
- * After a successful TX RDD/SYS posting and TX acceptance there is Block movement
- * TX maker sends RDD out successfully
- * TX taker sends SYS out successfully
- * TX maker receives SYS successfully
- * TX taker does not receive RDD
- * DX status goes into "Cancelled" state
- * RDD stuck in P2SH Hash
- 
- * See log's below:
- 
-   * [Maker Log](https://drive.google.com/open?id=0By-umY3NmpLVdlNJLXVyZUpwOVk)
-  
-   * [Taker Log](https://drive.google.com/open?id=0By-umY3NmpLVazhPcmRTWVhEUms)
-  
-   * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVSl9ZZzV2ejR5YVU)
- 
-#### Possible Solution(s):
- * User configuration parameter error
- 
- 
-#### Dev Feedback/Status Update:
- *  
+*   
