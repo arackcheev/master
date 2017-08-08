@@ -320,7 +320,7 @@ This is community based testing and the information will be relayed to the devel
 * Download and test trade
 
 #### Dev Feedback/Status Update:
-* 
+* New wallet with codebase in the future
 
 ## Ethereum [ETH]
 #### Issue #1:
