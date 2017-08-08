@@ -36,6 +36,380 @@ This is community based testing and the information will be relayed to the devel
  * After a successful TX posting there is Block movement? (re-test to make sure). No coin movement. TX cancels.
  
  * See log below:
+ 
+ * Maker end SEQ/SYS:
+```[I] 2017-Aug-07 23:54:16 [0x3] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:16 [0x3] HTTP: resp 200 {"result":{"":54.99000000,"DX testaddress":0.00000000},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:16 [0x3] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["DX testaddress"],"id":1}
+
+[I] 2017-Aug-07 23:54:16 [0x3] HTTP: resp 200 {"result":["BFvDdaevmnqYMAFz4a5WL5ck932eXEXA2y"],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:16 [0x3] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:16 [0x3] HTTP: resp 200 {"result":{"":0.32824477,"BitconnectTest":0.00000000},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:16 [0x3] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["BitconnectTest"],"id":1}
+
+[I] 2017-Aug-07 23:54:16 [0x3] HTTP: resp 200 {"result":["8djfkGB6Qrbhk312nkvNjgtLr75XbNmqEn"],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:17 [0x3] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 23:54:18 [0x1] rpc call <listunspent>
+[I] 2017-Aug-07 23:54:18 [0x1] HTTP: req  listunspent {"method":"listunspent","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:18 [0x1] HTTP: resp 200 {"result":[{"txid":"958de869269727bcaab5b0d4e4f6a67b0c8e51bc2b48ccf180e2eaae9b18cb2e","vout":0,"address":"SkQagsidSefbB7rVWjG5RiNDXMbxMrUAk2","scriptPubKey":"76a914fd897bb31fd8f75ba966effe10ec63c3d28957a588ac","amount":69.79800000,"confirmations":7785,"spendable":true}],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:18 [0x3] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 23:54:18 [0x2] broadcast message, command 22
+[T] 2017-Aug-07 23:54:18 [0x2] received packet, command code <22>
+[I] 2017-Aug-07 23:54:18 [0x2] unknown transaction Y68gWsLLMlFX9zET9RDZFlnMAmdHvPzKC9o6u3K+tqc= processTransactionCancel
+[I] 2017-Aug-07 23:54:18 [0x2] broadcast message, command 22
+[T] 2017-Aug-07 23:54:18 [0x2] received packet, command code <22>
+[I] 2017-Aug-07 23:54:18 [0x2] unknown transaction Y68gWsLLMlFX9zET9RDZFlnMAmdHvPzKC9o6u3K+tqc= processTransactionCancel
+[I] 2017-Aug-07 23:54:18 [0x2] broadcast message, command 4
+[T] 2017-Aug-07 23:54:18 [0x2] received packet, command code <4>
+[T] 2017-Aug-07 23:54:18 [0x2] [] processPendingTransaction
+[I] 2017-Aug-07 23:54:19 [0x3] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 23:54:19 [0x3] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:19 [0x3] HTTP: resp 200 {"result":{"":0.06557233,"BTC Test":0.00000000},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:19 [0x3] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["BTC Test"],"id":1}
+
+[I] 2017-Aug-07 23:54:19 [0x3] HTTP: resp 200 {"result":["1MWH86khL7wXtXWiNMG5HGAb6d7FKgW6Rn"],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:20 [0x3] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 23:54:20 [0x3] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:20 [0x3] HTTP: resp 200 {"result":{"":-0.02241300,"DashTest":0.52509466},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:20 [0x3] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["DashTest"],"id":1}
+
+[I] 2017-Aug-07 23:54:20 [0x3] HTTP: resp 200 {"result":["XsxGNC4hxaa5m4JeVm3FT5eQNR7fYK3BxH"],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:21 [0x3] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 23:54:21 [0x3] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:21 [0x3] HTTP: resp 200 {"result":{"":-5215.01000000,"DX testaddress":5398.85437500},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:21 [0x3] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["DX testaddress"],"id":1}
+
+[I] 2017-Aug-07 23:54:21 [0x3] HTTP: resp 200 {"result":["DKYuPPJdtUjnC7iPBVjrnWQAmDV8EygP7M"],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:21 [0x3] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:21 [0x3] HTTP: resp 200 {"result":{"":1718.96232000,"DX testaddress":400.00000000},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:21 [0x3] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["DX testaddress"],"id":1}
+
+[I] 2017-Aug-07 23:54:21 [0x3] HTTP: resp 200 {"result":["D6m5WZM78ciTQygp2oLvfPubtEFZtgKjia"],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:21 [0x3] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:21 [0x3] HTTP: resp 200 {"result":{"":26.37971541,"DynamicTest":1.70000000},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:21 [0x3] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["DynamicTest"],"id":1}
+
+[I] 2017-Aug-07 23:54:21 [0x3] HTTP: resp 200 {"result":["DSHQkWfWvi1ZbTJvBULiENVbatPMbJKavh"],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:21 [0x3] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:21 [0x3] HTTP: resp 200 {"result":{"":55.61562500,"DX testaddress":0.00000000},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:21 [0x3] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["DX testaddress"],"id":1}
+
+[I] 2017-Aug-07 23:54:21 [0x3] HTTP: resp 200 {"result":["6gEBq2VX5wB8qPhrXyZxuFndycFo9GwGq8"],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:21 [0x3] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:21 [0x3] HTTP: resp 200 {"result":{"":-0.81499800,"GameCredits Test":1.90000000},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:21 [0x3] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["GameCredits Test"],"id":1}
+
+[I] 2017-Aug-07 23:54:21 [0x3] HTTP: resp 200 {"result":["GUn81fe2HDDLsdkQaepVmvPgrqHWkDKM6W"],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:22 [0x3] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 23:54:22 [0x3] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:22 [0x3] HTTP: resp 200 {"result":{"":-7.01000000,"GUI":4.49000000,"LBRY Test":5.00000000},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:22 [0x3] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["GUI"],"id":1}
+
+[I] 2017-Aug-07 23:54:22 [0x3] HTTP: resp 200 {"result":["bGzkPgkR4WRK1XWDpPuE4GWqYgHpSW2U8o"],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:22 [0x3] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["LBRY Test"],"id":1}
+
+[I] 2017-Aug-07 23:54:22 [0x3] HTTP: resp 200 {"result":["baepKENi7HzBDUZMAriDCm4Qti4wrhMbnX","bag1tekFFqR4aPBSxZpEXbZuFWvHn29Ykg"],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:23 [0x2] broadcast message, command 4
+[T] 2017-Aug-07 23:54:23 [0x2] received packet, command code <4>
+[T] 2017-Aug-07 23:54:23 [0x2] [] processPendingTransaction
+[I] 2017-Aug-07 23:54:23 [0x3] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 23:54:23 [0x3] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:23 [0x3] HTTP: resp 200 {"result":{"":-5.98299600,"LitecoinTest":7.25589846},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:23 [0x3] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["LitecoinTest"],"id":1}
+
+[I] 2017-Aug-07 23:54:23 [0x3] HTTP: resp 200 {"result":["Lb8EMPmqaR9GRt9FxMJrUC6Gs5gaami3Dh"],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:23 [0x3] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:23 [0x3] HTTP: resp 200 {"result":{"":87.96323000,"MUETest":0.00000000},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:23 [0x3] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["MUETest"],"id":1}
+
+[I] 2017-Aug-07 23:54:23 [0x3] HTTP: resp 200 {"result":["7V7qUsNWyV1dYxqZqMMaRuQ7osd3YXiQj7"],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:24 [0x3] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 23:54:24 [0x3] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:24 [0x3] HTTP: resp 200 {"result":{"":1.71472737,"NamecoinTest":0.00000000},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:24 [0x3] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["NamecoinTest"],"id":1}
+
+[I] 2017-Aug-07 23:54:24 [0x3] HTTP: resp 200 {"result":["N2H6BXhNBkKriQQYCskKR1Y2GrmQzd9Wux"],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:24 [0x3] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:24 [0x3] HTTP: resp 200 {"result":{"":2.28646495,"DX testaddress":1.85000000},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:24 [0x3] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["DX testaddress"],"id":1}
+
+[I] 2017-Aug-07 23:54:24 [0x3] HTTP: resp 200 {"result":["DSYh1dPSdVowvXtnkur2MQhvG8duwiSWxK"],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:25 [0x3] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 23:54:25 [0x3] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:26 [0x3] HTTP: resp 200 {"result":{"":7.98000000,"PeercoinTest":0.00000000},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:26 [0x3] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["PeercoinTest"],"id":1}
+
+[I] 2017-Aug-07 23:54:26 [0x3] HTTP: resp 200 {"result":["PGr9Dn4tTKy9HdbZcBJ4KL6KHA9bi47Wxg"],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: resp 200 {"result":{"":6.99700000,"QTUM Test":192.00000000},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["QTUM Test"],"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: resp 200 {"result":["QVjBfxGFWQTkbqQbGPPYqeNiA993Nn3eYj"],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: resp 200 {"result":{"":0.00000000,"Redd Test":0.00000000},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["Redd Test"],"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: resp 200 {"result":["RfyiwaK7MzDucZ6rwVAHXhJJHBLAFtwHtu"],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: resp 200 {"result":{"":-1080.200000,"DX testaddress":1149.80000000},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["DX testaddress"],"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: resp 200 {"result":["SWaiTyjWpzVCyKhzxdfny7GU37fd8hd9wM"],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: resp 200 {"result":{"":1.80000000,"DX testaddress":0.00000000},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["DX testaddress"],"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: resp 200 {"result":["SZiTPGoXMzgEZYnDof3wyTABU9dzyPcg7G"],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: resp 200 {"result":{"":255.55737677,"SyscoinTest":106.54299700},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["SyscoinTest"],"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: resp 200 {"result":["1F9oHgid9n5qc8HUpNSFTWRLoXwKh3rxXJ"],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: resp 200 {"result":{"":3.13415111,"ViacoinTest":0.00000000},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["ViacoinTest"],"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: resp 200 {"result":["VcCUQEERivG8bkQTMTeD53B514ibLJ2qbL"],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: resp 200 {"result":{"":3.51169404,"VertcoinTest":0.00000000},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["VertcoinTest"],"id":1}
+
+[I] 2017-Aug-07 23:54:27 [0x3] HTTP: resp 200 {"result":["Viiqs1yXGheZLBm344om73YDuQp89b6Aup"],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:28 [0x3] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 23:54:38 [0x2] received message to 9xX0LvuBbHmaylsJedv50879jIc= command 5
+[I] 2017-Aug-07 23:54:39 [0x2] broadcast message, command 6
+[T] 2017-Aug-07 23:54:39 [0x2] received packet, command code <6>
+[T] 2017-Aug-07 23:54:39 [0x2] [] processTransactionHold
+[I] 2017-Aug-07 23:54:39 [0x2] received message to 9xX0LvuBbHmaylsJedv50879jIc= command 7
+[I] 2017-Aug-07 23:54:39 [0x2] received message to mzu6SGYcA/KSKUBuzNu1IGm82hY= command 8
+[T] 2017-Aug-07 23:54:39 [0x2] received packet, command code <8>
+[T] 2017-Aug-07 23:54:39 [0x2] [SYS] processTransactionInit
+[I] 2017-Aug-07 23:54:40 [0x2] received message to YuUelEMs6SIR5JoM8rgrJ7N+80Y= command 8
+[I] 2017-Aug-07 23:54:40 [0x2] received message to 9xX0LvuBbHmaylsJedv50879jIc= command 9
+[I] 2017-Aug-07 23:54:40 [0x2] received message to ZeJf0khWF0TAJTceYpKKE1jOP08= command 10
+[T] 2017-Aug-07 23:54:40 [0x2] received packet, command code <10>
+[T] 2017-Aug-07 23:54:40 [0x2] [SEQ] processTransactionCreate
+[I] 2017-Aug-07 23:54:40 [0x2] rpc call <listunspent>
+[I] 2017-Aug-07 23:54:40 [0x2] HTTP: req  listunspent {"method":"listunspent","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:40 [0x2] HTTP: resp 200 {"result":[{"txid":"958de869269727bcaab5b0d4e4f6a67b0c8e51bc2b48ccf180e2eaae9b18cb2e","vout":0,"address":"SkQagsidSefbB7rVWjG5RiNDXMbxMrUAk2","scriptPubKey":"76a914fd897bb31fd8f75ba966effe10ec63c3d28957a588ac","amount":69.79800000,"confirmations":7785,"spendable":true}],"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:40 [0x2] USED FOR TX <958de869269727bcaab5b0d4e4f6a67b0c8e51bc2b48ccf180e2eaae9b18cb2e> amount 69.798 0 fee 0.001
+[I] 2017-Aug-07 23:54:40 [0x2] rpc call <getinfo>
+[I] 2017-Aug-07 23:54:40 [0x2] HTTP: req  getinfo {"method":"getinfo","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:40 [0x2] HTTP: resp 200 {"result":{"version":1010000,"protocolversion":70000,"walletversion":60000,"balance":69.79800000,"newmint":0.000000,"stake":0.000000,"blocks":447606,"moneysupply":44878664.29835634,"timeoffset":-10,"connections":16,"proxy":"","difficulty":0.8992549089561864,"testnet":false,"keypoololdest":1498778027,"keypoolsize":999,"encrypted":true,"mintonly":false,"unlocked_until":2502167930,"paytxfee":0.000000,"relayfee":0.000100,"errors":""},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:40 [0x2] rpc call <getnewaddress>
+[I] 2017-Aug-07 23:54:40 [0x2] HTTP: req  getnewaddress {"method":"getnewaddress","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:42 [0x2] HTTP: resp 200 {"result":"SgUfFxpayrMCENw1A8N6a9DydvrEGjdr2L","error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:42 [0x2] rpc call <createrawtransaction>
+[I] 2017-Aug-07 23:54:42 [0x2] HTTP: req  createrawtransaction {"method":"createrawtransaction","params":[[{"txid":"958de869269727bcaab5b0d4e4f6a67b0c8e51bc2b48ccf180e2eaae9b18cb2e","vout":0}],{"SoHEEPrjjMHWAKC2njt9bxcifRYbadHEtG":0.50100000,"SYJPJgnpePkdjqaAv5CttQq4QrW5sDunws":0.00300000,"SgUfFxpayrMCENw1A8N6a9DydvrEGjdr2L":69.29300000}],"id":1}
+
+[I] 2017-Aug-07 23:54:42 [0x2] HTTP: resp 200 {"result":"0100000008448959012ecb189baeeae280f1cc482bbc518e0c7ba6f6e4d4b0b5aabc27972669e88d950000000000ffffffff032077fc020000000017a9141d0ddf5f3275b139fd0e9e6a27be22cd146854a787e0930400000000001976a91478bbf9f1b3f368f0e153d08a0314cb997cd3d2f588ac20ba049d010000001976a914d26e758b8c1856a0dff3f16ee0a7a2d83e74309c88ac00000000","error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:42 [0x2] rpc call <signrawtransaction>
+[I] 2017-Aug-07 23:54:42 [0x2] HTTP: req  signrawtransaction {"method":"signrawtransaction","params":["0100000008448959012ecb189baeeae280f1cc482bbc518e0c7ba6f6e4d4b0b5aabc27972669e88d950000000000ffffffff032077fc020000000017a9141d0ddf5f3275b139fd0e9e6a27be22cd146854a787e0930400000000001976a91478bbf9f1b3f368f0e153d08a0314cb997cd3d2f588ac20ba049d010000001976a914d26e758b8c1856a0dff3f16ee0a7a2d83e74309c88ac00000000",null,null],"id":1}
+
+[I] 2017-Aug-07 23:54:42 [0x2] HTTP: resp 200 {"result":{"hex":"0100000008448959012ecb189baeeae280f1cc482bbc518e0c7ba6f6e4d4b0b5aabc27972669e88d95000000006b483045022100df4223686fed51a51eb505eb596f85868fc06111dd9685eeff2c2781a223924a022067ba53a71c920a424478aeb046b3719d3a11f2b5ed47269540cb1a5dd39968ee012103a88150c6e8499040ffb1306796dfbf1f7c61b4ef2bf9beeaf7d56ccf332e279cffffffff032077fc020000000017a9141d0ddf5f3275b139fd0e9e6a27be22cd146854a787e0930400000000001976a91478bbf9f1b3f368f0e153d08a0314cb997cd3d2f588ac20ba049d010000001976a914d26e758b8c1856a0dff3f16ee0a7a2d83e74309c88ac00000000","complete":true},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:42 [0x2] rpc call <decoderawtransaction>
+[I] 2017-Aug-07 23:54:42 [0x2] HTTP: req  decoderawtransaction {"method":"decoderawtransaction","params":["0100000008448959012ecb189baeeae280f1cc482bbc518e0c7ba6f6e4d4b0b5aabc27972669e88d95000000006b483045022100df4223686fed51a51eb505eb596f85868fc06111dd9685eeff2c2781a223924a022067ba53a71c920a424478aeb046b3719d3a11f2b5ed47269540cb1a5dd39968ee012103a88150c6e8499040ffb1306796dfbf1f7c61b4ef2bf9beeaf7d56ccf332e279cffffffff032077fc020000000017a9141d0ddf5f3275b139fd0e9e6a27be22cd146854a787e0930400000000001976a91478bbf9f1b3f368f0e153d08a0314cb997cd3d2f588ac20ba049d010000001976a914d26e758b8c1856a0dff3f16ee0a7a2d83e74309c88ac00000000"],"id":1}
+
+[I] 2017-Aug-07 23:54:42 [0x2] HTTP: resp 200 {"result":{"txid":"531e3293246020be22dd0ef8fc699f011212de4f9e6b3d66ac91576f03ef53c6","version":1,"locktime":0,"time":1502168072,"vin":[{"txid":"958de869269727bcaab5b0d4e4f6a67b0c8e51bc2b48ccf180e2eaae9b18cb2e","vout":0,"scriptSig":{"asm":"3045022100df4223686fed51a51eb505eb596f85868fc06111dd9685eeff2c2781a223924a022067ba53a71c920a424478aeb046b3719d3a11f2b5ed47269540cb1a5dd39968ee01 03a88150c6e8499040ffb1306796dfbf1f7c61b4ef2bf9beeaf7d56ccf332e279c","hex":"483045022100df4223686fed51a51eb505eb596f85868fc06111dd9685eeff2c2781a223924a022067ba53a71c920a424478aeb046b3719d3a11f2b5ed47269540cb1a5dd39968ee012103a88150c6e8499040ffb1306796dfbf1f7c61b4ef2bf9beeaf7d56ccf332e279c"},"sequence":4294967295}],"vout":[{"value":0.50100000,"n":0,"scriptPubKey":{"asm":"OP_HASH160 1d0ddf5f3275b139fd0e9e6a27be22cd146854a7 OP_EQUAL","hex":"a9141d0ddf5f3275b139fd0e9e6a27be22cd146854a787","reqSigs":1,"type":"scripthash","addresses":["SoHEEPrjjMHWAKC2njt9bxcifRYbadHEtG"]}},{"value":0.300000,"n":1,"scriptPubKey":{"asm":"OP_DUP OP_HASH160 78bbf9f1b3f368f0e153d08a0314cb997cd3d2f5 OP_EQUALVERIFY OP_CHECKSIG","hex":"76a91478bbf9f1b3f368f0e153d08a0314cb997cd3d2f588ac","reqSigs":1,"type":"pubkeyhash","addresses":["SYJPJgnpePkdjqaAv5CttQq4QrW5sDunws"]}},{"value":69.29300000,"n":2,"scriptPubKey":{"asm":"OP_DUP OP_HASH160 d26e758b8c1856a0dff3f16ee0a7a2d83e74309c OP_EQUALVERIFY OP_CHECKSIG","hex":"76a914d26e758b8c1856a0dff3f16ee0a7a2d83e74309c88ac","reqSigs":1,"type":"pubkeyhash","addresses":["SgUfFxpayrMCENw1A8N6a9DydvrEGjdr2L"]}}]},"error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:42 [0x2] rpc call <getnewaddress>
+[I] 2017-Aug-07 23:54:42 [0x2] HTTP: req  getnewaddress {"method":"getnewaddress","params":[],"id":1}
+
+[I] 2017-Aug-07 23:54:43 [0x2] HTTP: resp 200 {"result":"SkTB9Z46inVFREpX219fnkLn9bMD5adtbi","error":null,"id":1}
+
+[I] 2017-Aug-07 23:54:43 [0x2] rpc call <decoderawtransaction>
+[I] 2017-Aug-07 23:54:43 [0x2] HTTP: req  decoderawtransaction {"method":"decoderawtransaction","params":["0100000001c653ef036f5791ac663d6b9e4fde1212019f69fcf80edd22be20602493321e5300000000c0483045022100f1b9868b84fd3465099ecc141bdec19d0ebf20c3ccfc7158cd846ebc74ac05cf022038893e622eaf965127732408b5b5c4a0a09b1ecfd2ac86433fedded3b8071ce501210259b37f4503eb6aaf336d9e64e64b011ca16aae0c5c06741febbd4d4d10c76ea3514c52630378d406b17576a914058af851c7712077d31df9bea6ffc0547e71d07a88ac6776a914df6fb3fa67ed77def98294e48b0804abfc5478fa88ada914f2e87f7223d118d523c13b5cd932d1484e3e230b8768feffffff0180f0fa02000000001976a914fe0714b32d7a0e5f2c5e77fbef4eb5a55cb135d688ac78d40600"],"id":1}
+
+[I] 2017-Aug-07 23:54:43 [0x2] HTTP: resp 500 {"result":null,"error":{"code":-22,"message":"TX decode failed"},"id":1}
+
+[I] 2017-Aug-07 23:54:43 [0x2] error: {"code":-22,"message":"TX decode failed"}
+[I] 2017-Aug-07 23:54:43 [0x2] decode signed transaction error, transaction canceled processTransactionCreate
+[I] 2017-Aug-07 23:54:43 [0x2] cancel transaction <a7b6be72bb3ada0bcafcbc476702cc5916d910f51331f7575132cbc25a20af63>
+```
+
+ * TAKER LOG:
+```
+[I] 2017-Aug-07 22:54:23 [0x1] HTTP: resp 200 {"result":[{"txid":"0f85c55d26e2d7b07e0bce816499ff1661e6b269e389529c8fee18a32643be1b","vout":2,"address":"Sbxd4x4FnJzbFGdapFKoiMxh4zBxRqyztX","v2address":"1Ffd37H73woPixr8GpLjATp8RCxXcNs8y4","account":"","scriptPubKey":"76a914a0dfa62eb2485183e2b75d8d6ba80852d3f6e38a88ac","amount":68.97999200,"confirmations":23409,"spendable":true,"solvable":true},{"txid":"1b429eceb7fde8ec155c43aeb9fb6ab9f814767c9ff4bc070a819a2a86fd519b","vout":1,"address":"ShAF9TmFCTQtRzTcsZjyr63VKyT5wBzXWS","v2address":"1LsF7cz6U6DguggAL8kuJBtvgCDfCUupFW","account":"","scriptPubKey":"76a914d9eaf849d0363217ca31ceec0fd49083edfc734c88ac","amount":0.00300000,"confirmations":23993,"spendable":true,"solvable":true},{"txid":"80651921aa40eba9dbe3a563530752a4d343d314e55e867c3628622f6a33ecbb","vout":1,"address":"ShAF9TmFCTQtRzTcsZjyr63VKyT5wBzXWS","v2address":"1LsF7cz6U6DguggAL8kuJBtvgCDfCUupFW","account":"","scriptPubKey":"76a914d9eaf849d0363217ca31ceec0fd49083edfc734c88ac","amount":0.00300000,"confirmations":23937,"spendable":true,"solvable":true},{"txid":"36f590f2f707de7e13941a46eca16b88fc9af364fbe97d60271e987bd5de95d0","vout":2,"address":"SfWjtYYg9RR95CuNUjpGaeny82x685NyHG","v2address":"1KDjrhmXR4DwYu7uwJqC2keQUFifKCF7VU","account":"","scriptPubKey":"76a914c7db07e4420d6ff99bfc6127a417bee51e58963a88ac","amount":3.68719360,"confirmations":24720,"spendable":true,"solvable":true},{"txid":"b75d742be3b652bd9f618e61fc2b1e11903298bcfac26929c50e2976d509abe6","vout":1,"address":"ShAF9TmFCTQtRzTcsZjyr63VKyT5wBzXWS","v2address":"1LsF7cz6U6DguggAL8kuJBtvgCDfCUupFW","account":"","scriptPubKey":"76a914d9eaf849d0363217ca31ceec0fd49083edfc734c88ac","amount":0.00300000,"confirmations":23874,"spendable":true,"solvable":true}],"error":null,"id":1}
+
+[I] 2017-Aug-07 22:54:23 [0x4] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 22:54:24 [0x4] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 22:54:25 [0x4] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 22:54:27 [0x4] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 22:54:28 [0x4] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 22:54:28 [0x1] rpc call <listunspent>
+[I] 2017-Aug-07 22:54:28 [0x1] HTTP: req  listunspent {"method":"listunspent","params":[],"id":1}
+
+[I] 2017-Aug-07 22:54:28 [0x1] HTTP: resp 200 {"result":[],"error":null,"id":1}
+
+[I] 2017-Aug-07 22:54:29 [0x4] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 22:54:30 [0x4] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 22:54:30 [0x4] HTTP: req  listaccounts {"method":"listaccounts","params":[],"id":1}
+
+[I] 2017-Aug-07 22:54:30 [0x4] HTTP: resp 200 {"result":{"":0.00000000,"ppcTEST":0.00000000},"error":null,"id":1}
+
+[I] 2017-Aug-07 22:54:30 [0x4] HTTP: req  getaddressesbyaccount {"method":"getaddressesbyaccount","params":["ppcTEST"],"id":1}
+
+[I] 2017-Aug-07 22:54:30 [0x4] HTTP: resp 200 {"result":["PLjyQTB6mk4NdPps6Da7Zo8FdKfx8N5cfv"],"error":null,"id":1}
+
+[I] 2017-Aug-07 22:54:30 [0x1] rpc call <listunspent>
+[I] 2017-Aug-07 22:54:30 [0x1] HTTP: req  listunspent {"method":"listunspent","params":[],"id":1}
+
+[I] 2017-Aug-07 22:54:30 [0x1] HTTP: resp 200 {"result":[{"txid":"0f85c55d26e2d7b07e0bce816499ff1661e6b269e389529c8fee18a32643be1b","vout":2,"address":"Sbxd4x4FnJzbFGdapFKoiMxh4zBxRqyztX","v2address":"1Ffd37H73woPixr8GpLjATp8RCxXcNs8y4","account":"","scriptPubKey":"76a914a0dfa62eb2485183e2b75d8d6ba80852d3f6e38a88ac","amount":68.97999200,"confirmations":23409,"spendable":true,"solvable":true},{"txid":"1b429eceb7fde8ec155c43aeb9fb6ab9f814767c9ff4bc070a819a2a86fd519b","vout":1,"address":"ShAF9TmFCTQtRzTcsZjyr63VKyT5wBzXWS","v2address":"1LsF7cz6U6DguggAL8kuJBtvgCDfCUupFW","account":"","scriptPubKey":"76a914d9eaf849d0363217ca31ceec0fd49083edfc734c88ac","amount":0.00300000,"confirmations":23993,"spendable":true,"solvable":true},{"txid":"80651921aa40eba9dbe3a563530752a4d343d314e55e867c3628622f6a33ecbb","vout":1,"address":"ShAF9TmFCTQtRzTcsZjyr63VKyT5wBzXWS","v2address":"1LsF7cz6U6DguggAL8kuJBtvgCDfCUupFW","account":"","scriptPubKey":"76a914d9eaf849d0363217ca31ceec0fd49083edfc734c88ac","amount":0.00300000,"confirmations":23937,"spendable":true,"solvable":true},{"txid":"36f590f2f707de7e13941a46eca16b88fc9af364fbe97d60271e987bd5de95d0","vout":2,"address":"SfWjtYYg9RR95CuNUjpGaeny82x685NyHG","v2address":"1KDjrhmXR4DwYu7uwJqC2keQUFifKCF7VU","account":"","scriptPubKey":"76a914c7db07e4420d6ff99bfc6127a417bee51e58963a88ac","amount":3.68719360,"confirmations":24720,"spendable":true,"solvable":true},{"txid":"b75d742be3b652bd9f618e61fc2b1e11903298bcfac26929c50e2976d509abe6","vout":1,"address":"ShAF9TmFCTQtRzTcsZjyr63VKyT5wBzXWS","v2address":"1LsF7cz6U6DguggAL8kuJBtvgCDfCUupFW","account":"","scriptPubKey":"76a914d9eaf849d0363217ca31ceec0fd49083edfc734c88ac","amount":0.00300000,"confirmations":23874,"spendable":true,"solvable":true}],"error":null,"id":1}
+
+[I] 2017-Aug-07 22:54:31 [0x4] listaccounts exception couldn't connect to server
+[I] 2017-Aug-07 22:54:31 [0x2] broadcast message, command 6
+[T] 2017-Aug-07 22:54:31 [0x2] received packet, command code <6>
+[T] 2017-Aug-07 22:54:31 [0x2] [] processTransactionHold
+[I] 2017-Aug-07 22:54:31 [0x2] received message to 9xX0LvuBbHmaylsJedv50879jIc= command 7
+[I] 2017-Aug-07 22:54:31 [0x2] received message to mzu6SGYcA/KSKUBuzNu1IGm82hY= command 8
+[I] 2017-Aug-07 22:54:31 [0x2] received message to YuUelEMs6SIR5JoM8rgrJ7N+80Y= command 8
+[T] 2017-Aug-07 22:54:31 [0x2] received packet, command code <8>
+[T] 2017-Aug-07 22:54:31 [0x2] [SEQ] processTransactionInit
+
+[I] 2017-Aug-07 22:54:36 [0x2] broadcast message, command 22
+[T] 2017-Aug-07 22:54:36 [0x2] received packet, command code <22>
+```
+
+ * SERVICE NODE:
+```[I] 2017-Aug-07 23:54:09 [0x2] broadcast message, command 3
+[T] 2017-Aug-07 23:54:09 [0x2] received packet, command code <3>
+[T] 2017-Aug-07 23:54:09 [0x2] [] processTransaction
+[I] 2017-Aug-07 23:54:09 [0x2] received transaction Y68gWsLLMlFX9zET9RDZFlnMAmdHvPzKC9o6u3K+tqc=
+    from SWaiTyjWpzVCyKhzxdfny7GU37fd8hd9wM
+             SEQ : 500000
+    to   1F9oHgid9n5qc8HUpNSFTWRLoXwKh3rxXJ
+             SYS : 500000
+[T] 2017-Aug-07 23:54:09 [0x2] createTransaction
+[I] 2017-Aug-07 23:54:09 [0x2] 47c9aa6320c3d67630df0c57547c2649978ed98be7cd912cc8c758d7714475d3
+[I] 2017-Aug-07 23:54:09 [0x2] 81d4afe1193838faaf2559bac6a09199f93c0a7ce9eeb8bff5a9789284ef8522
+[I] 2017-Aug-07 23:54:09 [0x2] transaction created, id Y68gWsLLMlFX9zET9RDZFlnMAmdHvPzKC9o6u3K+tqc=
+[I] 2017-Aug-07 23:54:09 [0x2] broadcast message, command 22
+[T] 2017-Aug-07 23:54:09 [0x2] received packet, command code <22>
+[I] 2017-Aug-07 23:54:09 [0x2] delete pending transaction <a7b6be72bb3ada0bcafcbc476702cc5916d910f51331f7575132cbc25a20af63>
+[I] 2017-Aug-07 23:54:09 [0x2] Nothing to add to transactions history
+[I] 2017-Aug-07 23:54:09 [0x2] unknown transaction Y68gWsLLMlFX9zET9RDZFlnMAmdHvPzKC9o6u3K+tqc= processTransactionCancel
+[I] 2017-Aug-07 23:54:09 [0x2] broadcast message, command 22
+[T] 2017-Aug-07 23:54:09 [0x2] received packet, command code <22>
+[I] 2017-Aug-07 23:54:09 [0x2] delete pending transaction <a7b6be72bb3ada0bcafcbc476702cc5916d910f51331f7575132cbc25a20af63>
+[I] 2017-Aug-07 23:54:09 [0x2] Nothing to add to transactions history
+[I] 2017-Aug-07 23:54:09 [0x2] unknown transaction Y68gWsLLMlFX9zET9RDZFlnMAmdHvPzKC9o6u3K+tqc= processTransactionCancel
+[I] 2017-Aug-07 23:54:29 [0x2] received message to 9xX0LvuBbHmaylsJedv50879jIc= command 5
+[T] 2017-Aug-07 23:54:29 [0x2] received packet, command code <5>
+[T] 2017-Aug-07 23:54:29 [0x2] [] processTransactionAccepting
+[I] 2017-Aug-07 23:54:29 [0x2] received accepting transaction 9xX0LvuBbHmaylsJedv50879jIdjryBawssyUVf3MRM=
+    from 1c5Sqp8uHydjsQmg9Qrt2oL5pzRMqNdcD
+             SYS : 500000
+    to   SWJuj94678vkagEV8JkmL3j7gerb1AwSJq
+             SEQ : 500000
+[T] 2017-Aug-07 23:54:29 [0x2] acceptTransaction
+[I] 2017-Aug-07 23:54:29 [0x2] 81d4afe1193838faaf2559bac6a09199f93c0a7ce9eeb8bff5a9789284ef8522
+[I] 2017-Aug-07 23:54:29 [0x2] 47c9aa6320c3d67630df0c57547c2649978ed98be7cd912cc8c758d7714475d3
+[T] 2017-Aug-07 23:54:29 [0x2] tryJoin
+[I] 2017-Aug-07 23:54:29 [0x2] transactions joined, new id <1331f7575132cbc25a20af63878cfdced3f9db79095bca9a796c81fb2ef415f7>
+[I] 2017-Aug-07 23:54:29 [0x2] send xbcTransactionHold 
+[I] 2017-Aug-07 23:54:29 [0x2] received message to 9xX0LvuBbHmaylsJedv50879jIc= command 7
+[T] 2017-Aug-07 23:54:29 [0x2] received packet, command code <7>
+[T] 2017-Aug-07 23:54:29 [0x2] [] processTransactionHoldApply
+[I] 2017-Aug-07 23:54:29 [0x2] confirm transaction state <trJoined> from 1c5Sqp8uHydjsQmg9Qrt2oL5pzRMqNdcD
+[I] 2017-Aug-07 23:54:29 [0x2] received message to 9xX0LvuBbHmaylsJedv50879jIc= command 7
+[T] 2017-Aug-07 23:54:29 [0x2] received packet, command code <7>
+[T] 2017-Aug-07 23:54:29 [0x2] [] processTransactionHoldApply
+[I] 2017-Aug-07 23:54:29 [0x2] confirm transaction state <trJoined> from SWaiTyjWpzVCyKhzxdfny7GU37fd8hd9wM
+[I] 2017-Aug-07 23:54:29 [0x2] send xbcTransactionInit to 1F9oHgid9n5qc8HUpNSFTWRLoXwKh3rxXJ
+[I] 2017-Aug-07 23:54:29 [0x2] send xbcTransactionInit to SWJuj94678vkagEV8JkmL3j7gerb1AwSJq
+[I] 2017-Aug-07 23:54:30 [0x2] received message to 9xX0LvuBbHmaylsJedv50879jIc= command 9
+[T] 2017-Aug-07 23:54:30 [0x2] received packet, command code <9>
+[T] 2017-Aug-07 23:54:30 [0x2] [] processTransactionInitialized
+[I] 2017-Aug-07 23:54:30 [0x2] confirm transaction state <trHold> from SWJuj94678vkagEV8JkmL3j7gerb1AwSJq
+[I] 2017-Aug-07 23:54:31 [0x2] received message to 9xX0LvuBbHmaylsJedv50879jIc= command 9
+[T] 2017-Aug-07 23:54:31 [0x2] received packet, command code <9>
+[T] 2017-Aug-07 23:54:31 [0x2] [] processTransactionInitialized
+[I] 2017-Aug-07 23:54:31 [0x2] confirm transaction state <trHold> from 1F9oHgid9n5qc8HUpNSFTWRLoXwKh3rxXJ
+[I] 2017-Aug-07 23:54:31 [0x2] send xbcTransactionCreate to SWaiTyjWpzVCyKhzxdfny7GU37fd8hd9wM
+[I] 2017-Aug-07 23:54:34 [0x2] broadcast message, command 22
+[T] 2017-Aug-07 23:54:34 [0x2] received packet, command code <22>
+[I] 2017-Aug-07 23:54:34 [0x2] delete pending transaction <a7b6be72bb3ada0bcafcbc476702cc5916d910f51331f7575132cbc25a20af63>
+[I] 2017-Aug-07 23:54:34 [0x2] Nothing to add to transactions history
+[I] 2017-Aug-07 23:54:34 [0x2] unknown transaction Y68gWsLLMlFX9zET9RDZFlnMAmdHvPzKC9o6u3K+tqc= processTransactionCancel
+```
 
 #### Possible Solution(s):
  * User configuration parameter error
