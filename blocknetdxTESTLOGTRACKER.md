@@ -32,7 +32,7 @@ This is community based testing and the information will be relayed to the devel
 
 
 ## Sequence [SEQ]
-#### Issue #1:
+#### Issue #1 (code 22 TX decode failed):
  * After a successful TX posting there is Block movement. No coin movement after accepted TX. TX cancels.
  
  * See log's below:
@@ -52,7 +52,7 @@ This is community based testing and the information will be relayed to the devel
 
 ## BitBay [BAY]
 
-#### Issue #1:
+#### Issue #1 (code 22 TX decode failed):
  * After a successful TX posting there is Block movement. No coin movement after accepted TX. TX cancels.
  
  * See log's below:
@@ -72,7 +72,7 @@ This is community based testing and the information will be relayed to the devel
 
 ## Stratis [STRAT]
 
-#### Issue #1:
+#### Issue #1 (code 22 TX decode failed):
  * After a successful TX posting there is Block movement. No coin movement after accepted TX. TX cancels.
  
  * See log's below:
@@ -91,7 +91,7 @@ This is community based testing and the information will be relayed to the devel
  *  
 
 ## Feathercoin [FTC]
-#### Issue #1:
+#### Issue #1 (code 5 no info about tx) & (code 25) :
  * After a successful TX FTC/SYS posting and TX acceptance there is Block movement
  * TX maker sends FTC out successfully
  * TX taker sends SYS out successfully
@@ -117,7 +117,7 @@ This is community based testing and the information will be relayed to the devel
 
 ## Quarkcoin [QRK]
 
-#### Issue #1:
+#### Issue #1 (code 26 insufficient priority):
  * After a successful TX QRK/SYS posting and TX acceptance there is Block movement
  * TX maker sends QRK out successfully
  * TX taker sends SYS out successfully
@@ -143,7 +143,7 @@ This is community based testing and the information will be relayed to the devel
 
 ## Blackcoin [BLK]
 
-#### Issue #1:
+#### Issue #1 (code 22 TX decode failed):
  * After a successful TX posting there is Block movement. No coin movement after accepted TX. TX cancels.
  
  * See log's below:
@@ -208,7 +208,7 @@ This is community based testing and the information will be relayed to the devel
 
 ## Peercoin [PPC]
 
-#### Issue #1:
+#### Issue #1 (code 22 TX decode failed):
  * After a successful TX posting there is Block movement. No coin movement after accepted TX. TX cancels.
  
  * See log's below:
@@ -228,7 +228,7 @@ This is community based testing and the information will be relayed to the devel
 
 ## Bitconnect [BCC]
 
-#### Issue #1:
+#### Issue #1 (code 22 TX decode failed):
  * After a successful TX posting there is Block movement. No coin movement after accepted TX. TX cancels.
  
  * See log's below:
@@ -249,7 +249,7 @@ This is community based testing and the information will be relayed to the devel
 ## Groestlcoin [GRS]
 
 #### Issue #1:
- * After a successful TX posting there is no block or coin movement. Stays in "Hold" status. 
+ *  
  
  * See log's below:
  
@@ -330,7 +330,7 @@ This is community based testing and the information will be relayed to the devel
 
 ## GameCredits [GAME]
 
-#### Issue #1:
+#### Issue #1 (code 25):
  * After a successful TX GAME/SYS posting and TX acceptance there is Block movement
  * TX maker sends GAME out successfully
  * TX taker sends SYS out successfully
@@ -356,7 +356,7 @@ This is community based testing and the information will be relayed to the devel
 
 ## Reddcoin [RDD]
 
-#### Issue #1:
+#### Issue #1 (code 26):
  * After a successful TX RDD/SYS posting and TX acceptance there is Block movement
  * TX maker sends RDD out successfully
  * TX taker sends SYS out successfully
