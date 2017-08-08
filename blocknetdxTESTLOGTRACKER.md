@@ -118,7 +118,13 @@ This is community based testing and the information will be relayed to the devel
 ## Quarkcoin [QRK]
 
 #### Issue #1:
- * After a successful TX posting there is Block movement. No coin movement after accepted TX. TX cancels.
+ * After a successful TX QRK/SYS posting and TX acceptance there is Block movement
+ * TX maker sends QRK out successfully
+ * TX taker sends SYS out successfully
+ * TX maker receives SYS successfully
+ * TX taker does not receive QRK
+ * DX status stays in a "Created" state
+ * QRK stuck in P2SH Hash
  
  * See log's below:
  
