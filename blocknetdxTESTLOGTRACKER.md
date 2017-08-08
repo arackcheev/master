@@ -429,7 +429,7 @@ This is community based testing and the information will be relayed to the devel
   
    * [Taker Log](https://drive.google.com/open?id=0By-umY3NmpLVazhPcmRTWVhEUms)
   
-   * [Node Log](
+   * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVSl9ZZzV2ejR5YVU)
  
 #### Possible Solution(s):
  * User configuration parameter error
