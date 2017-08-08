@@ -122,11 +122,11 @@ This is community based testing and the information will be relayed to the devel
  
  * See log's below:
  
-   * [Maker Log](
+   * [Maker Log](https://drive.google.com/open?id=0By-umY3NmpLVZ0JEdHhQejU3bmc)
   
-   * [Taker Log](
+   * [Taker Log](https://drive.google.com/open?id=0By-umY3NmpLVbEVoUFBDV2lTNVk)
   
-   * [Node Log](
+   * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVcmR4bGRJekF0aWs)
 
  #### Possible Solution(s):
  * User configuration parameter error
@@ -150,8 +150,8 @@ This is community based testing and the information will be relayed to the devel
  
 #### Possible Solution(s):
  * User configuration parameter error
- 
- 
+ * Using new Lore client, not old QT client. Try old client?
+  
 #### Dev Feedback/Status Update:
  *  
 
