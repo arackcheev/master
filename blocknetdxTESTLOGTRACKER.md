@@ -379,7 +379,84 @@ This is community based testing and the information will be relayed to the devel
  
 #### Dev Feedback/Status Update:
  *  
+ 
+## Cloakcoin [CLOAK]
 
+#### Issue #1 (code 22 TX decode failed):
+ * After a successful TX posting there is Block movement. No coin movement after accepted TX. TX cancels.
+ 
+ * See log's below:
+ 
+   * [Maker Log](https://drive.google.com/open?id=0By-umY3NmpLVVnBVcFdHQ2pOX2s)
+  
+   * [Taker Log](https://drive.google.com/open?id=0By-umY3NmpLVMkVNeU41SEplMzA)
+  
+   * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVaV9BV1BGVjJiamc)
+
+ #### Possible Solution(s):
+ * User configuration parameter error
+ 
+ 
+#### Dev Feedback/Status Update:
+ *   
+ 
+## CLAMcoin [CLAMS]
+
+#### Issue #1 (code 22 TX decode failed):
+ * After a successful TX posting there is Block movement. No coin movement after accepted TX. TX cancels.
+ 
+ * See log's below:
+ 
+   * [Maker Log](https://drive.google.com/open?id=0By-umY3NmpLVWE1CcHljeTc5SEk)
+  
+   * [Taker Log](https://drive.google.com/open?id=0By-umY3NmpLVYTRwWHY0bWVwU2s)
+  
+   * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVTVlNSGdKNjZCUW8)
+
+ #### Possible Solution(s):
+ * User configuration parameter error
+ 
+ #### Dev Feedback/Status Update:
+ *
+ 
+## LEOcoin [LEO]
+
+#### Issue #1 (code 22 TX decode failed):
+ * After a successful TX posting there is Block movement. No coin movement after accepted TX. TX cancels.
+ 
+ * See log's below:
+ 
+   * [Maker Log](https://drive.google.com/open?id=0By-umY3NmpLVSWdLNjJhMmVkbms)
+  
+   * [Taker Log](https://drive.google.com/open?id=0By-umY3NmpLVZlF5blNtdWx3NzA)
+  
+   * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVSVkxVEN0dkk3Q3c)
+
+ #### Possible Solution(s):
+ * User configuration parameter error
+ 
+ #### Dev Feedback/Status Update:
+ *
+ 
+## Nubits [NBT]
+
+#### Issue #1 (code 22 TX decode failed):
+ * After a successful TX posting there is Block movement. No coin movement after accepted TX. TX cancels.
+ 
+ * See log's below:
+ 
+   * [Maker Log](https://drive.google.com/open?id=0By-umY3NmpLVUWV0eW0tYUxEZUk)
+  
+   * [Taker Log](https://drive.google.com/open?id=0By-umY3NmpLVYWNBbThfRmhfSzQ)
+  
+   * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVOTZ2dDBjeVdoNnc)
+
+ #### Possible Solution(s):
+ * User configuration parameter error
+ 
+ #### Dev Feedback/Status Update:
+ *
+ 
 ## XCurrency [XC]
 #### Issue #1:
 * Unsure if Xcurrency has CLTV support yet
