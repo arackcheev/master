@@ -30,7 +30,7 @@ This is community based testing and the information will be relayed to the devel
 | BCN   |       |           |          |            |                 |                     |                     |                      |
 | NXT   |PROBABLE|PROBABLE  |          |            |                 |                     |                     |NOT LOOKED INTO YET   |
 
-
+---
 ## Sequence [SEQ]
 #### Issue #1 (code 22 TX decode failed):
  * After a successful TX posting there is Block movement. No coin movement after accepted TX. TX cancels.
@@ -49,6 +49,8 @@ This is community based testing and the information will be relayed to the devel
  
 #### Dev Feedback/Status Update:
  * Contacted DYN/SEQ source to see if we can get assitance on SEQ. Possibly SEQ isn't CLTV but DYN is? 
+
+---
 
 ## BitBay [BAY]
 
@@ -69,6 +71,8 @@ This is community based testing and the information will be relayed to the devel
  
 #### Dev Feedback/Status Update:
  *  
+
+---
 
 ## Stratis [STRAT]
 
@@ -160,31 +164,6 @@ This is community based testing and the information will be relayed to the devel
   
 #### Dev Feedback/Status Update:
  *  
-
-## Stealthcoin [XST]
-#### Issue #1:
-* Waiting on new windows client w/ updated CLTV codework 
-
-#### Possible Solution(s):
-* Wait for release of new wallet client, then begin testing
-
-#### Dev Feedback/Status Update:
-* Forthcoming...
-
-## Breakoutcoin [BRK]
-
-## Breakoutstake [BRX]
-
-## Bitswift [SWIFT]
-#### Issue #1:
-* No CLTV support yet
-
-#### Possible Solution(s):
-* CLTV is currently being implemented into BitSwift
-* Once new wallet is out testing can begin
-
-#### Dev Feedback/Status Update:
-* Forthcoming...
 
 ## Potcoin [POT]
 
@@ -456,7 +435,36 @@ This is community based testing and the information will be relayed to the devel
  
  #### Dev Feedback/Status Update:
  *
- 
+
+---
+---
+# Future Coin's
+
+## Stealthcoin [XST]
+#### Issue #1:
+* Waiting on new windows client w/ updated CLTV codework 
+
+#### Possible Solution(s):
+* Wait for release of new wallet client, then begin testing
+
+#### Dev Feedback/Status Update:
+* Forthcoming...
+
+## Breakoutcoin [BRK]
+
+## Breakoutstake [BRX]
+
+## Bitswift [SWIFT]
+#### Issue #1:
+* No CLTV support yet
+
+#### Possible Solution(s):
+* CLTV is currently being implemented into BitSwift
+* Once new wallet is out testing can begin
+
+#### Dev Feedback/Status Update:
+* Forthcoming...
+
 ## XCurrency [XC]
 #### Issue #1:
 * Unsure if Xcurrency has CLTV support yet
