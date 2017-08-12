@@ -30,7 +30,6 @@ This is community based testing and the information will be relayed to the devel
 | BCN   |       |           |          |            |                 |                     |                     |                      |
 | NXT   |PROBABLE|PROBABLE  |          |            |                 |                     |                     |NOT LOOKED INTO YET   |
 
----
 ## Sequence [SEQ]
 #### Issue #1 (code 22 TX decode failed):
  * After a successful TX posting there is Block movement. No coin movement after accepted TX. TX cancels.
@@ -49,8 +48,6 @@ This is community based testing and the information will be relayed to the devel
  
 #### Dev Feedback/Status Update:
  * Contacted DYN/SEQ source to see if we can get assitance on SEQ. Possibly SEQ isn't CLTV but DYN is? 
-
----
 
 ## BitBay [BAY]
 
@@ -71,8 +68,6 @@ This is community based testing and the information will be relayed to the devel
  
 #### Dev Feedback/Status Update:
  *  
-
----
 
 ## Stratis [STRAT]
 
