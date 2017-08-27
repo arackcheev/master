@@ -145,6 +145,8 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 ## Setup  .conf Files for the Wallets of Your Trading Coins:
 The wallet of each coin you want to trade needs to be configured with a username/password and an allow from IP, if you’re using only a local machine use IP:127.0.0.1
 
+ * To see a list of various wallet configurations go to: [Wallet Configurations](https://github.com/BlocknetDX/blocknet-docs/blob/master/walletsCONF.md)
+
  * Download the latest wallet, let it sync up fully, then close the wallet.
 
  * Click the START button on your desktop, where it says “Search program and files” then type “%appdata%” and the “Roaming” directory should pop up. Click on “Roaming” or hit enter.
