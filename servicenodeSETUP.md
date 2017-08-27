@@ -129,7 +129,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
    
 ### TROUBLESHOOTING
 
-* Ensure your servicenode.conf information is correct to your settings
+* Ensure your `servicenode.conf` information is correct to your settings
 
 * Ensure  you dont have "< >" in any of the configuration files : (ex: `servicenodeaddr=<your_public_IP:41474>` should be `servicenodeaddr=127.0.0.1:41474`. "127.0.0.1 is an example IP address")
 
@@ -208,7 +208,7 @@ The Blocknet’s Xbridge technology is integrated into the latest client release
 
  * To see the full list of coin .conf's see: [xbridge.conf](https://github.com/BlocknetDX/blocknet-docs/blob/master/xbridgeCONF.md)
 
- * Create/edit an `xbridge.conf` file and place the following configuration file in the blocknet wallet data directory (for Windows) C:\Users\[yourusername]\AppData\Roaming\blocknetdx\:
+ * Create/edit an `xbridge.conf` file and place the following configuration file in the blocknet wallet data directory (for Windows) C:\Users\[yourusername]\AppData\Roaming\blocknetdx\
 
  * Note: to avoid crashes or failed trades, please edit your `xbridge.conf` to feature only and all the coins you wish to have on your service node
 
@@ -220,10 +220,10 @@ The Blocknet’s Xbridge technology is integrated into the latest client release
 
     * Open Task Manager and go to the “details” tab
     * Locate the relevant wallet and make a note of its PID.
-    * Run Command Prompt and type “netstat -ano | field “[PID]”.D]”.
-    * Look for an entry like the following: TCP	0.0.0.0:9332   0.0.0.0:0     LISTENING   	5336
+    * Run Command Prompt and type `netstat -ano | field “[PID]”.D]`
+    * Look for an entry like the following: `TCP	0.0.0.0:9332   0.0.0.0:0     LISTENING   	5336`
 
- * The number after the colons in the IP address is the port to use (here, “9332”). Type it into xbridge.conf at the `Port=` line.
+ * The number after the colons in the IP address is the port to use (here, “9332”). Type it into `xbridge.conf` at the `Port=` line.
 
  * Note: wallets open different ports to connect to peers over the internet, and other ports on localhost for various purposes. The port you are looking for is a four-digit number after either the zero address (0.0.0.0) or localhost (127.0.0.1). The other ports use five-digit numbers.
  
@@ -257,15 +257,15 @@ As the wallet starts up, you’ll see the DX initialise using the values you ent
  
 ![alt text](https://github.com/Aderks/master/blob/master/pictures/resp200.PNG "Logo Title Text 1") 
 
- * Note: If, amidst the “HTTP: resp 200” messages, you see a message similar to [I] 2017-Apr-19 17:48:31 [0x2],listaccounts exception couldn't connect to server, then it is likely that at least one of your specified trading wallets have not been run.
+ * Note: If, amidst the “HTTP: resp 200” messages, you see a message similar to `[I] 2017-Apr-19 17:48:31 [0x2],listaccounts exception couldn't connect to server`, then it is likely that at least one of your specified trading wallets have not been run.
 
- * Note: If you fail to get “HTTP: resp 200” messages, it’s possible that the ports assigned to wallets differ from those specified in your .conf file. To check this, open Command Prompt, type netstat -an, and take a look which ports are being used over localhost (127.0.0.1), or sometimes over 0.0.0.0.
+ * Note: If you fail to get “HTTP: resp 200” messages, it’s possible that the ports assigned to wallets differ from those specified in your .conf file. To check this, open Command Prompt, type `netstat -an`, and take a look which ports are being used over localhost (127.0.0.1), or sometimes over 0.0.0.0.
  
  
 ## Problem Diagnosis
 * To verify that each wallet is communicating with xbridge make sure the created receive addresses for each wallet is listed in the address book. If this part fails, close your wallets and review their configuration files. 
 
-* Verify the ports are actually open. You may use Command Prompt to do so by typing in “netstat -an” and reviewing the print. Check that the ports you specified in the .conf files (8332 for Bitcoin and 8370 for SYS) are open over localhost (127.0.0.1).
+* Verify the ports are actually open. You may use Command Prompt to do so by typing in `netstat -an` and reviewing the print. Check that the ports you specified in the .conf files (ex: 8332 for Bitcoin) are open over localhost (127.0.0.1).
 
 * Check that no OS-based firewall is blocking communication. You may do this through your firewall’s interface.
 
