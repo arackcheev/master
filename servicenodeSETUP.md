@@ -76,7 +76,9 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
      * ex: `mn1 127.0.0.2:41474 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0`   
    
    * Enter your generated information from above in the format showed in the example:
-     * ex: `snode01 <your_public_IP:41474> <your_servicenode_private_key> <collateral_TX_ouput> <TX_ouput_index>`
+   ```
+   snode01 <your_public_IP:41474> <your_servicenode_private_key> <collateral_TX_ouput> <TX_ouput_index>
+   ```
    
    * Save the `servicenode.conf` and restart the wallet. Fully unlock the wallet.
    
