@@ -108,7 +108,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 
 * On the CLIENT computer navigate to the "Servicenodes" button on the GUI. If the setups were done correctly you should see all of your "Aliases"
 
-* Click your Alias (ex: snode01), and then at the bottom click "Start alias" button on the GUI.
+* Click your Alias (ex: snode01), and then at the bottom click "Start alias" on the GUI.
    * You should see a successful popup window. The status of your node should be "ENABLED" and show an "Active time"
    
 ![alt text](https://github.com/Aderks/master/blob/master/pictures/snode_alias.PNG "Logo Title Text 1")    
