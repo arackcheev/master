@@ -36,7 +36,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 
 * The latest wallet of each currency you want to support on your service node (fully synced, encrypted)
 
-* Properly configured .conf files each wallet
+* Properly configured .conf files for each wallet
 
 
 ## Service Node Setup
