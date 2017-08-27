@@ -146,7 +146,8 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 
 * Ensure you dont have "< >" in any of the configuration files : (ex: `servicenodeaddr=<your_public_IP:41474>` should be `servicenodeaddr=127.0.0.1:41474`. "127.0.0.1 is an example IP address")
    * Ensure you are using the correct IP PORT #
-     * Main-net=????? Test-net=41474
+     * Main-net=????? 
+     * Test-net=41474
 
 * Ensure on the CLIENT computer you only have a `servicenode.conf`, the `blocknetdx.conf` is not needed on the CLIENT computer
    * For testnet ensure `servicenode.conf` is located in `/testnet4/`
@@ -166,27 +167,28 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 ## Setup  .conf Files for the Wallets of Your Trading Coins:
 The wallet of each coin you want to trade needs to be configured with a username/password and an allow from IP, if you’re using only a local machine use IP:127.0.0.1
 
- * To see a list of various wallet configurations go to: [Wallet Configurations](https://github.com/BlocknetDX/blocknet-docs/blob/master/walletsCONF.md)
+ * To see the full list of compatible wallet configurations go to: [Wallet Configurations](https://github.com/BlocknetDX/blocknet-docs/blob/master/walletsCONF.md)
 
- * Download the latest wallet, let it sync up fully, then close the wallet.
+ * Download the latest wallet, let it sync up fully, then close the wallet
 
- * Click the START button on your desktop, where it says “Search program and files” then type “%appdata%” and the “Roaming” directory should pop up. Click on “Roaming” or hit enter.
+ * Click the START button on your desktop, where it says “Search program and files” then type “%appdata%” and the “Roaming” directory should pop up. Click on “Roaming” or hit enter
 
  * Find your wallet’s designated data directory folder, ex: Bitcoin
 
  * If you don’t have a .conf file started you will need to open up Notepad to create one.
 
- * Copy and paste the following (this can be added to what is already present in file if you have “addnodes” or other configurations in here already):
-
-```
-server=1
-listen=1
-rpcuser=yourusername
-rpcpassword=yourpassword
-rpcallowip=127.0.0.1
-enableaccounts=1 (required for BitBay and Syscoin; probably fine for other wallets)
-staking=0 (required for BitBay and Syscoin; probably fine for other wallets)
-```
+ * Navigate to [Wallet Configurations](https://github.com/BlocknetDX/blocknet-docs/blob/master/walletsCONF.md) and copy/paste the configuration information for the wallet you are running. (this can be added to what is already present in file if you have “addnodes” or other configurations already):
+   * Ex: bitcoin.conf
+   
+   ```
+   server=1
+   listen=1
+   rpcuser=yourusername
+   rpcpassword=yourpassword
+   rpcallowip=127.0.0.1
+   ```
+   
+   * Ensure the configuration is correct. Do not assume the configurations are all the same.
 
  * Change `rpcuser` and `rpcpassword` to something unique to you. For security reasons you should have a different RPC username and password for each wallet. 
 
@@ -195,12 +197,12 @@ staking=0 (required for BitBay and Syscoin; probably fine for other wallets)
  * When you are done, click File, Save as, Type in: “bitcoin.conf”.
     * Ensure the file is not “bitcoin.conf.txt”
 
- * Save it and then place the .CONF into its corresponding wallet folder.
+ * Save it and then place the .conf into its corresponding wallet folder.
     * For this example: %Appdata%/Roaming/Bitcoin 
 
  * Remember what you wrote for the username, password, and IP.
 
- * Create an identical .CONF file for each wallet you are going to be using on the decentralised exchange.
+ * Create an identical .conf file for each wallet you are going to be using on the decentralised exchange.
     * Ensure `rpcuser` and `rpcpassword` are different on each wallet for security purposes
  
 ---
