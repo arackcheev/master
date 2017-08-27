@@ -110,7 +110,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
    
 * At this time your Service Node is running successfully. You can close off the CLIENT computer Blocknet wallet if you want.   
    
-* The CLIENT computer will receive the " Servicenode Rewards"
+* The CLIENT computer will receive the " Servicenode Rewards "
 
 
 ### STATUS CHECKS
