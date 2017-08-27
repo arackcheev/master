@@ -40,7 +40,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 
 ## Service Node Setup
 
-* Download the latest wallet release on 2 computers or VPS 
+* Download the latest wallet release on two computers or VPS 
    * [GitHub Releases](https://github.com/BlocknetDX/BlockDX/releases)
    
 * On each computer let the wallet fully sync. Once that is complete encrypt both wallets with a password of your choice
