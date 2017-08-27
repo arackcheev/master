@@ -10,9 +10,11 @@ The Internet Of Blockchains
 * Blocknet’s DX uses the xbridgep2p™ blockchain router technology to enable users to exchange tokens and assets, and to utilise smart contracts between blockchains.
 
 ## Overview
-Setup requires an integration between the Blocknet wallet and the wallets of coins you want as currency pairs. At this early stage, nothing is automated and no UI is built (only a quick wallet integration has been done for the time being). Configuration is by manually creating (or editing) at least four .conf files: 
+Setup requires an integration between the Blocknet wallet and the wallets of coins you want as currency pairs. At this stage, nothing is automated and the UI on the new Blocknet wallet will be used until the final UI is complete. Configuration is by manually creating (or editing) .conf files: 
 
- * blocknet.conf
+ * blocknetdx.conf
+ 
+ * servicenode.conf
 
  * xbridge.conf
 
@@ -20,18 +22,50 @@ Setup requires an integration between the Blocknet wallet and the wallets of coi
 
 Integration is via the wallets’ RPC APIs. For security reasons we recommend that wallets all run on a single box and communicate over localhost (127.0.0.1), though wallets may also be run on multiple machines and connect via IP address. General documentation on JSON RPC features is available at https://en.bitcoin.it/wiki/Running_Bitcoin.
 
+## Requirements
+* Two computers with the latest Blocknet client installed, encrypted, fully synced
+   * One computer will be the Service Node Server which will need to be running 24/7
+      * This guide will refer this computer as the " SNODE SERVER "
+   * The other computer will be the client computer where the 5000 Block is locked. This doesn't need to run 24/7.
+      * This guide will refer this computer as the " CLIENT "
 
-## Setup blocknet.conf
-The current version of the Blocknet wallet requires testing on the testnet until its hardfork, which will enable OP_CHECKLOCKTIMEVERIFY. As such, it’s necessary to configure the Blocknet wallet to run on the testnet. 
+* Your Public IP address or a VPS/VPN IP address
 
-Additionally, the .conf file is required to contain the IP address of at least one service node.*
-Create (or edit) a file named “blocknet.conf”, and paste the following into it:
+* 5000.000 Block to be locked into a service node address (the 5000 Block cannot stake while it is locked)
 
-   ```
-   testnet=1 connect=104.238.198.117
-   ```
-   * Place the blocknet.conf file into the %AppData%\blocknet directory.
+* The latest wallet of each currency you want to support on your service node (fully synced, encrypted)
 
+* Properly configured .conf files each wallet
+
+
+## Service Node Setup
+
+* Download the latest wallet release on 2 computers or VPS 
+   * [GitHub Releases](https://github.com/BlocknetDX/BlockDX/releases)
+   
+* On each computer let the wallet fully sync. Once that is complete encrypt both wallets with a password of your choice
+   * If you are testing please use `testnet=1` or `-testnet` for `blocknetdx-qt.exe`
+   
+* On the CLIENT computer navigate the top toolbar to: `Tools > Debug console`
+   * Type `getaccountaddress <name>` (This generates a public address key for your service node. Create a unique service node name.)
+      * Ex: `getaccountaddress snode01`
+      
+   * Type `servicenode genkey` (This generates and ouputs your service node private key)
+   
+* Whichever wallet your funds are located in send exactly 5000.00 Block (tBlock if on testnet) to the public address you created on the previous step
+   * The address needs to have EXACTLY 5000.00 Block (tBLock) to work properly
+   * When you send the 5000 Block, ensure "Send as zero-fee transaction if possible" is checked off
+   
+* Wait for the CLIENT computer to receive and confirm the 5000 Block TX
+
+* Once the TX is fully confirmed navigate back to 
+   
+
+   
+   
+   
+   
+   
 
 ## Setup  .conf Files for the Wallets of Your Trading Coins:
 The wallet of each coin you want to trade needs to be configured with a username/password and an allow from IP, if you’re using only a local machine use IP:127.0.0.1
