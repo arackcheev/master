@@ -104,6 +104,8 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 * Click your Alias (ex: snode01), and then at the bottom click "Start alias" button on the GUI.
    * You should see a successful popup window. The status of your node should be "ENABLED" and show an "Active time"
    
+![alt text](https://github.com/Aderks/master/blob/master/pictures/snode_alias.PNG "Logo Title Text 1")    
+   
 * At this time your Service Node is running successfully. You can close off the CLIENT computer Blocknet wallet if you want.   
    
 * The CLIENT computer will receive the " Servicenode Rewards"
@@ -115,6 +117,8 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
    * Type `servicenode debug` (This will output a message "Servicenode successfully started")
    
    * Type `servicenode status` (This will ouput your service node information and a successful message at the end of it)
+   
+![alt text](https://github.com/Aderks/master/blob/master/pictures/sbide_status.PNG "Logo Title Text 1")    
    
 * If you did not receive "Servicenode successfully started" proceed to the next "Troubleshooting section"
 
@@ -189,7 +193,9 @@ In each trading coin’s wallet, create a new address and label it something inf
 
  * To create a new address, go to your wallet’s “receive” tab and click “new address”
 
- * To label an address, you may either right-click on it or click the “label” field. 
+ * To label an address, you may either right-click on it or click the “label” field.
+ 
+ ![alt text](https://github.com/Aderks/master/blob/master/pictures/labelledaddress.PNG "Logo Title Text 1") 
 
  * This needs to be done for all wallets being used.
 
@@ -241,9 +247,13 @@ The Blocknet’s Xbridge technology is integrated into the latest client release
 ## Verify communication between wallets.
 In order to ensure that the xbridge client is communicating with your wallets and the .conf files are setup properly, on the Blocknet wallet, click the GUI “XBridge” tab  and then click the “Toggle to log” button.
 
-As the wallet starts up, you’ll see the DX initialise using the values you entered into your `xbridge.conf` file
+As the wallet starts up, you’ll see the DX initialise using the values you entered into your `xbridge.conf` file:
+
+![alt text](https://github.com/Aderks/master/blob/master/pictures/dx_start.PNG "Logo Title Text 1") 
 
  * Wait until you see “HTTP: resp 200” messages on the console. This signifies that the wallets are communicating over RPC and setup has been successful.
+ 
+![alt text](https://github.com/Aderks/master/blob/master/pictures/resp200.PNG "Logo Title Text 1") 
 
  * Note: If, amidst the “HTTP: resp 200” messages, you see a message similar to [I] 2017-Apr-19 17:48:31 [0x2],listaccounts exception couldn't connect to server, then it is likely that at least one of your specified trading wallets have not been run.
 
