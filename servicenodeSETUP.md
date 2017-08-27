@@ -270,7 +270,9 @@ As the wallet starts up, you’ll see the DX initialise using the values you ent
  
  
 ## Problem Diagnosis
-* To verify that each wallet is communicating with xbridge make sure the created receive addresses for each wallet is listed in the address book. If this part fails, close your wallets and review their configuration files. 
+* To verify that each wallet is communicating with xbridge make sure the created receive addresses for each wallet is listed in the address book. If this part fails, close your wallets and review their configuration files.
+
+* If you made changes to any .conf file you need to close and restart that wallet, including Blocknet 
 
 * Verify the ports are actually open. You may use Command Prompt to do so by typing in `netstat -an` and reviewing the print. Check that the ports you specified in the .conf files (ex: 8332 for Bitcoin) are open over localhost (127.0.0.1).
 
