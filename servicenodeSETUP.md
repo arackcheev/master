@@ -46,7 +46,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 * On each computer let the wallet fully sync. Once that is complete encrypt both wallets with a password of your choice
    * If you are testing please use `testnet=1` or `-testnet` for `blocknetdx-qt.exe`
    
-### CLIENT COMPUTER   
+### CLIENT Computer Wallet Setup   
    
 * Navigate the top toolbar to: `Tools > Debug console`
    * Type `getaccountaddress <name>` (This generates a public address key for your service node. Create a unique service node name.)
@@ -67,7 +67,9 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
    
    * Take note of these generated outputs as they will be needed in the configuration files
    
-* Go to [Google](www.google.com) and search "whats my ip". Your Public IP address will be displayed. Take note of this address as it will be needed in the configuration files.   
+* Go to [Google](www.google.com) and search "whats my ip". Your Public IP address will be displayed. Take note of this address as it will be needed in the configuration files.
+   * Main-net users use IP_address:?????
+   * Test-net users use IP_address:41474
    
 * Navigate to your Blocknet data directory (default is: `%appdata%/roaming/blocknetdx/`)
    * Create/edit the `servicenode.conf` file (`/blocknetdx/testnet4/` for testnet users)
@@ -82,7 +84,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
    
    * Save the `servicenode.conf` and restart the wallet. Fully unlock the wallet.
    
-### SNODE SERVER COMPUTER
+### SNODE Computer Wallet Setup
 
 * Navigate to your Blocknet data directory (default is: `%appdata%/roaming/blocknetdx/`)
    * Create/edit the `blocknetdx.conf` file
@@ -99,7 +101,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
    
    * Save the `blocknetdx.conf` and restart the wallet. Fully unlock the wallet.
    
-### STARTING SERVICE NODE(s)
+### Starting Service Node(s)
 
 * On the CLIENT computer navigate to the "Servicenodes" button on the GUI. If the setups were done correctly you should see all of your "Aliases"
 
@@ -113,7 +115,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 * The CLIENT computer will receive the " Servicenode Rewards "
 
 
-### STATUS CHECKS
+### Status Checks
 
 * On the SNODE SERVER navigate the top toolbar to: `Tools > Debug console`
    * Type `servicenode debug` (This will output a message "Servicenode successfully started")
@@ -127,11 +129,13 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 * If you received a "Servicenode successfully started" proceed to the next step of this setup
    
    
-### TROUBLESHOOTING
+### Troubleshooting
 
 * Ensure your `servicenode.conf` information is correct to your settings
 
-* Ensure  you dont have "< >" in any of the configuration files : (ex: `servicenodeaddr=<your_public_IP:41474>` should be `servicenodeaddr=127.0.0.1:41474`. "127.0.0.1 is an example IP address")
+* Ensure you dont have "< >" in any of the configuration files : (ex: `servicenodeaddr=<your_public_IP:41474>` should be `servicenodeaddr=127.0.0.1:41474`. "127.0.0.1 is an example IP address")
+   * Ensure you are using the correct IP PORT #
+     * Main-net=????? Test-net=41474
 
 * Ensure on the CLIENT computer you only have a `servicenode.conf`, the `blocknetdx.conf` is not needed on the CLIENT computer
    * For testnet ensure `servicenode.conf` is located in `/testnet4/`
