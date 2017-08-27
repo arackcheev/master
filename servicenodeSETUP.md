@@ -78,9 +78,9 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
    * Create/edit the `servicenode.conf` file (`/blocknetdx/testnet4/` for testnet users)
    
    * There should be an example of how the configuration needs to be in this file: (You can delete this after yours is typed in)
-     * ex: `mn1 127.0.0.2:41474 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0`   
+   ![alt text](https://github.com/Aderks/master/blob/master/pictures/snode_conf_ex.PNG "Logo Title Text 1")
    
-   * Enter your generated information from above in the format showed in the example:
+   * Enter your generated information from above in the format showed in this example:
    ```
    snode01 <your_public_IP:41474> <your_servicenode_private_key> <collateral_TX_ouput> <TX_ouput_index>
    ```
