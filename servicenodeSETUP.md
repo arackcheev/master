@@ -190,25 +190,25 @@ The wallet of each coin you want to host needs to be configured with a username/
    
    * Ensure the configuration is correct. Do not assume the configurations are all the same.
 
- * Change `rpcuser` and `rpcpassword` to something unique to you. For security reasons you should have a different RPC username and password for each wallet. 
+ * Change `rpcuser` and `rpcpassword` to something unique to you. For security reasons you should have a different RPC username and password for each wallet
 
  * If you’re using a single machine use IP: `127.0.0.1`
 
- * When you are done, click File, Save as, Type in: “bitcoin.conf”.
-    * Ensure the file is not “bitcoin.conf.txt”
+ * When you are done, click File, Save as, Type in: `bitcoin.conf`
+    * Ensure the file is not `bitcoin.conf.txt`
 
- * Save it and then place the .conf into its corresponding wallet folder.
+ * Save it and then place the .conf into its corresponding wallet folder
     * For this example: %Appdata%/Roaming/Bitcoin 
 
- * Remember what you wrote for the username, password, and IP.
+ * Remember what you wrote for the username, password, and IP
 
  * Create an identical .conf file for each wallet you are going to be using on the decentralised exchange.
     * Ensure `rpcuser` and `rpcpassword` are different on each wallet for security purposes
  
 ---
 
-## Configure Trading Coin Addresses
-In each trading coin’s wallet, create a new address and label it something informative, like “DX address”. (xbridge expects a labelled receive address)
+## Configure Coin Addresses
+In each hosted coin’s wallet, create a new address and label it something informative, like “DX address” (xbridge expects a labelled receive address)
 
  * To create a new address, go to your wallet’s “receive” tab and click “new address”
 
@@ -216,7 +216,7 @@ In each trading coin’s wallet, create a new address and label it something inf
  
  ![alt text](https://github.com/Aderks/master/blob/master/pictures/labelledaddress.PNG "Logo Title Text 1") 
 
- * This needs to be done for all wallets being used.
+ * This needs to be done for all wallets being used
 
 
 ## Setup xbridge.conf
@@ -235,8 +235,8 @@ The Blocknet’s Xbridge technology is integrated into the latest client release
  
  * Ensure the rest of the configuration matches [xbridge.conf](https://github.com/BlocknetDX/blocknet-docs/blob/master/xbridgeCONF.md) for each coin
 
- * Save the File (if you just edited the existing file, just click save, if you made a new file then click file, save as, and in the file name type: “xbridge.conf”).
-    * Ensure the file is not “xbridgep2p.conf.txt”
+ * Save the File (if you just edited the existing file, just click save, if you made a new file then click file, save as, and in the file name type: `xbridge.conf`
+    * Ensure the file is not `xbridgep2p.conf.txt`
 
  * Place this file into the Blocknet data directory folder: "C:\Users\[yourusername]\AppData\Roaming\blocknetdx\"
 
