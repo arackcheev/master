@@ -259,9 +259,9 @@ As the wallet starts up, you’ll see the DX initialise using the values you ent
 
 ![alt text](https://github.com/Aderks/master/blob/master/pictures/dx_start.PNG "Logo Title Text 1") 
 
- * Wait until you see “HTTP: resp 200” messages on the console. This signifies that the wallets are communicating over RPC and setup has been successful.
+ * Wait until you see “HTTP: resp 200” messages on the console. This signifies that the wallets are communicating over RPC and setup has been successful. Ensure each wallet you are running displays a “HTTP: resp 200” and displays your labelled receive address name.
  
-![alt text](https://github.com/Aderks/master/blob/master/pictures/resp200.PNG "Logo Title Text 1") 
+ ![alt text](https://github.com/Aderks/master/blob/master/pictures/resp200.PNG "Logo Title Text 1") 
 
  * Note: If, amidst the “HTTP: resp 200” messages, you see a message similar to `[I] 2017-Apr-19 17:48:31 [0x2],listaccounts exception couldn't connect to server`, then it is likely that at least one of your specified trading wallets have not been run.
 
