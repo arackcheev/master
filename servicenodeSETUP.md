@@ -71,7 +71,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
    
    * Take note of these generated outputs as they will be needed in the configuration files
    
-* Go to [Google](www.google.com) and search "whats my ip". Your Public IP address will be displayed. Take note of this address as it will be needed in the configuration files.
+* Go to [Google](www.google.com) and search "what's my ip". Your Public IP address will be displayed. Take note of this address as it will be needed in the configuration files
    * Main-net users use IP_address:?????
    * Test-net users use IP_address:41474
    
@@ -92,7 +92,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 
 * Navigate to your Blocknet data directory (default is: `%appdata%/roaming/blocknetdx/`)
    * Create/edit the `blocknetdx.conf` file
-     * If you are testnet `blocknetdx.conf` needs to stay in `%appdata%/roaming/blocknetdx/` and NOT in the `/testnet4/` folder
+     * If you are using testnet, `blocknetdx.conf` needs to stay in `%appdata%/roaming/blocknetdx/` and NOT in the `/testnet4/` folder
      
    * Type the following information into your `blocknetdx.conf` file:
    
@@ -118,27 +118,27 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
    
    ![alt text](https://github.com/Aderks/master/blob/master/pictures/alias_all.png "Logo Title Text 1")  
    
-   * The status of your node should be "ENABLED" and show an "Active time"
+   * The status of your node(s) should be "ENABLED" and show an "Active time"
    
    ![alt text](https://github.com/Aderks/master/blob/master/pictures/snode_alias.PNG "Logo Title Text 1")    
    
-* At this time your Service Node is running successfully. You can close off the CLIENT computer Blocknet wallet if you want.   
+* Your Service Node(s) are running successfully. You can close off the CLIENT computer Blocknet wallet if you want  
    
 * The CLIENT computer will receive the " Servicenode Rewards "
 
 
 ### Status Checks
 
-* On the SNODE SERVER navigate the top toolbar to: `Tools > Debug console`
+* On the SNODE SERVER computer navigate the top toolbar to: `Tools > Debug console`
    * Type `servicenode debug` (This will output a message "Servicenode successfully started")
    
    * Type `servicenode status` (This will ouput your service node information and a successful message at the end of it)
    
-![alt text](https://github.com/Aderks/master/blob/master/pictures/snode_status.PNG "Logo Title Text 1")    
+  ![alt text](https://github.com/Aderks/master/blob/master/pictures/snode_status.PNG "Logo Title Text 1")    
    
 * If you did not receive "Servicenode successfully started" proceed to the next "Troubleshooting section"
 
-* If you received a "Servicenode successfully started" proceed to the next step of this setup
+* If you received a "Servicenode successfully started" proceed to setup your .conf files for the wallets on your service node
    
    
 ### Troubleshooting
