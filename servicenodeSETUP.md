@@ -31,7 +31,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 
 * Your Public IP address or a VPS/VPN IP address
 
-* 5000.000 Block to be locked into a service node address (the 5000 Block cannot stake while it is locked)
+* 5000.00 Block to be locked into a service node address (the 5000 Block cannot stake while it is locked)
 
 * The latest wallet of each currency you want to support on your service node (fully synced, encrypted)
 
@@ -219,22 +219,11 @@ The Blocknet’s Xbridge technology is integrated into the latest client release
 
  * Note: to avoid crashes or failed trades, please edit your `xbridge.conf` to feature only and all the coins you wish to have on your service node
 
- * Paste the RPC usernames and passwords you created for each currency pair into the “Username” and “Password” fields.
+ * Paste the RPC usernames and passwords you created for each currency pair into the “Username” and “Password” fields
  
- * Paste the address of the "labelled receive address" you created for each currency pair.
-
- * If the port is unknown on the currency pair you want, you will need to find the port the wallet is using on Localhost. Here is a working method to do so:
-
-    * Open Task Manager and go to the “details” tab
-    * Locate the relevant wallet and make a note of its PID.
-    * Run Command Prompt and type `netstat -ano | field “[PID]”.D]`
-    * Look for an entry like the following: `TCP	0.0.0.0:9332   0.0.0.0:0     LISTENING   	5336`
-
- * The number after the colons in the IP address is the port to use (here, “9332”). Type it into `xbridge.conf` at the `Port=` line.
-
- * Note: wallets open different ports to connect to peers over the internet, and other ports on localhost for various purposes. The port you are looking for is a four-digit number after either the zero address (0.0.0.0) or localhost (127.0.0.1). The other ports use five-digit numbers.
+ * Paste the address of the "labelled receive address" you created for each currency pair
  
- * Note: there may be more than one port open for your coin. In such cases, try the first one, and if it doesn’t work, try the next one.
+ * Ensure the rest of the configuration matches [xbridge.conf](https://github.com/BlocknetDX/blocknet-docs/blob/master/xbridgeCONF.md) for each coin
 
  * Save the File (if you just edited the existing file, just click save, if you made a new file then click file, save as, and in the file name type: “xbridge.conf”).
     * Ensure the file is not “xbridgep2p.conf.txt”
@@ -243,7 +232,7 @@ The Blocknet’s Xbridge technology is integrated into the latest client release
 
  * You will be coming back to this to edit it in the future to add future coins, and change `RPCusername` `RPCpassword` `Port` `Address` 
  
- * Do not change the other settings in the .CONF file unless you are conducting tests.
+ * Do not change the other settings in the .conf file unless you are conducting tests
  
 
 ## Startup
