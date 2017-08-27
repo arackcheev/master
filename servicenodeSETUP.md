@@ -108,10 +108,15 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 
 * On the CLIENT computer navigate to the "Servicenodes" button on the GUI. If the setups were done correctly you should see all of your "Aliases"
 
-* Click your Alias (ex: snode01), and then at the bottom click "Start alias" on the GUI.
-   * You should see a successful popup window. The status of your node should be "ENABLED" and show an "Active time"
+* Click your Alias (ex: snode01), and then at the bottom click "Start alias" on the GUI
+   * You should see a successful popup window
+   ![alt text](https://github.com/Aderks/master/blob/master/pictures/alias_single.PNG "Logo Title Text 1")
    
-![alt text](https://github.com/Aderks/master/blob/master/pictures/snode_alias.PNG "Logo Title Text 1")    
+   * Click "Start all" if you have multiple service nodes and want to one-click auto-deploy   
+   ![alt text](https://github.com/Aderks/master/blob/master/pictures/alias_all.PNG "Logo Title Text 1")  
+   
+   * The status of your node should be "ENABLED" and show an "Active time"
+   ![alt text](https://github.com/Aderks/master/blob/master/pictures/snode_alias.PNG "Logo Title Text 1")    
    
 * At this time your Service Node is running successfully. You can close off the CLIENT computer Blocknet wallet if you want.   
    
