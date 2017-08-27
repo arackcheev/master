@@ -120,7 +120,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
    
    * Type `servicenode status` (This will ouput your service node information and a successful message at the end of it)
    
-![alt text](https://github.com/Aderks/master/blob/master/pictures/sbide_status.PNG "Logo Title Text 1")    
+![alt text](https://github.com/Aderks/master/blob/master/pictures/snode_status.PNG "Logo Title Text 1")    
    
 * If you did not receive "Servicenode successfully started" proceed to the next "Troubleshooting section"
 
