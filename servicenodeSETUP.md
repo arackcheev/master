@@ -20,7 +20,7 @@ Setup requires an integration between the Blocknet wallet and the wallets of coi
 
  * configuration file for each currency you want to support
 
-Integration is via the wallets’ RPC APIs. For security reasons we recommend that wallets all run on a single box and communicate over localhost (127.0.0.1), though wallets may also be run on multiple machines and connect via IP address. General documentation on JSON RPC features is available at https://en.bitcoin.it/wiki/Running_Bitcoin.
+Integration is via the wallets’ RPC APIs. For security reasons we recommend that wallets all run on a single box and communicate over localhost (127.0.0.1), though wallets may also be run on multiple machines and connect via IP address. General documentation on JSON RPC features is available @ https://en.bitcoin.it/wiki/Running_Bitcoin.
 
 ## Requirements
 * Two computers with the latest Blocknet client installed, encrypted, fully synced
