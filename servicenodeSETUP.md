@@ -165,7 +165,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 ---
 
 ## Setup  .conf Files for the Wallets on Your Service Node:
-The wallet of each coin you want to trade needs to be configured with a username/password and an allow from IP, if you’re using only a local machine use IP:127.0.0.1
+The wallet of each coin you want to host needs to be configured with a username/password and an allow from IP, if you’re using only a local machine use IP:127.0.0.1
 
  * To see the full list of compatible wallet configurations go to: [Wallet Configurations](https://github.com/BlocknetDX/blocknet-docs/blob/master/walletsCONF.md)
 
