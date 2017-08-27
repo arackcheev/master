@@ -46,11 +46,15 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 * On each computer let the wallet fully sync. Once that is complete encrypt both wallets with a password of your choice
    * If you are testing please use `testnet=1` or `-testnet` for `blocknetdx-qt.exe`
    
-* On the CLIENT computer navigate the top toolbar to: `Tools > Debug console`
+### CLIENT COMPUTER   
+   
+* Navigate the top toolbar to: `Tools > Debug console`
    * Type `getaccountaddress <name>` (This generates a public address key for your service node. Create a unique service node name.)
       * Ex: `getaccountaddress snode01`
       
    * Type `servicenode genkey` (This generates and ouputs your service node private key)
+   
+   * Take note of these generated outputs as they will be needed in the configuration files
    
 * Whichever wallet your funds are located in send exactly 5000.00 Block (tBlock if on testnet) to the public address you created on the previous step
    * The address needs to have EXACTLY 5000.00 Block (tBLock) to work properly
@@ -58,13 +62,83 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
    
 * Wait for the CLIENT computer to receive and confirm the 5000 Block TX
 
-* Once the TX is fully confirmed navigate back to 
+* Once the TX is fully confirmed navigate back to: `Tools > Debug console`
+   * Type `servicenode ouputs` (This outputs the servicenode TX information needed in the `servicenode.conf`)
    
+   * Take note of these generated outputs as they will be needed in the configuration files
+   
+* Go to [Google](www.google.com) and search "whats my ip". Your Public IP address will be displayed. Take note of this address as it will be needed in the configuration files.   
+   
+* Navigate to your Blocknet data directory (default is: `%appdata%/roaming/blocknetdx/`)
+   * Create/edit the `servicenode.conf` file (`/blocknetdx/testnet4/` for testnet users)
+   
+   * There should be an example of how the configuration needs to be in this file: (You can delete this after yours is typed in)
+     * ex: `mn1 127.0.0.2:41474 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0`   
+   
+   * Enter your generated information from above in the format showed in the example:
+     * ex: `snode01 <your_public_IP:41474> <your_servicenode_private_key> <collateral_TX_ouput> <TX_ouput_index>`
+   
+   * Save the `servicenode.conf` and restart the wallet. Fully unlock the wallet.
+   
+### SNODE SERVER COMPUTER
 
+* Navigate to your Blocknet data directory (default is: `%appdata%/roaming/blocknetdx/`)
+   * Create/edit the `blocknetdx.conf` file
+     * If you are testnet `blocknetdx.conf` needs to stay in `%appdata%/roaming/blocknetdx/` and NOT in the `/testnet4/` folder
+     
+   * Type the following information into your `blocknetdx.conf` file:
+   
+   ```
+   staking=0
+   servicenode=1
+   servicenodeaddr=<your_public_IP:41474>
+   servicenodeprivkey=<your_servicenode_private_key>
+   ```
+   
+   * Save the `blocknetdx.conf` and restart the wallet. Fully unlock the wallet.
+   
+### STARTING SERVICE NODE(s)
+
+* On the CLIENT computer navigate to the "Servicenodes" button on the GUI. If the setups were done correctly you should see all of your "Aliases"
+
+* Click your Alias (ex: snode01), and then at the bottom click "Start alias" button on the GUI.
+   * You should see a successful popup window. The status of your node should be "ENABLED" and show an "Active time"
+   
+* At this time your Service Node is running successfully. You can close off the CLIENT computer Blocknet wallet if you want.   
+   
+* The CLIENT computer will receive the " Servicenode Rewards"
+
+
+### STATUS CHECKS
+
+* On the SNODE SERVER navigate the top toolbar to: `Tools > Debug console`
+   * Type `servicenode debug` (This will output a message "Servicenode successfully started")
+   
+   * Type `servicenode status` (This will ouput your service node information and a successful message at the end of it)
+   
+* If you did not receive "Servicenode successfully started" proceed to the next "Troubleshooting section"
+
+* If you received a "Servicenode successfully started" proceed to the next step of this setup
    
    
+### TROUBLESHOOTING
+
+* Ensure your servicenode.conf information is correct to your settings
+
+* Ensure  you dont have "< >" in any of the configuration files : (ex: `servicenodeaddr=<your_public_IP:41474>` should be `servicenodeaddr=127.0.0.1:41474`. "127.0.0.1 is an example IP address")
+
+* Ensure on the CLIENT computer you only have a `servicenode.conf`, the `blocknetdx.conf` is not needed on the CLIENT computer
+   * For testnet ensure `servicenode.conf` is located in `/testnet4/`
+
+* Ensure on the SNODE SERVER computer you only have a `blocknetdx.conf`, the `servicenode.conf` is not needed on the SNODE SERVER computer
+   * For testnet ensure `blocknetdx.conf` is located in `/blocknetdx/` and not `/testnet4/`
+   * If you are a tester there will be a CMD line startup guide so you don't have to edit this configuration when you switch from main-net and test-net
    
-   
+* Ensure your configuration files are not `servicenode.conf.txt`
+
+* Ensure the 5000 block is exactly 5000 block, no more or no less & ensure it is confirmed
+
+* Ensure you wallets are fully sync'd and fully unlocked   
    
 
 ## Setup  .conf Files for the Wallets of Your Trading Coins:
