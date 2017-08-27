@@ -26,6 +26,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 * Two computers with the latest Blocknet client installed, encrypted, fully synced
    * One computer will be the Service Node Server which will need to be running 24/7
       * This guide will refer to this computer as the " SNODE SERVER "
+      
    * The other computer will be the client computer where the 5000 Block is locked. This doesn't need to run 24/7.
       * This guide will refer to this computer as the " CLIENT "
 
