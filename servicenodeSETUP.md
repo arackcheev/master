@@ -58,7 +58,10 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
    
 * Whichever wallet your funds are located in send exactly 5000.00 Block (tBlock if on testnet) to the public address you created on the previous step
    * The address needs to have EXACTLY 5000.00 Block (tBLock) to work properly
+   
    * When you send the 5000 Block, ensure "Send as zero-fee transaction if possible" is checked off
+   
+![alt text](https://github.com/Aderks/master/blob/master/pictures/send_5000.PNG "Logo Title Text 1")
    
 * Wait for the CLIENT computer to receive and confirm the 5000 Block TX
 
