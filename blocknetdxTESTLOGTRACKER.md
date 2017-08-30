@@ -36,6 +36,7 @@ This is community based testing and the information will be relayed to the devel
  * Emercoin [EMC] >> TX decode failed
  * Ioncoin [ION] >> TX decode failed
  * Verge [XVG] >> TX decode failed
+ * Vericoin [VRC] >> TX decode failed
  * Gulden [NLG] >> Labelled address wont show up >> Forced address in a TX >> Stays in HOLD
 
 ## Sequence [SEQ]
