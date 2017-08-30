@@ -30,6 +30,14 @@ This is community based testing and the information will be relayed to the devel
 | BCN   |       |           |          |            |                 |                     |                     |                      |
 | NXT   |PROBABLE|PROBABLE  |          |            |                 |                     |                     |NOT LOOKED INTO YET   |
 
+# NON - LOGGED COINS
+
+ * Stealth [XST] >> TX decode failed
+ * Emercoin [EMC] >> TX decode failed
+ * Ioncoin [ION] >> TX decode failed
+ * Verge [XVG] >> TX decode failed
+ * Gulden [NLG] >> Labelled address wont show up >> Forced address in a TX >> Stays in HOLD
+
 ## Sequence [SEQ]
 #### Issue #1 (code 22 TX decode failed):
  * After a successful TX posting there is Block movement. No coin movement after accepted TX. TX cancels.
