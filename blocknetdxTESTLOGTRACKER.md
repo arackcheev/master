@@ -38,6 +38,10 @@ This is community based testing and the information will be relayed to the devel
  * Verge [XVG] >> TX decode failed
  * Vericoin [VRC] >> TX decode failed
  * Gulden [NLG] >> Labelled address wont show up >> Forced address in a TX >> Stays in HOLD
+ 
+---
+
+# LOGGED COINS
 
 ## Sequence [SEQ]
 #### Issue #1 (code 22 TX decode failed):
