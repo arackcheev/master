@@ -228,6 +228,7 @@ In each hosted coin wallet, create a new address and label it something informat
 
  * This needs to be done for all wallets being used
 
+---
 
 ## Setup xbridge.conf
 
@@ -254,6 +255,7 @@ The Blocknet’s Xbridge technology is integrated into the latest client release
  
  * Do not change the other settings in the .conf file unless you are on testnet conducting tests.
  
+---
 
 ## Startup Sequence
  * Start the currency pair(s) you are running on your service node
@@ -262,7 +264,8 @@ The Blocknet’s Xbridge technology is integrated into the latest client release
  * Start the Blocknet wallet on the SNODE SERVER computer after starting the other wallets.
     * Ensure your servicenode is activated.
   
-  
+---
+
 ## Verify communication between wallets.
 In order to ensure that the xbridge client is communicating with your wallets and the .conf files are setup properly, on the Blocknet wallet, click the GUI “XBridge” tab  and then click the “Toggle to log” button.
 
@@ -278,7 +281,8 @@ As the wallet starts up, you’ll see the DX initialise using the values you ent
 
  * Note: If you fail to get “HTTP: resp 200” messages, it’s possible that the ports assigned to wallets differ from those specified in your .conf file. To check this, open Command Prompt, type `netstat -an`, and take a look which ports are being used over localhost (127.0.0.1), or sometimes over 0.0.0.0.
  
- 
+---
+
 ## Problem Diagnosis
 * To verify that each wallet is communicating with xbridge make sure the created receive addresses for each wallet is listed in the address book. If this part fails, close your wallets and review their configuration files.
 
