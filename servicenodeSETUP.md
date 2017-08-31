@@ -99,7 +99,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
    ```
    servicenode=1
    servicenodeaddr=YOUR_PUBLIC_IP:41412
-   servicenodeprivkey=YOUR_SERVICENODE_PRIVATE_KEY>
+   servicenodeprivkey=YOUR_SERVICENODE_PRIVATE_KEY
    ```
    
    * Save the `blocknetdx.conf` and restart the wallet. Fully unlock the wallet.
