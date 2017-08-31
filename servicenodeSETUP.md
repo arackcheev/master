@@ -155,7 +155,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 * Ensure your `servicenode.conf` information is correct to your settings
 
 * Ensure you don't have "< >" in any of the configuration files : (ex: `servicenodeaddr=<your_public_IP:41474>` should be `servicenodeaddr=127.0.0.1:41412`. "127.0.0.1 is an example IP address")
-   * Ensure you are using the correct IP PORT #
+   * Ensure you are using the correct P2P PORT #
      * Main-net=`41412` 
      * Test-net=`41474`
 
@@ -164,11 +164,11 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 
 * Ensure on the SNODE SERVER computer you only have a `blocknetdx.conf`, the `servicenode.conf` is not needed on the SNODE SERVER computer
    * For testnet ensure `blocknetdx.conf` is located in `/blocknetdx/` and not `/testnet4/`
-   * If you are a tester there will be a CMD line startup guide so you don't have to edit this configuration when you switch from main-net and test-net
+   * If you are a tester, there will be a CMD line startup guide so you don't have to edit this configuration when you switch from main-net and test-net
    
 * Ensure your configuration files are not `servicenode.conf.txt`
 
-* Ensure the 5000 block is exactly 5000 block, no more or no less & ensure it is confirmed
+* Ensure the 5000 Block is exactly 5000 Block, no more or no less and ensure it's confirmed
 
 * Ensure you have the latest wallet and that it's fully sync'd and fully unlocked   
    
