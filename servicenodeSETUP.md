@@ -212,7 +212,7 @@ The wallet of each coin you want to host needs to be configured with a username/
 
  * Remember what you wrote for the username, password, and IP
 
- * Create an identical .conf file for each wallet you are going to be using on the decentralised exchange.
+ * Create .conf files for each wallet you are going to be using on the decentralised exchange.
     * Ensure `rpcuser` and `rpcpassword` are different on each wallet for security purposes
  
 ---
