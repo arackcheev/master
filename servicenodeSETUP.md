@@ -67,7 +67,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 * Wait for the CLIENT computer to receive the 5000 Block and have at least 15 confirmations on the TX
 
 * Once the TX is fully confirmed navigate back to: `Tools > Debug console`
-   * Type `servicenode ouputs` (This outputs the servicenode TX information needed in the `servicenode.conf`)
+   * Type `servicenode outputs` (This outputs the servicenode TX information needed in the `servicenode.conf`)
    
    * Take note of these generated outputs as they will be needed in the configuration files
    
