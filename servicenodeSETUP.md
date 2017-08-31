@@ -5,7 +5,7 @@ The Internet Of Blockchains
 
 ## Blocknet Decentralised Exchange Service Node Setup
 
-**These instructions are to run as a servive node for the Blocknet Decentralised Exchange.** 
+**These instructions are to run as a service node for the Blocknet Decentralised Exchange.** 
 
 * Blocknet’s DX uses the xbridgep2p™ blockchain router technology to enable users to exchange tokens and assets, and to utilise smart contracts between blockchains.
 
@@ -81,7 +81,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
    * There should be an example of how the configuration needs to be in this file: (You can delete this after yours is typed in)
    ![alt text](https://github.com/Aderks/master/blob/master/pictures/snode_conf_ex.PNG "Logo Title Text 1")
    
-   * Enter your generated information from above in the format showed in this example:
+   * Enter your generated information from above in the format shown in this example:
    ```
    snode01 <YOUR_PUBLIC_IP:41474> <YOUR_SERVICENODE_PRIVATE_KEY> <COLLATERAL_TX_OUTPUT> <TX_OUTPUT_INDEX>
    ```
@@ -141,7 +141,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 * On the SNODE SERVER computer navigate the top toolbar to: `Tools > Debug console`
    * Type `servicenode debug` (This will output a message "Servicenode successfully started")
    
-   * Type `servicenode status` (This will ouput your service node information and a successful message at the end of it)
+   * Type `servicenode status` (This will output your service node information and a successful message at the end of it)
    
   ![alt text](https://github.com/Aderks/master/blob/master/pictures/snode_status.PNG "Logo Title Text 1")    
    
@@ -154,7 +154,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 
 * Ensure your `servicenode.conf` information is correct to your settings
 
-* Ensure you dont have "< >" in any of the configuration files : (ex: `servicenodeaddr=<your_public_IP:41474>` should be `servicenodeaddr=127.0.0.1:41412`. "127.0.0.1 is an example IP address")
+* Ensure you don't have "< >" in any of the configuration files : (ex: `servicenodeaddr=<your_public_IP:41474>` should be `servicenodeaddr=127.0.0.1:41412`. "127.0.0.1 is an example IP address")
    * Ensure you are using the correct IP PORT #
      * Main-net=`41412` 
      * Test-net=`41474`
@@ -218,7 +218,7 @@ The wallet of each coin you want to host needs to be configured with a username/
 ---
 
 ## Configure Coin Addresses
-In each hosted coin’s wallet, create a new address and label it something informative, like “DX address” (xbridge expects a labelled receive address)
+In each hosted coin wallet, create a new address and label it something informative, like “DX address” (xbridge expects a labelled receive address)
 
  * To create a new address, go to your wallet’s “receive” tab and click “new address”
 
