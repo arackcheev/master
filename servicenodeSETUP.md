@@ -53,7 +53,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
    * Type `getaccountaddress <name>` (This generates a public address key for your service node. Create a unique service node name.)
       * Ex: `getaccountaddress snode01`
       
-   * Type `servicenode genkey` (This generates and ouputs your service node private key)
+   * Type `servicenode genkey` (This generates and outputs your service node private key)
    
    * Take note of these generated outputs as they will be needed in the configuration files
    
