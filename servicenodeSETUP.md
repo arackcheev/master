@@ -32,7 +32,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 
 * Your Public IP address or a VPS/VPN IP address
 
-* 5000.00 Block to be locked into a service node address (the 5000 Block cannot stake while it is locked)
+* 5000 Block to be locked into a service node address (the 5000 Block cannot stake while it is locked)
 
 * The latest wallet of each currency you want to support on your service node (fully synced, encrypted)
 
@@ -57,14 +57,14 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
    
    * Take note of these generated outputs as they will be needed in the configuration files
    
-* Whichever wallet your funds are located in send exactly 5000.00 Block (tBlock if on testnet) to the public address you created on the previous step
-   * The address needs to have EXACTLY 5000.00 Block (tBLock) to work properly
+* Whichever wallet your funds are located in send exactly 5000 Block (tBlock if on testnet) to the public address you created on the previous step
+   * The address needs to have EXACTLY 5000 Block (or tBLock) to work properly
    
    * When you send the 5000 Block, ensure "Send as zero-fee transaction if possible" is checked off
    
 ![alt text](https://github.com/Aderks/master/blob/master/pictures/send_5000.PNG "Logo Title Text 1")
    
-* Wait for the CLIENT computer to receive and confirm the 5000 Block TX
+* Wait for the CLIENT computer to receive the 5000 Block and have at least 15 confirmations on the TX
 
 * Once the TX is fully confirmed navigate back to: `Tools > Debug console`
    * Type `servicenode ouputs` (This outputs the servicenode TX information needed in the `servicenode.conf`)
@@ -72,8 +72,8 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
    * Take note of these generated outputs as they will be needed in the configuration files
    
 * Go to [Google](www.google.com) and search "what's my ip". Your Public IP address will be displayed. Take note of this address as it will be needed in the configuration files
-   * Main-net users use IP_address:41412
-   * Test-net users use IP_address:41474
+   * Main-net users use PUBLIC_IP:41412
+   * Test-net users use PUBLIC_IP:41474
    
 * Navigate to your Blocknet data directory (default is: `%appdata%/roaming/blocknetdx/`)
    * Create/edit the `servicenode.conf` file (`/blocknetdx/testnet4/` for testnet users)
@@ -83,7 +83,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
    
    * Enter your generated information from above in the format showed in this example:
    ```
-   snode01 <your_public_IP:41474> <your_servicenode_private_key> <collateral_TX_ouput> <TX_ouput_index>
+   snode01 <YOUR_PUBLIC_IP:41474> <YOUR_SERVICENODE_PRIVATE_KEY> <COLLATERAL_TX_OUTPUT> <TX_OUTPUT_INDEX>
    ```
    
    * Save the `servicenode.conf` and restart the wallet. Fully unlock the wallet.
@@ -97,10 +97,9 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
    * Type the following information into your `blocknetdx.conf` file:
    
    ```
-   staking=0
    servicenode=1
-   servicenodeaddr=<your_public_IP:41412>
-   servicenodeprivkey=<your_servicenode_private_key>
+   servicenodeaddr=YOUR_PUBLIC_IP:41412
+   servicenodeprivkey=YOUR_SERVICENODE_PRIVATE_KEY>
    ```
    
    * Save the `blocknetdx.conf` and restart the wallet. Fully unlock the wallet.
@@ -108,6 +107,16 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 ### Starting Service Node(s)
 
 * On the CLIENT computer navigate to the "Servicenodes" button on the GUI. If the setups were done correctly you should see all of your "Aliases"
+
+#### Activate via Debug Console
+
+* Navigate to `Tools > Debug console`
+
+* Type: `servicenode start-alias snode1`
+
+#### Activate via GUI Wallet Buttons
+
+* Navigate to the "Servicenodes" button on the GUI
 
 * Click your Alias (ex: snode01), and then at the bottom click "Start alias" on the GUI
    * You should see a successful popup window
@@ -122,7 +131,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
    
    ![alt text](https://github.com/Aderks/master/blob/master/pictures/snode_alias.PNG "Logo Title Text 1")    
    
-* Your Service Node(s) are running successfully. You can close off the CLIENT computer Blocknet wallet if you want  
+* Your Service Node(s) are running successfully. You can close off the CLIENT computer Blocknet wallet if you want.  
    
 * The CLIENT computer will receive the " Servicenode Rewards "
 
@@ -147,8 +156,8 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 
 * Ensure you dont have "< >" in any of the configuration files : (ex: `servicenodeaddr=<your_public_IP:41474>` should be `servicenodeaddr=127.0.0.1:41412`. "127.0.0.1 is an example IP address")
    * Ensure you are using the correct IP PORT #
-     * Main-net=41412 
-     * Test-net=41474
+     * Main-net=`41412` 
+     * Test-net=`41474`
 
 * Ensure on the CLIENT computer you only have a `servicenode.conf`, the `blocknetdx.conf` is not needed on the CLIENT computer
    * For testnet ensure `servicenode.conf` is located in `/testnet4/`
@@ -161,7 +170,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 
 * Ensure the 5000 block is exactly 5000 block, no more or no less & ensure it is confirmed
 
-* Ensure you wallets are fully sync'd and fully unlocked   
+* Ensure you have the latest wallet and that it's fully sync'd and fully unlocked   
    
 ---
 
@@ -189,7 +198,7 @@ The wallet of each coin you want to host needs to be configured with a username/
    rpcallowip=127.0.0.1
    ```
    
-   * Ensure the configuration is correct. Do not assume the configurations are all the same.
+   * Ensure the configuration is correct. Do not assume the configurations are the same for each wallet.
 
  * Change `rpcuser` and `rpcpassword` to something unique to you. For security reasons you should have a different RPC username and password for each wallet
 
@@ -243,16 +252,17 @@ The Blocknet’s Xbridge technology is integrated into the latest client release
 
  * You will be coming back to this to edit it in the future to add future coins, and change `RPCusername` `RPCpassword` `Port` `Address` 
  
- * Do not change the other settings in the .conf file unless you are conducting tests
+ * Do not change the other settings in the .conf file unless you are on testnet conducting tests.
  
 
-## Startup
+## Startup Sequence
  * Start the currency pair(s) you are running on your service node
-    * Ensure the wallet is fully sync'd and unlocked
+    * Ensure every wallet is fully sync'd and unlocked
 
  * Start the Blocknet wallet on the SNODE SERVER computer after starting the other wallets.
- 
-
+    * Ensure your servicenode is activated.
+  
+  
 ## Verify communication between wallets.
 In order to ensure that the xbridge client is communicating with your wallets and the .conf files are setup properly, on the Blocknet wallet, click the GUI “XBridge” tab  and then click the “Toggle to log” button.
 
@@ -275,6 +285,8 @@ As the wallet starts up, you’ll see the DX initialise using the values you ent
 * If you made changes to any .conf file you need to close and restart that wallet, including Blocknet 
 
 * Verify the ports are actually open. You may use Command Prompt to do so by typing in `netstat -an` and reviewing the print. Check that the ports you specified in the .conf files (ex: 8332 for Bitcoin) are open over localhost (127.0.0.1).
+
+* Ensure all .conf files are configured properly. These configurations are very case-sensitive. Any wrong data entered in them could be causing the issues.
 
 * Check that no OS-based firewall is blocking communication. You may do this through your firewall’s interface.
 
