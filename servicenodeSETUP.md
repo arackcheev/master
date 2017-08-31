@@ -72,7 +72,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
    * Take note of these generated outputs as they will be needed in the configuration files
    
 * Go to [Google](www.google.com) and search "what's my ip". Your Public IP address will be displayed. Take note of this address as it will be needed in the configuration files
-   * Main-net users use IP_address:?????
+   * Main-net users use IP_address:41412
    * Test-net users use IP_address:41474
    
 * Navigate to your Blocknet data directory (default is: `%appdata%/roaming/blocknetdx/`)
@@ -99,7 +99,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
    ```
    staking=0
    servicenode=1
-   servicenodeaddr=<your_public_IP:41474>
+   servicenodeaddr=<your_public_IP:41412>
    servicenodeprivkey=<your_servicenode_private_key>
    ```
    
@@ -145,9 +145,9 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 
 * Ensure your `servicenode.conf` information is correct to your settings
 
-* Ensure you dont have "< >" in any of the configuration files : (ex: `servicenodeaddr=<your_public_IP:41474>` should be `servicenodeaddr=127.0.0.1:41474`. "127.0.0.1 is an example IP address")
+* Ensure you dont have "< >" in any of the configuration files : (ex: `servicenodeaddr=<your_public_IP:41474>` should be `servicenodeaddr=127.0.0.1:41412`. "127.0.0.1 is an example IP address")
    * Ensure you are using the correct IP PORT #
-     * Main-net=????? 
+     * Main-net=41412 
      * Test-net=41474
 
 * Ensure on the CLIENT computer you only have a `servicenode.conf`, the `blocknetdx.conf` is not needed on the CLIENT computer
@@ -278,8 +278,6 @@ As the wallet starts up, you’ll see the DX initialise using the values you ent
 
 * Check that no OS-based firewall is blocking communication. You may do this through your firewall’s interface.
 
-* Check the progress of RPC communication in C:\Users\yourusername\AppData\Roaming\blocknetdx\log
+* Check the xbridge log for any errors in: C:\Users\yourusername\AppData\Roaming\blocknetdx\log
 
-* Check the progress of CLTV-based coin exchange steps in C:\Users\yourusername\AppData\Roaming\blocknetdx\log-tx
-
-* Check on general wallet events in C:\Users\yourusername\AppData\Roaming\walletname\testnet\debug.log
+* Check on general wallet events in C:\Users\yourusername\AppData\Roaming\walletname\debug.log
