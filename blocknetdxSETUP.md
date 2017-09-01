@@ -9,13 +9,8 @@ The Internet Of Blockchains
 
 * Blocknet’s DX uses the xbridgep2p™ blockchain router technology to enable users to exchange tokens and assets, and to utilise smart contracts between blockchains.
 
-* For initial simplicity, at present xbridgep2p™ is embedded into the blocknet wallet, and its code repository is here: https://github.com/atcsecure/blocknet/branches
-
-
 ## Overview
-Setup requires an integration between the Blocknet wallet and the wallets of coins you want as currency pairs. At this early stage, nothing is automated and no UI is built (only a quick wallet integration has been done for the time being). Configuration is by manually creating (or editing) at least four .conf files: 
-
- * blocknet.conf
+Setup requires an integration between the Blocknet wallet and the wallets of coins you want to trade with. At this stage, nothing is automated and the UI on the new Blocknet wallet will be used until the final UI is complete. Configuration is by manually creating (or editing) .conf files: 
 
  * xbridge.conf
 
@@ -23,136 +18,132 @@ Setup requires an integration between the Blocknet wallet and the wallets of coi
 
 Integration is via the wallets’ RPC APIs. For security reasons we recommend that wallets all run on a single box and communicate over localhost (127.0.0.1), though wallets may also be run on multiple machines and connect via IP address. General documentation on JSON RPC features is available at https://en.bitcoin.it/wiki/Running_Bitcoin.
 
+## Requirements
 
-## Setup blocknet.conf
-The current version of the Blocknet wallet requires testing on the testnet until its hardfork, which will enable OP_CHECKLOCKTIMEVERIFY. As such, it’s necessary to configure the Blocknet wallet to run on the testnet. 
+* Latest Blocknet client installed, encrypted, fully synced
 
-Additionally, the .conf file is required to contain the IP address of at least one service node.*
-Create (or edit) a file named “blocknet.conf”, and paste the following into it:
+* The latest wallet of each currency you want to trade with (fully synced, encrypted)
+      * Currency you want to trade with needs to be sent to a labelled receive address on each wallet 
 
-   ```
-   testnet=1 connect=104.238.198.117
-   ```
-   * Place the blocknet.conf file into the %AppData%\blocknet directory.
+* Properly configured .conf files for each wallet
 
+---
 
-## Setup  .conf Files for the Wallets of Your Trading Coins:
-The wallet of each coin you want to trade needs to be configured with a username/password and an allow from IP, if you’re using only a local machine use IP:127.0.0.1
+## Setup  .conf Files for the Wallets on Your Service Node:
+The wallet of each coin you want to host needs to be configured with a username/password and an allow from IP, if you’re using only a local machine use IP:127.0.0.1
 
- * Download the latest wallet, let it sync up fully, then close the wallet.
+ * To see the full list of compatible wallet configurations go to: [Wallet Configurations](https://github.com/BlocknetDX/blocknet-docs/blob/master/walletsCONF.md)
 
- * Click the START button on your desktop, where it says “Search program and files” then type “%appdata%” and the “Roaming” directory should pop up. Click on “Roaming” or hit enter.
+ * Download the latest wallet, let it sync up fully, then close the wallet
 
- * Find your wallet’s designated folder, eg: Bitcoin
+ * Click the START button on your desktop, where it says “Search program and files” then type “%appdata%” and the “Roaming” directory should pop up. Click on “Roaming” or hit enter
+
+ * Find your wallet’s designated data directory folder, ex: Bitcoin
 
  * If you don’t have a .conf file started you will need to open up Notepad to create one.
 
- * Copy and paste the following (this can be added to what is already present in file if you have “addnodes” or other configurations in here already):
+ * Navigate to [Wallet Configurations](https://github.com/BlocknetDX/blocknet-docs/blob/master/walletsCONF.md) and copy/paste the configuration information for the wallet you are running. (this can be added to what is already present in file if you have “addnodes” or other configurations already):
+   * Ex: bitcoin.conf
+   
+   ```
+   server=1
+   listen=1
+   rpcuser=yourusername
+   rpcpassword=yourpassword
+   rpcallowip=127.0.0.1
+   ```
+   
+   * Ensure the configuration is correct. Do not assume the configurations are the same for each wallet.
 
-```
-server=1
-listen=1
-rpcuser=yourusername
-rpcpassword=yourpassword
-rpcallowip=127.0.0.1
-enableaccounts=1 (required for BitBay and Syscoin; probably fine for other wallets)
-staking=0 (required for BitBay and Syscoin; probably fine for other wallets)
-```
-
- * Change `rpcuser` and `rpcpassword` to something unique to you. For security reasons you should have a different RPC username and password for each wallet. 
+ * Change `rpcuser` and `rpcpassword` to something unique to you. For security reasons you should have a different RPC username and password for each wallet
 
  * If you’re using a single machine use IP: `127.0.0.1`
 
- * When you are done, click File, Save as, Type in: “bitcoin.conf”.
-    * Ensure the file is not “bitcoin.conf.txt”
+ * When you are done, click File, Save as, Type in: `bitcoin.conf`
+    * Ensure the file is not `bitcoin.conf.txt`
 
- * Save it and then place the .CONF into its corresponding wallet folder.
+ * Save it and then place the .conf into its corresponding wallet folder
     * For this example: %Appdata%/Roaming/Bitcoin 
 
- * Remember what you wrote for the username, password, and IP.
+ * Remember what you wrote for the username, password, and IP
 
- * Create an identical .CONF file for each wallet you are going to be using on the decentralised exchange.
+ * Create .conf files for each wallet you are going to be using on the decentralised exchange.
+    * Ensure `rpcuser` and `rpcpassword` are different on each wallet for security purposes
  
+---
 
-## Configure Trading Coin Addresses
-In each trading coin’s wallet, create a new address and label it something informative, like “DX address”. (xbridge expects a labelled receive address)
+## Configure Coin Addresses
+In each hosted coin wallet, create a new address and label it something informative, like “DX address” (xbridge expects a labelled receive address)
 
  * To create a new address, go to your wallet’s “receive” tab and click “new address”
 
- * To label an address, you may either right-click on it or click the “label” field. 
+ * To label an address, you may either right-click on it or click the “label” field.
+ 
+ ![alt text](https://github.com/BlocknetDX/blocknet-docs/blob/master/pictures/labelledaddress.PNG "Logo Title Text 1") 
 
- * This needs to be done for all wallets being used.
+ * This needs to be done for all wallets being used
 
-
-## Setup xbridgep2p
-The Blocknet’s Xbridge technology is available both as a standalone application and integrated into the Blocknet wallet. The wallet-integrated version currently includes the latest enhancements and is the one to use for testing. If you want to compile from source, visit:
-https://github.com/atcsecure/blocknet/branches 
+---
 
 ## Setup xbridge.conf
- * To see the full list of coin .conf's see: https://github.com/Aderks/master/blob/master/xbridgeCONF.md
 
- * Download the following configuration file to the blocknet wallet folder in (for Windows) C:\Users\[yourusername]\AppData\Roaming\blocknet:
-http://builds.xcurrency.co/blocknet/Build/Official_Blocknet_Wallet/xbridgep2p.conf
+The Blocknet’s Xbridge technology is integrated into the latest client release. See [GitHub](https://github.com/BlocknetDX/BlockDX) for the source code.
 
- * If the above file is not up to date, open it using Notepad++ or your text editor of choice, and replace its contents with the following, replacing highlighted text with your own details:
+ * To see the full list of coin .conf's see: [xbridge.conf](https://github.com/BlocknetDX/blocknet-docs/blob/master/xbridgeCONF.md)
 
- * Note: to avoid crashes or failed trades, you currently need to run each wallet that is configured below. Please edit your config file to feature only and all the coins you wish to trade with.
+ * Create/edit an `xbridge.conf` file and place the following configuration file in the blocknet wallet data directory (for Windows) C:\Users\[yourusername]\AppData\Roaming\blocknetdx\
 
- * To run as a service node, the .CONF file needs to contain the BTC dust value, as seen in the example above.
+ * Note: to avoid crashes or failed trades, please edit your `xbridge.conf` to feature only and all the coins you wish to have on your service node
 
- * Paste the RPC usernames and passwords you created for each currency pair into the “Username” and “Password” fields in each section above.
-
- * For other coins, you will need to find the port the wallet is using on Localhost. Here is a working method to do so:
-
-    * Open Task Manager and go to the “details” tab
-    * Locate the relevant wallet and make a note of its PID.
-    * Run Command Prompt and type “netstat -ano | field “[PID]”.D]”.
-    * Look for an entry like the following: TCP	0.0.0.0:9332   0.0.0.0:0     LISTENING   	5336
-
- * The number after the colons in the IP address is the port to use (here, “9332”). Type it into xbridge.conf at the `Port=` line.
-
- * Note: wallets open different ports to connect to peers over the internet, and other ports on localhost for various purposes. The port you are looking for is a four-digit number after either the zero address (0.0.0.0) or localhost (127.0.0.1). The other ports use five-digit numbers.
+ * Paste the RPC usernames and passwords you created for each currency pair into the “Username” and “Password” fields
  
- * Note: there may be more than one port open for your coin. In such cases, try the first one, and if it doesn’t work, try the next one.
+ * Paste the address of the "labelled receive address" you created for each currency pair
+ 
+ * Ensure the rest of the configuration matches [xbridge.conf](https://github.com/BlocknetDX/blocknet-docs/blob/master/xbridgeCONF.md) for each coin
 
- * Save the File (if you just edited the existing file, just click save, if you made a new file then click file, save as, and in the file name type: “xbridge.conf”).
-    * Ensure the file is not “xbridgep2p.conf.txt”
+ * Save the File (if you just edited the existing file, just click save, if you made a new file then click file, save as, and in the file name type: `xbridge.conf`
+    * Ensure the file is not `xbridge.conf.txt`
 
- * Place this file into the folder where you extracted the “xbridgep2p” client.
-
- * If you’re using the new version of the Blocknet wallet with an integrated DX, place the“xbridge.conf” file into the C:\Users\PCusername\AppData\Roaming\blocknet directory.
+ * Place this file into the Blocknet data directory folder: "C:\Users\[yourusername]\AppData\Roaming\blocknetdx\"
 
  * You will be coming back to this to edit it in the future to add future coins, and change `RPCusername` `RPCpassword` `Port` `Address` 
  
- * Do not change the other settings in the .CONF file unless you are conducting tests.
+ * Do not change the other settings in the .conf file unless you are on testnet conducting tests.
+ 
+---
 
+## Startup Sequence
+ * Start the currency pair(s) you are trading with
+    * Ensure every wallet is fully sync'd and unlocked
 
-## Startup
- * Ensure that each wallet is fully synced.
-
- * Ensure that each wallet is fully unlocked.
-
- * Start the currency pair wallets.
-
- * Start the blocknet wallet after starting the other wallets.
-
+ * Start the Blocknet wallet after starting the other wallets.
+     
+---
 
 ## Verify communication between wallets.
-In order to ensure that the xbridge client is communicating with your wallets and the .conf files are setup properly, on the Blocknet wallet, click the “XBridge” tab and then click the “console” button.
+In order to ensure that the xbridge client is communicating with your wallets and the .conf files are setup properly, navigate to the Blocknet data dir: C:\Users\yourusername\AppData\Roaming\blocknetdx\
 
-As the wallet starts up, you’ll see the DX initialise using the values you entered into your xbridge.conf file:
+   * Open the "log" folder. Open up the log file with the current date/time. Ex: `xbridgep2p_20170831T181856.log`
+   * Each log file will update until the client instance is close. If a new client instance is opened a new log file will be created.
 
- * Wait until you see “200” messages on the console. This signifies that the wallets are communicating over RPC and setup has been successful.
+As the wallet starts up, you’ll see the DX initialise using the values you entered into your `xbridge.conf` file:
 
- * Note: If, amidst the “200” messages, you see a message similar to [I] 2017-Apr-19 17:48:31 [0x2],listaccounts exception couldn't connect to server, then it is likely that at least one of your specified trading wallets have not been run.
+![alt text](https://github.com/BlocknetDX/blocknet-docs/blob/master/pictures/dxstart.PNG "Logo Title Text 1") 
 
- * Note: If you fail to get “200” messages, it’s possible that the ports assigned to wallets differ from those specified in your .conf file. To check this, open Command Prompt, type netstat -an, and take a look which ports are being used over localhost (127.0.0.1), or sometimes over 0.0.0.0.
+ * Wait until you see “HTTP: resp 200” messages. This signifies that the wallets are communicating over RPC and setup has been successful. Ensure each wallet you are running displays a “HTTP: resp 200” and displays your labelled receive address name.
  
+ ![alt text](https://github.com/BlocknetDX/blocknet-docs/blob/master/pictures/resp_200.PNG "Logo Title Text 1") 
+
+ * Note: If, amidst the “HTTP: resp 200” messages, you see a message similar to `[I] 2017-Apr-19 17:48:31 [0x2],listaccounts exception couldn't connect to server`, then it is likely that at least one of your specified trading wallets have not been run.
+
+ * Note: If you fail to get “HTTP: resp 200” messages, it’s possible that the ports assigned to wallets differ from those specified in your .conf file. To check this, open Command Prompt, type `netstat -an`, and take a look which ports are being used over localhost (127.0.0.1), or sometimes over 0.0.0.0.
+ 
+--- 
  
 ## Place an Order
 Once you’ve confirmed that the wallets are communicating and setup has been successful, do the following:
 
-   * In the “XBridge” tab of the Blocknet wallet, click on the “New Transaction” button. A new window will open:
+   * In the “BlocknetDX” tab of the Blocknet wallet, click on the “New Transaction” button. A new window will open:
 
    * Click on the “Address book” icon. This opens up a new window that displays the addresses you created in each currency pair wallet. 
 
@@ -162,42 +153,24 @@ Once you’ve confirmed that the wallets are communicating and setup has been su
 
       * Note: Do not manually paste an address into the “from” and “to” fields. Select addresses that xbridgep2p has been given by your currency pair wallets.
 
+---
 
 ## Problem Diagnosis
-To verify that each wallet is communicating with xbridgep2p make sure the created receive addresses for each wallet is listed in the address book. If this part fails, close your wallets and review their configuration files. 
+* To verify that each wallet is communicating with xbridge make sure the created receive addresses for each wallet is listed in the address book. If this part fails, close your wallets and review their configuration files.
 
-Verify the ports are actually open. You may use Command Prompt to do so by typing in “netstat -an” and reviewing the print. Check that the ports you specified in the .conf files (8332 for Bitcoin and 8370 for SYS) are open over localhost (127.0.0.1).
+* If you made changes to any .conf file you need to close and restart that wallet, including Blocknet 
 
- * Check that no OS-based firewall is blocking communication. You may do this through your firewall’s interface.
+* Verify the ports are actually open. You may use Command Prompt to do so by typing in `netstat -an` and reviewing the print. Check that the ports you specified in the .conf files (ex: 8332 for Bitcoin) are open over localhost (127.0.0.1).
 
- * Check the progress of RPC communication in C:\Users\yourusername\AppData\Roaming\blocknet\log
+* Ensure all .conf files are configured properly. These configurations are very case-sensitive. Any wrong data entered in them could be causing the issues.
 
- * Check the progress of CLTV-based coin exchange steps in C:\Users\yourusername\AppData\Roaming\blocknet\log-tx
+* Check that no OS-based firewall is blocking communication. You may do this through your firewall’s interface.
 
- * Check on general wallet events in C:\Users\yourusername\AppData\Roaming\walletname\testnet\debug.log
+* Check the xbridge log for any errors in: C:\Users\yourusername\AppData\Roaming\blocknetdx\log
 
+* Check on general wallet events in C:\Users\yourusername\AppData\Roaming\walletname\debug.log
 
-## Run as a Service Node
-A “service node” performs the function of collecting and distributing trade fees to the network. To run one, it is currently required that your Blocknet wallet holds 5000 BLOCK. When you run as a service node, you will receive trade fees on the DX.
-
-   * Before opening up the xbridge client in exchange mode, you will have to run, fully sync and unlock all wallets that are in the xbridgep2p.conf file. You will also need to run a fully synced Blocknet wallet.
-
-   * Verify there is communication between all wallets as per the above section.
-
-   * Navigate to the folder where the xbridgep2p client, .conf and .bat files are located.
-
-   * Either run 
-“dx.bat” 
-Or, in Command Prompt, run “blocknet.exe --enable-exchange”
-Or paste “"C:\Program Files\Blocknet DX\blocknet-qt.exe” -enable-exchange” into the application shortcut’s “target” field
-Or paste enable-exchange=1 into blocknet.conf
-
-   * This will open up a command window and then a couple seconds later the client loads.
-
-   * At the top of the client should have “[exchange enabled]” and should display “service node” on the bottom left side. 
-
-   * No transactions can be created in service node mode.
-
+---
 
 ## Security Tips
 (With thanks to threepwood)
