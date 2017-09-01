@@ -74,7 +74,7 @@ The wallet of each coin you want to trade with needs to be configured with a use
 ---
 
 ## Configure Coin Addresses
-In each hosted coin wallet, create a new address and label it something informative, like “DX address” (xbridge expects a labelled receive address)
+In each wallet, create a new address and label it something informative, like “DX address” (xbridge expects a labelled receive address)
 
  * To create a new address, go to your wallet’s “receive” tab and click “new address”
 
