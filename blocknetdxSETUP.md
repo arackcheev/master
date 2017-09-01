@@ -176,7 +176,7 @@ Once you’ve confirmed that the wallets are communicating and setup has been su
    
 ![alt text](https://github.com/Aderks/master/blob/master/pictures/btc_dyn_posted.PNG)
     
-   * In this example TX is trading 0.0006 BTC for 1 DYN
+   * In this example TX we are trading 0.0006 BTC for 1 DYN
 
 ---
 
