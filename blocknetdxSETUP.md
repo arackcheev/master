@@ -82,8 +82,10 @@ In each wallet, create a new address and label it something informative, like â€
  
  ![alt text](https://github.com/BlocknetDX/blocknet-docs/blob/master/pictures/labelledaddress.PNG "Logo Title Text 1") 
 
- * This needs to be done for all wallets being used
-
+ * Send the funds you want to trade with to the labelled address
+ 
+ * This needs to be done for all wallets you want to trade with
+ 
 ---
 
 ## Setup xbridge.conf
