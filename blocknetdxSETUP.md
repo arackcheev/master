@@ -24,7 +24,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 
 * Latest wallet of each currency you want to trade with (fully synced, encrypted)
 
-      * Currency you want to trade with needs to be sent to a labelled receive address on each wallet 
+     * Currency you want to trade with needs to be sent to a labelled receive address on each wallet 
 
 * Properly configured .conf files for each wallet
 
