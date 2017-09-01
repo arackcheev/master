@@ -84,7 +84,7 @@ In each wallet, create a new address and label it something informative, like â€
 
  * Send the funds you want to trade with to the labelled address
  
- * This needs to be done for all wallets you want to trade with
+ * This needs to be done for all the wallets you want to trade with
  
 ---
 
