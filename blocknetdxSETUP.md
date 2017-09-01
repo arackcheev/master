@@ -178,7 +178,9 @@ Once you’ve confirmed that the wallets are communicating and setup has been su
     
    * In this example TX we are trading 0.0006 BTC for 1 DYN
    
-* To accept a trade, side click the posted TX and click accept    
+* To accept a trade, side click the posted TX and click accept
+
+* To cancel your TX post, side click your TX and click cancel
 
 ---
 
