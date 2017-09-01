@@ -154,25 +154,27 @@ Once you’ve confirmed that the wallets are communicating and setup has been su
    
 ![alt text](https://github.com/Aderks/master/blob/master/pictures/address_book.PNG "Logo Title Text 1")   
 
-    * Note: If you do not see these addresses, it means that your wallets are not communicating over RPC
+   * Note: If you do not see these addresses, it means that your wallets are not communicating over RPC
+    
+   * Note: It may take up to about 30 seconds for xbridge to connect with your wallets, but once startup has completed it will populate your currency pair addresses
 
-    * Note: It may take up to about 30 seconds for xbridge to connect with your wallets, but once startup has completed it will populate your currency pair addresses
-
-    * Note: Do not manually paste an address into the “from” and “to” fields. Select addresses that xbridge has been given by your currency pair wallets.
+   * Note: Do not manually paste an address into the “from” and “to” fields. Select addresses that xbridge has been given by your currency pair wallets.
       
 * On the "from" and "to" sides, click the "Address Book" and double-click the currency's you want to trade
     
 * Your address and account balance will populate for each currency
    
 ![alt text](https://github.com/Aderks/master/blob/master/pictures/btc_dyn_newtx.PNG "Logo Title Text 1")
-    * This example we are trading Bitcoin for Dynamic
+    
+   * This example we are trading Bitcoin for Dynamic
    
 * Choose the amount you wish to trade for and click "New Transaction"
    
 * The new TX will then be posted to the Blocknet DX for someone to accept.
    
 ![alt text](https://github.com/Aderks/master/blob/master/pictures/btc_dyn_posted.PNG)
-    * This example TX is trading 0.0006 BTC for 1 DYN
+    
+   * This example TX is trading 0.0006 BTC for 1 DYN
 
 ---
 
