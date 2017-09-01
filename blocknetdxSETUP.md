@@ -168,7 +168,7 @@ Once you’ve confirmed that the wallets are communicating and setup has been su
    
 ![alt text](https://github.com/Aderks/master/blob/master/pictures/btc_dyn_newtx.PNG "Logo Title Text 1")
     
-   * This example we are trading Bitcoin for Dynamic
+   * In this example we are trading Bitcoin for Dynamic
    
 * Choose the amount you wish to trade for and click "New Transaction"
    
@@ -176,7 +176,7 @@ Once you’ve confirmed that the wallets are communicating and setup has been su
    
 ![alt text](https://github.com/Aderks/master/blob/master/pictures/btc_dyn_posted.PNG)
     
-   * This example TX is trading 0.0006 BTC for 1 DYN
+   * In this example TX is trading 0.0006 BTC for 1 DYN
 
 ---
 
