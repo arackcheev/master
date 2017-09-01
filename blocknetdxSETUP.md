@@ -20,7 +20,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 
 ## Requirements
 
-* Latest Blocknet client installed, encrypted, fully synced
+* Latest Blocknet client installed, encrypted, fully synced. [GitHub Releases](https://github.com/BlocknetDX/BlockDX/releases)
 
 * Latest wallet of each currency you want to trade with (fully synced, encrypted)
 
