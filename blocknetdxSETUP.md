@@ -3,7 +3,7 @@
 
 The Internet Of Blockchains
 
-## Blocknet Decentralised Exchange Setup Guide
+## Blocknet Decentralised Exchange Trader Setup Guide
 
 **These instructions are to run as a trader on the Blocknet Decentralised Exchange** 
 
