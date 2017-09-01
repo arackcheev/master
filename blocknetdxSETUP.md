@@ -96,7 +96,7 @@ The Blocknet’s Xbridge technology is integrated into the latest client release
 
  * Create/edit an `xbridge.conf` file and place the following configuration file in the blocknet wallet data directory (for Windows) C:\Users\[yourusername]\AppData\Roaming\blocknetdx\
 
- * Note: to avoid crashes or failed trades, please edit your `xbridge.conf` to feature only and all the coins you wish to have on your service node
+ * Note: to avoid crashes or failed trades, please edit your `xbridge.conf` to feature only and all the coins you wish to trade with
 
  * Paste the RPC usernames and passwords you created for each currency pair into the “Username” and “Password” fields
  
