@@ -147,9 +147,11 @@ As the wallet starts up, you’ll see the DX initialise using the values you ent
 Once you’ve confirmed that the wallets are communicating and setup has been successful, do the following:
 
    * In the “BlocknetDX” tab of the Blocknet wallet, click on the “New Transaction” button. A new window will open:
+   
    ![alt text](https://github.com/Aderks/master/blob/master/pictures/newTX.PNG "Logo Title Text 1")   
 
    * Click on the “Address book” icon. This opens up a new window that displays the addresses you created in each currency pair wallet.
+   
    ![alt text](https://github.com/Aderks/master/blob/master/pictures/address_book.PNG "Logo Title Text 1")   
 
       * Note: If you do not see these addresses, it means that your wallets are not communicating over RPC
@@ -161,12 +163,14 @@ Once you’ve confirmed that the wallets are communicating and setup has been su
    * On the "from" and "to" sides, click the "Address Book" and double-click the currency's you want to trade
     
    * Your address and account balance will populate for each currency
+   
    ![alt text](https://github.com/Aderks/master/blob/master/pictures/btc_dyn_newtx.PNG "Logo Title Text 1")
         * This example we are trading Bitcoin for Dynamic
    
    * Choose the amount you wish to trade for and click "New Transaction"
    
    * The new TX will then be posted to the Blocknet DX for someone to accept.
+   
    ![alt text](https://github.com/Aderks/master/blob/master/pictures/btc_dyn_posted.PNG)
         * This example TX is trading 0.006 BTC for 1 DYN
 
