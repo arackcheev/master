@@ -22,7 +22,7 @@ Integration is via the wallets’ RPC APIs. For security reasons we recommend th
 
 * Latest Blocknet client installed, encrypted, fully synced
 
-* The latest wallet of each currency you want to trade with (fully synced, encrypted)
+* Latest wallet of each currency you want to trade with (fully synced, encrypted)
       * Currency you want to trade with needs to be sent to a labelled receive address on each wallet 
 
 * Properly configured .conf files for each wallet
