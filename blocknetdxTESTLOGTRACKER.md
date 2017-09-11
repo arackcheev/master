@@ -1,35 +1,3 @@
-# Blocknet DX Test Log Tracking
-
-The purpose of this document is to identify DX errors through testing of new coins on the exchange whether it be on test-net or main-net. The chart below will be a general summary of the progress. After the general summary will be sections of each coin with the issues at hand and the progress of the resolution. There is no particular order in which coins are looked at first. 
-
-This is community based testing and the information will be relayed to the developers of Blocknet for further assistance.
-
-## General Summary
-
-| COIN  | CLTV? | JSON RPC? | DX COMM? | TX POSTED? | BLOCK MOVEMENT? | MAKER RECEIVE COIN? | TAKER RECEIVE COIN? | STATUS or COMMENTS |
-|:-------:|:-------:|:-----------:|:----------:|:------------:|:-----------------:|:---------------------:|:---------------------:|----------------------|
-| SEQ   |YES    |YES        |YES       |YES         |YES              |NO                   |NO                   |                      |
-| BAY   |YES    |YES        |YES       |YES         |NO               |NO                   |NO                   |                      |
-| STRAT |       |YES        |YES       |YES         |                 |                     |                     |                      |
-| FTC   |       |YES        |YES       |YES         |YES              |YES                  |NO                   |                      |
-| QRK   |       |YES        |YES       |YES         |                 |                     |                     |                      |
-| BLK   |       |YES        |YES       |YES         |NO               |                     |                     |                      |
-| XST   |       |YES        |YES       |YES         |                 |                     |                     |                      |
-| BRK   |       |YES        |YES       |NO          |                 |                     |                     |'INVALID TX ADDRESS ON TX POST'                      |
-| BRX   |       |YES        |YES       |NO          |                 |                     |                     |'INVALID TX ADDRESS ON TX POST'                      |
-| SWIFT |       |YES        |          |            |                 |                     |                     |                      |
-| POT   |       |YES        |YES       |            |                 |                     |                     |                      |
-| PPC   |       |YES        |YES       |            |                 |                     |                     |                      |
-| BCC   |       |YES        |          |            |                 |                     |                     |                      |
-| GRS   |       |YES        |YES       |            |                 |                     |                     |                      |
-| DCR   |       |YES        |YES       |            |                 |                     |                     |                      |
-| XC    |       |YES        |          |            |                 |                     |                     |                      |
-| ETH   |       |           |          |            |                 |                     |                     |                      |
-| ZEC   |       |           |          |            |                 |                     |                     |                      |
-| SIA   |       |           |          |            |                 |                     |                     |                      |
-| BCN   |       |           |          |            |                 |                     |                     |                      |
-| NXT   |PROBABLE|PROBABLE  |          |            |                 |                     |                     |NOT LOOKED INTO YET   |
-
 # NON - LOGGED COINS
 
  * Stealth [XST] >> TX decode failed
@@ -38,6 +6,11 @@ This is community based testing and the information will be relayed to the devel
  * Verge [XVG] >> TX decode failed
  * Vericoin [VRC] >> TX decode failed
  * Gulden [NLG] >> Labelled address wont show up >> Forced address in a TX >> Stays in HOLD
+ * NoLimitCoin >> TX decode failed
+ * Neoscoin >> TX decode failed
+ * Firstcoin >> TX decode failed
+ * Potcoin >> TX decode failed (NEED TO UPLOAD LOGS)
+ * BitcoinCash >> TX decode failed (NEED TO UPLOAD LOG)
  
 ---
 
