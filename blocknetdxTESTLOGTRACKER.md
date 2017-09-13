@@ -294,22 +294,22 @@
 #### Issue #1: (code 22 TX decode failed):
   * See log's below:
  
-   * [Maker Log]()
+   * [Maker Log]
   
    * [Taker Log](https://drive.google.com/open?id=0By-umY3NmpLVMlhpN24yWFNabEk)
   
-   * [Node Log]()
+   * [Node Log]
 
 ## Bitcoincash [BCH]
 
 #### Issue #1: (code 22 TX decode failed):
   * See log's below:
  
-   * [Maker Log]()
+   * [Maker Log]
   
    * [Taker Log](https://drive.google.com/open?id=0By-umY3NmpLVUjd4SkEwTWEzLUU)
   
-   * [Node Log]()
+   * [Node Log]
    
 ## Bitcoindark [BTCD]
 
