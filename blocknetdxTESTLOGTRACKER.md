@@ -5,11 +5,12 @@
  * Verge [XVG] >> TX decode failed
  * Vericoin [VRC] >> TX decode failed
  * Gulden [NLG] >> Labelled address wont show up >> Forced address in a TX >> Stays in HOLD
- * NoLimitCoin >> TX decode failed
- * Neoscoin >> TX decode failed
- * Firstcoin >> TX decode failed
- * Particl >> TX decode failed
- 
+ * NoLimitCoin [NLC2] >> TX decode failed
+ * Neoscoin [NEOS] >> TX decode failed
+ * Firstcoin [FRST] >> TX decode failed
+ * Particl [PART] >> TX decode failed
+ * LiteDoge [LDOGE] >> TX decode failed
+ * Hshare [HSR] >> TX decode failed
 ---
 
 # LOGGED COINS
