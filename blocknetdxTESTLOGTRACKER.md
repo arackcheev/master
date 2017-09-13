@@ -102,19 +102,6 @@
   
    * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVSHFUbjRKZ2drdjg)
  
-## Potcoin [POT]
-
-#### Issue #1:
- * After a successful TX posting there is Block movement. No coin movement after accepted TX. TX cancels.
- 
- * See log's below:
- 
-   * [Maker Log](
-  
-   * [Taker Log](
-  
-   * [Node Log](
- 
 ## Peercoin [PPC]
 
 #### Issue #1 (code 22 TX decode failed):
