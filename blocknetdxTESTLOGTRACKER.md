@@ -30,13 +30,6 @@
   
    * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVaTdNai12bzNSd2s)
  
-#### Possible Solution(s):
- * User configuration parameter error
- 
- 
-#### Dev Feedback/Status Update:
- * Contacted DYN/SEQ source to see if we can get assitance on SEQ. Possibly SEQ isn't CLTV but DYN is? 
-
 ## BitBay [BAY]
 
 #### Issue #1 (code 22 TX decode failed):
@@ -50,13 +43,6 @@
   
    * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVZXY1VUFDUzNDbms)
  
-#### Possible Solution(s):
- * User configuration parameter error
- 
- 
-#### Dev Feedback/Status Update:
- *  
-
 ## Stratis [STRAT]
 
 #### Issue #1 (code 22 TX decode failed):
@@ -70,13 +56,6 @@
   
    * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVMXdLS0dERGVzbHc)
  
-#### Possible Solution(s):
- * User configuration parameter error
- 
- 
-#### Dev Feedback/Status Update:
- *  
-
 ## Feathercoin [FTC]
 #### Issue #1 (code 5 no info about tx) & (code 25) :
  * After a successful TX FTC/SYS posting and TX acceptance there is Block movement
@@ -95,13 +74,6 @@
   
     * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVWVR1UzR5LVpPTzg)
   
-#### Possible Solution(s):
- * User configuration parameter error
- 
-#### Dev Feedback/Status Update:
-
-*
-
 ## Quarkcoin [QRK]
 
 #### Issue #1 (code 26 insufficient priority):
@@ -121,13 +93,6 @@
   
    * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVcmR4bGRJekF0aWs)
 
- #### Possible Solution(s):
- * User configuration parameter error
- 
- 
-#### Dev Feedback/Status Update:
- *  
-
 ## Blackcoin [BLK]
 
 #### Issue #1 (code 22 TX decode failed):
@@ -141,13 +106,6 @@
   
    * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVSHFUbjRKZ2drdjg)
  
-#### Possible Solution(s):
- * User configuration parameter error
- * Using new Lore client, not old QT client. Try old client?
-  
-#### Dev Feedback/Status Update:
- *  
-
 ## Potcoin [POT]
 
 #### Issue #1:
@@ -161,13 +119,6 @@
   
    * [Node Log](
  
-#### Possible Solution(s):
- * User configuration parameter error
- 
- 
-#### Dev Feedback/Status Update:
- *  
-
 ## Peercoin [PPC]
 
 #### Issue #1 (code 22 TX decode failed):
@@ -180,13 +131,6 @@
    * [Taker Log](https://drive.google.com/open?id=0By-umY3NmpLVMG9SbUxKZnF5SEU)
   
    * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVVFZnSm9WSGV1Rnc)
-
- #### Possible Solution(s):
- * User configuration parameter error
- 
- 
-#### Dev Feedback/Status Update:
- *  
 
 ## Bitconnect [BCC]
 
@@ -201,13 +145,6 @@
   
    * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVU3hMWjJqU3RvLWs)
 
- #### Possible Solution(s):
- * User configuration parameter error
- 
- 
-#### Dev Feedback/Status Update:
- *  
-
 ## Groestlcoin [GRS]
 
 #### Issue #1:
@@ -220,13 +157,6 @@
    * [Taker Log](https://drive.google.com/open?id=0By-umY3NmpLVbm05Z01kWWl6WUk)
   
    * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVSXNiNHpYYkFFd0U)
-
- #### Possible Solution(s):
- * User configuration parameter error
- 
- 
-#### Dev Feedback/Status Update:
- *  
 
 ## Decred [DCR]
 #### Issue #1:
@@ -286,10 +216,6 @@
 
 * Need block to recognize 35 character long addresses or somehow decompress the address to be usable
 
-#### Dev Feedback/Status Update:
-
-* 
-
 ## GameCredits [GAME]
 
 #### Issue #1 (code 25):
@@ -309,13 +235,6 @@
   
    * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVUWpqTzByYmRiQ1E)
  
-#### Possible Solution(s):
- * User configuration parameter error
- 
- 
-#### Dev Feedback/Status Update:
- *  
-
 ## Reddcoin [RDD]
 
 #### Issue #1 (code 26):
@@ -335,13 +254,6 @@
   
    * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVSl9ZZzV2ejR5YVU)
  
-#### Possible Solution(s):
- * User configuration parameter error
- 
- 
-#### Dev Feedback/Status Update:
- *  
- 
 ## Cloakcoin [CLOAK]
 
 #### Issue #1 (code 22 TX decode failed):
@@ -355,13 +267,6 @@
   
    * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVaV9BV1BGVjJiamc)
 
- #### Possible Solution(s):
- * User configuration parameter error
- 
- 
-#### Dev Feedback/Status Update:
- *   
- 
 ## CLAMcoin [CLAMS]
 
 #### Issue #1 (code 22 TX decode failed):
@@ -375,12 +280,6 @@
   
    * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVTVlNSGdKNjZCUW8)
 
- #### Possible Solution(s):
- * User configuration parameter error
- 
- #### Dev Feedback/Status Update:
- *
- 
 ## LEOcoin [LEO]
 
 #### Issue #1 (code 22 TX decode failed):
@@ -394,12 +293,6 @@
   
    * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVSVkxVEN0dkk3Q3c)
 
- #### Possible Solution(s):
- * User configuration parameter error
- 
- #### Dev Feedback/Status Update:
- *
- 
 ## Nubits [NBT]
 
 #### Issue #1 (code 22 TX decode failed):
@@ -413,11 +306,6 @@
   
    * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVOTZ2dDBjeVdoNnc)
 
- #### Possible Solution(s):
- * User configuration parameter error
- 
- #### Dev Feedback/Status Update:
- *
 
 ---
 ---
