@@ -307,20 +307,64 @@
   
    * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVOTZ2dDBjeVdoNnc)
 
+## Stealthcoin [XST]
+
+#### Issue #1: (code 22 TX decode failed):
+  * See log's below:
+ 
+   * [Maker Log]()
+  
+   * [Taker Log]()
+  
+   * [Node Log]()
+
+## Bitcoincash [BCH]
+
+#### Issue #1: (code 22 TX decode failed):
+  * See log's below:
+ 
+   * [Maker Log]()
+  
+   * [Taker Log]()
+  
+   * [Node Log]()
+   
+## Bitcoindark [BTCD]
+
+#### Issue #1: (code 22 TX decode failed):
+  * See log's below:
+ 
+   * [Maker Log]()
+  
+   * [Taker Log]()
+  
+   * [Node Log]()   
+   
+## Potcoin [POT]
+
+#### Issue #1: (code 22 TX decode failed):
+  * See log's below:
+ 
+   * [Maker Log]()
+  
+   * [Taker Log]()
+  
+   * [Node Log]()
+   
+## NAVcoin [NAV]
+
+#### Issue #1: (code 22 TX decode failed):
+  * See log's below:
+ 
+   * [Maker Log]()
+  
+   * [Taker Log]()
+  
+   * [Node Log]()        
 
 ---
 ---
 # Future Coin's
-
-## Stealthcoin [XST]
-#### Issue #1:
-* Waiting on new windows client w/ updated CLTV codework 
-
-#### Possible Solution(s):
-* Wait for release of new wallet client, then begin testing
-
-#### Dev Feedback/Status Update:
-* Forthcoming...
 
 ## Breakoutcoin [BRK]
 
