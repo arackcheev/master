@@ -13,6 +13,7 @@
  * BitcoinCash >> TX decode failed (NEED TO UPLOAD LOG)
  * Particl >> (NEED TO UPLOAD LOG)
  * NAVcoin >> TX decode failed (NEED TO UPLOAD LOGS)
+ * BTCD >> TX decode failed (NEED TO UPLOAD LOGS)
  
 ---
 
