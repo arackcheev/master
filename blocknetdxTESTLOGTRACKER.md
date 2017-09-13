@@ -1,6 +1,5 @@
 # NON - LOGGED COINS
 
- * Stealth [XST] >> TX decode failed
  * Emercoin [EMC] >> TX decode failed
  * Ioncoin [ION] >> TX decode failed
  * Verge [XVG] >> TX decode failed
@@ -9,11 +8,7 @@
  * NoLimitCoin >> TX decode failed
  * Neoscoin >> TX decode failed
  * Firstcoin >> TX decode failed
- * Potcoin >> TX decode failed (NEED TO UPLOAD LOGS)
- * BitcoinCash >> TX decode failed (NEED TO UPLOAD LOG)
  * Particl >> TX decode failed
- * NAVcoin >> TX decode failed (NEED TO UPLOAD LOGS)
- * BTCD >> TX decode failed (NEED TO UPLOAD LOGS)
  
 ---
 
@@ -314,7 +309,7 @@
  
    * [Maker Log]()
   
-   * [Taker Log]()
+   * [Taker Log](https://drive.google.com/open?id=0By-umY3NmpLVMlhpN24yWFNabEk)
   
    * [Node Log]()
 
@@ -325,7 +320,7 @@
  
    * [Maker Log]()
   
-   * [Taker Log]()
+   * [Taker Log](https://drive.google.com/open?id=0By-umY3NmpLVUjd4SkEwTWEzLUU)
   
    * [Node Log]()
    
@@ -334,33 +329,33 @@
 #### Issue #1: (code 22 TX decode failed):
   * See log's below:
  
-   * [Maker Log]()
+   * [Maker Log](https://drive.google.com/open?id=0By-umY3NmpLVNG4tRHFleF85S0k)
   
-   * [Taker Log]()
+   * [Taker Log](https://drive.google.com/open?id=0By-umY3NmpLVbmtock1jNkVrVW8)
   
-   * [Node Log]()   
+   * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVQTJxQVVUZVF1aTQ)   
    
 ## Potcoin [POT]
 
 #### Issue #1: (code 22 TX decode failed):
   * See log's below:
  
-   * [Maker Log]()
+   * [Maker Log](https://drive.google.com/open?id=0By-umY3NmpLVX0ZtOGp5WEZiYVU)
   
-   * [Taker Log]()
+   * [Taker Log](https://drive.google.com/open?id=0By-umY3NmpLVQm1MNjNnNVNmWEU)
   
-   * [Node Log]()
+   * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVMkxWbHRLVWNvVHc)
    
 ## NAVcoin [NAV]
 
 #### Issue #1: (code 22 TX decode failed):
   * See log's below:
  
-   * [Maker Log]()
+   * [Maker Log](https://drive.google.com/open?id=0By-umY3NmpLVSWp2X2l2XzhXaXc)
   
-   * [Taker Log]()
+   * [Taker Log](https://drive.google.com/open?id=0By-umY3NmpLVQUlPM3pwazAycXM)
   
-   * [Node Log]()        
+   * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVc1pTa2tLSnRocnM)        
 
 ---
 ---
