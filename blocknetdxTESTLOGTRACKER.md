@@ -11,6 +11,10 @@
  * Particl [PART] >> TX decode failed
  * LiteDoge [LDOGE] >> TX decode failed
  * Hshare [HSR] >> TX decode failed
+ * OKcash [OK] >> TX decode failed
+ * Zcoin [XZC] >> TX rejected (going to test further after a -txindex)
+ * Dopecoin [DOPE] >> TX decode failed
+ * Radium [RADs] >> Radium wallet API issue with `listaccounts`, not much we can do here
 ---
 
 # LOGGED COINS
@@ -345,6 +349,20 @@
   
    * [Node Log](https://drive.google.com/open?id=0By-umY3NmpLVc1pTa2tLSnRocnM)        
 
+## Goldcoin [GLD]
+
+#### Issue #1: (Failed, error -3: expected type array, got null)
+  * See log snippet below:
+```
+[I] 2017-Sep-16 01:14:34 [0x14a4] rpc call <signrawtransaction>
+[I] 2017-Sep-16 01:14:34 [0x14a4] HTTP: req  signrawtransaction {"method":"signrawtransaction","params":["010000000168fff451ffa2ea353d73ba4aec84775e69453d81af3d3fb3ff651a8f0790698f0100000000ffffffff024004fb0b0000000017a914b7f858ec10fc56816eb79ba03fbd3ed6acd3ff888760a20c7d000000001976a914da84b6ac4452d45fc18abf5f9c372949eb3c299a88ac00000000",null,null],"id":1}
+
+[I] 2017-Sep-16 01:14:34 [0x14a4] HTTP: resp 500 {"result":null,"error":{"code":-3,"message":"Expected type array, got null"},"id":1}
+
+[I] 2017-Sep-16 01:14:34 [0x14a4] error: {"code":-3,"message":"Expected type array, got null"}
+[I] 2017-Sep-16 01:14:34 [0x14a4] sign transaction error, transaction canceled processTransactionCreate
+[I] 2017-Sep-16 01:14:34 [0x14a4] cancel transaction <85cc238585b4d8616a017f958e5a6b0021891a9d58d1c47ba6395c90aafd9f11>
+```
 ---
 ---
 # Future Coin's
