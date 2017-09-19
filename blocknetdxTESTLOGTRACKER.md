@@ -389,12 +389,7 @@
 #### Issue #1:
 * No CLTV support yet
 
-#### Possible Solution(s):
 * CLTV is currently being implemented into BitSwift
-* Once new wallet is out testing can begin
-
-#### Dev Feedback/Status Update:
-* Forthcoming...
 
 ## XCurrency [XC]
 #### Issue #1:
@@ -402,14 +397,14 @@
 
 ## Ethereum [ETH]
 #### Issue #1:
-* Not support by Blocknet yet
+* Not supported by Blocknet yet
 
 * Forthcoming...
 
 ## Zcash [ZEC]
 
 #### Issue #1:
-* Not support by Blocknet yet
+* Not supported by Blocknet yet
 
 * Forthcoming...
   
@@ -427,6 +422,4 @@
 #### Issue #1:
 * NXT has its own CLTV/API, but it's different from Bitcoin based coins
 
-* Need to modify Block API to understand NXT API
-
-   
+* Need to modify Block API to understand NXT API   
