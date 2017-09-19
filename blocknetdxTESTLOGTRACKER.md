@@ -12,7 +12,6 @@
  * LiteDoge [LDOGE] >> TX decode failed
  * Hshare [HSR] >> TX decode failed
  * OKcash [OK] >> TX decode failed
- * Zcoin [XZC] >> TX rejected (going to test further after a -txindex)
  * Dopecoin [DOPE] >> TX decode failed
  * Radium [RADs] >> Radium wallet API issue with `listaccounts`, not much we can do here
 ---
@@ -363,8 +362,23 @@
 [I] 2017-Sep-16 01:14:34 [0x14a4] sign transaction error, transaction canceled processTransactionCreate
 [I] 2017-Sep-16 01:14:34 [0x14a4] cancel transaction <85cc238585b4d8616a017f958e5a6b0021891a9d58d1c47ba6395c90aafd9f11>
 ```
+
+ ## Zcoin [XZC]
+ 
+ #### Issue #1: (TX rejected)
+   * See log's below:
+ 
+   * [Maker Log]
+  
+   * [Taker Log](https://drive.google.com/open?id=0By-umY3NmpLVX09HcjNMcHU1OGM)
+  
+   * [Node Log]  
+ 
+ NOTE: Trying -txindex on the wallets and then try a trade after. 
+
 ---
 ---
+
 # Future Coin's
 
 ## Breakoutcoin [BRK]
@@ -384,23 +398,12 @@
 
 ## XCurrency [XC]
 #### Issue #1:
-* Unsure if Xcurrency has CLTV support yet
-
-#### Possible Solution(s):
-* Get confirmation on CLTV support
-* Download and test trade
-
-#### Dev Feedback/Status Update:
-* New wallet with codebase in the future
+* Waiting on new wallet and then trading can begin
 
 ## Ethereum [ETH]
 #### Issue #1:
 * Not support by Blocknet yet
 
-#### Possible Solution(s):
-* Modify code to support ETH and ERC20 coins
-
-#### Dev Feedback/Status Update:
 * Forthcoming...
 
 ## Zcash [ZEC]
@@ -408,40 +411,22 @@
 #### Issue #1:
 * Not support by Blocknet yet
 
-#### Possible Solution(s):
-* Modify code to support ZEC
-
-#### Dev Feedback/Status Update:
 * Forthcoming...
   
 ## Siacoin [SIA]
 #### Issue #1:
 * Haven't tested yet, might not be supported by Blocknet yet
 
-#### Possible Solution(s):
-* Modify code to support SIA
-
-#### Dev Feedback/Status Update:
-* 
-
 ## Bytecoin [BCN]
 #### Issue #1:
 * Haven't tested yet, might not be supported by Blocknet yet
 
-#### Possible Solution(s):
-* Modify code to support BCN and other CryptoNote based coins
-
-#### Dev Feedback/Status Update:
-* 
+* Modify code to support BCN and other CryptoNote based coins?
 
 ## Nxt [NXT]
 #### Issue #1:
 * NXT has its own CLTV/API, but it's different from Bitcoin based coins
 
-#### Possible Solution(s):
 * Need to modify Block API to understand NXT API
-* Once block can talk with NXT tests can be conducted
 
-#### Dev Feedback/Status Update:
-
-*   
+   
